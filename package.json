@@ -31,7 +31,7 @@
 		"babel-core": "^6.26.3",
 		"babel-loader": "^9.1.2",
 		"css-loader": "^6.8.1",
-		"electron": "^25.0.1",
+		"electron": "^26.0.0",
 		"electron-builder": "^24.4.0",
 		"postcss": "^8.4.24",
 		"pug": "^3.0.2",
