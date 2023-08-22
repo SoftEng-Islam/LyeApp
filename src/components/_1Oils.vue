@@ -1,23 +1,37 @@
 <script lang="ts">
-import oilscFile from "../Oils";
+import {useOilStore} from "../store/index";
 import { ref } from 'vue'
-
-// defineProps({
-// 	msg: String,
-// })
 export default {
 	props: {
-		msg: String,
+		OilsList: {
+			type: Object,
+			required: true
+		},
+		msg: {
+			type: String,
+			required: true,
+		},
 	},
 	data() {
 		return {
-			oilscFile: oilscFile,
 			enteredValue: <string>"",
 			theResult: "",
 			show: "hidden",
 			clkOil: <object>{},
-			count: ref(0)
+			count: ref(0),
+			MyMessage: this.msg
+
 		};
+	},
+	setup() {
+		const uOilStore = useOilStore();
+        // const uOil = ref({});
+		const handleClickd = (val: Object) => {
+			uOilStore.ClickedOil(val);
+		}
+		return {
+			handleClickd, // uOil
+		}
 	},
 	watch: {
 
@@ -30,17 +44,13 @@ export default {
 			// console.log("searchResults");
 			this.theResult = event.target.value
 		},
-		OilClicked(o: any) {
-			console.log(o);
-			this.clkOil = o;
-		}
 	},
 };
 </script>
 <template lang="pug">
 div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 border-r-2 border-solid border-[var(--favColor)]" id="notes")
-	span() {{ msg }}
-	button(type="button" @click="count++") count is {{ count }}
+	span(class="text-white") {{ MyMessage  }} -
+	button(class="text-white" type="button" @click="count++")  count is {{ count }}
 	div(class="w-full h-full flex flex-col items-center")
 		//- Search
 		div(class="relative w-6/7 p-3 m-2 mb-5 flex items-center justify-center")
@@ -67,9 +77,9 @@ div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 bord
 						li(class="") Custom
 				li(class="mx-4 hover:text-white hover:cursor-pointer") Select
 		//- Notes
-		div(class="w-full pt-7 p-3 border-t border-solid border-[var(--dark100)]")
+		div(class="overflow-y-scroll  w-full pt-7 p-3 border-t border-solid border-[var(--dark100)]")
 			ul(class="w-full h-full ")
-				li(v-for="Properties, OilName in oilscFile"   v-on:click="OilClicked(Properties.properties)" class="duration-150 cursor-pointer hover:bg-[var(--dark200)] p-2 pl-4 my-5 rounded-xl text-[var(--favColor)] bg-[var(--dark300)]") {{ OilName }}
+				li(v-for="Oil in OilsList.Oils"  class="duration-150 cursor-pointer hover:bg-[var(--dark200)] p-2 pl-4 my-5 rounded-xl text-[var(--favColor)] bg-[var(--dark300)]" @click="handleClickd(Oil)") {{ Oil.name }}
 		//- Close
 	button(type="button" id="closeOrResize" class="hover:shadow-lg hover:shadow-[var(--favColor)] hover:cursor-pointer w-8 h-8 rounded-full bg-[var(--dark300)] text-[var(--favColor)] border-2 border-solid border-[var(--favColor)] absolute top-1/2 right-[-1rem] translate-y-[-50%]")
 		<svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-left"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>

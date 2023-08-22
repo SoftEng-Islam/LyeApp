@@ -10,7 +10,7 @@ export default {
 <template lang="pug">
 header(class="border-[var(--dark200)] border-b w-full flex items-center p-2 select-none h-[var(--HeaderHeight)] bg-[var(--dark300)]" style="-webkit-app-region: drag;")
     //- Logo
-    a(class="ml-4 text-xl outline-none text-[var(--favColor)]" :href="LogoLink" style="-webkit-app-region: no-drag") ElectroNote #[span(class="text-xs opacity-70") v1.0]
+    a(class="ml-4 text-xl outline-none text-[var(--favColor)]" :href="LogoLink" style="-webkit-app-region: no-drag") LyeApp #[span(class="text-xs opacity-70") v1.0]
 
     //- Search
     div(class="flex items-center justify-center h-8 rounded-lg p-10 pt-0 pr-0 pb-0 m-auto bg-[var(--dark200)]" style="-webkit-app-region: no-drag" id="searchInHeader")
