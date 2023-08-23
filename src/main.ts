@@ -15,6 +15,7 @@ createApp(App,)
 	.use(PerfectScrollbar,{
 		watchOptions: true,
 		options: {
+
 			suppressScrollX: false
 		}
 	})
