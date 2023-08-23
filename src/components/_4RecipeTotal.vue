@@ -10,5 +10,5 @@ export default {
 };
 </script>
 <template lang="pug">
-div
+div(class="lyeWidget")
 </template>
