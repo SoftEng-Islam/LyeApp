@@ -77,10 +77,16 @@ div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 bord
 						li(class="") Custom
 				li(class="mx-4 hover:text-white hover:cursor-pointer") Select
 		//- Notes
-		div(class="overflow-y-scroll  w-full pt-7 p-3 border-t border-solid border-[var(--dark100)]")
-			ul(class="w-full h-full ")
-				li(v-for="Oil in OilsList.Oils"  class="duration-150 cursor-pointer hover:bg-[var(--dark200)] p-2 pl-4 my-5 rounded-xl text-[var(--favColor)] bg-[var(--dark300)]" @click="handleClickd(Oil)") {{ Oil.name }}
+		div(class="w-full h-[90%] overflow-hidden pt-7 p-3 border-t border-solid border-[var(--dark100)]")
+			ul(class="h-full w-full")
+				perfect-scrollbar
+					li(v-for="Oil in OilsList.Oils"  class="duration-150 cursor-pointer hover:bg-[var(--dark200)] p-2 pl-4 my-5 rounded-xl text-[var(--favColor)] bg-[var(--dark300)]" @click="handleClickd(Oil)") {{ Oil.name }}
 		//- Close
 	button(type="button" id="closeOrResize" class="hover:shadow-lg hover:shadow-[var(--favColor)] hover:cursor-pointer w-8 h-8 rounded-full bg-[var(--dark300)] text-[var(--favColor)] border-2 border-solid border-[var(--favColor)] absolute top-1/2 right-[-1rem] translate-y-[-50%]")
 		<svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-left"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
 </template>
+<style>
+.ps {
+	height: 100%;
+}
+</style>
