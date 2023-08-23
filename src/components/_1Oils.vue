@@ -49,11 +49,9 @@ export default {
 </script>
 <template lang="pug">
 div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 border-r-2 border-solid border-[var(--favColor)]" id="notes")
-	span(class="text-white") {{ MyMessage  }} -
-	button(class="text-white" type="button" @click="count++")  count is {{ count }}
 	div(class="w-full h-full flex flex-col items-center")
 		//- Search
-		div(class="relative w-6/7 p-3 m-2 mb-5 flex items-center justify-center")
+		div(class="relative w-full p-3 m-2 mb-5 flex items-center justify-center")
 			div(class="z-10 w-full pl-4 h-9 flex items-center justify-center rounded-xl bg-[var(--dark200)]")
 				input(v-on:focusin="show = ''" v-on:focusout="show = 'hidden'" v-on:input="searchResults" class="h-7 w-4/5 outline-none text-white placeholder:focus:opacity-40 bg-transparent" type="text" placeholder="Search...")
 				button(class="outline-none")
@@ -64,8 +62,8 @@ div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 bord
 				ul(class="w-full  p-4 flex flex-col justify-center")
 					li(class="hover:scale-95 duration-150 cursor-pointer text-[var(--white)] w-full my-1 h-9 pl-4 flex items-center rounded-xl bg-[var(--dark100)]") {{ theResult }}
 		//- Tools
-		div(class="w-full")
-			ul(class="w-5/6 mx-auto  px-2 py-1 flex items-center justify-center rounded-full text-gray-400 bg-[var(--dark400)]")
+		div(class="w-full flex hidden items-center justify-center overflow-hidden")
+			ul(class="px-2 py-1 flex items-center justify-between rounded-full text-gray-400 bg-[var(--dark400)]")
 				li(class="mx-4 hover:text-white hover:cursor-pointer") Edit
 				li(class="mx-4 hover:text-white hover:cursor-pointer") Sort
 					ul(class="hidden")
@@ -80,7 +78,7 @@ div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 bord
 		div(class="w-full h-[90%] overflow-hidden pt-7 p-3 border-t border-solid border-[var(--dark100)]")
 			ul(class="h-full w-full")
 				perfect-scrollbar
-					li(v-for="Oil in OilsList.Oils"  class="duration-150 cursor-pointer hover:bg-[var(--dark200)] p-2 pl-4 my-5 rounded-xl text-[var(--favColor)] bg-[var(--dark300)]" @click="handleClickd(Oil)") {{ Oil.name }}
+					li(v-for="Oil,index in OilsList.Oils"  class="duration-150 cursor-pointer hover:bg-[var(--dark200)] p-2 pl-4 my-5 rounded-xl text-[var(--favColor)] bg-[var(--dark300)]" @click="handleClickd(Oil)") {{ index + 1 }}- {{ Oil.name }}
 		//- Close
 	button(type="button" id="closeOrResize" class="hover:shadow-lg hover:shadow-[var(--favColor)] hover:cursor-pointer w-8 h-8 rounded-full bg-[var(--dark300)] text-[var(--favColor)] border-2 border-solid border-[var(--favColor)] absolute top-1/2 right-[-1rem] translate-y-[-50%]")
 		<svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-left"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
