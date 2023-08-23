@@ -2,11 +2,9 @@
 
 ## Still underDevelopment
 
-	The production of toilet soaps usually entails saponification of triglycerides, which are vegetable or animal oils and fats. An alkaline solution (often lye or sodium hydroxide) induces saponification whereby the triglyceride fats first hydrolyze into salts of fatty acids. Glycerol (glycerin) is liberated. The glycerin can remain in the soap product as a softening agent, although it is sometimes separated.
+The production of toilet soaps usually entails saponification of triglycerides, which are vegetable or animal oils and fats. An alkaline solution (often lye or sodium hydroxide) induces saponification whereby the triglyceride fats first hydrolyze into salts of fatty acids. Glycerol (glycerin) is liberated. The glycerin can remain in the soap product as a softening agent, although it is sometimes separated.
 
 So This app can calc lye with any vegetable or animal oils and fats
-
-🥳 Really simple `Electron` + `Vue` + `Vite` boilerplate.
 
 
 ## Features
