@@ -35,7 +35,7 @@
 	--dark100: #575758;
 	--dark200: #424243;
 	--dark300: #2e2d2d;
-	--dark400: #1e1e1e;
+	--dark400: #201f1f;
 	--white: #b8b8b8;
 	--blue: #8fa3ff;
 	--purple: #d895ff;
@@ -63,5 +63,5 @@ body {
 }
 
 ::selection {
-	background: #439a86;
+	background: var(--favColor);
 }

@@ -9,10 +9,10 @@ export default {
 };
 </script>
 <template lang="pug">
-div(class="flex flex-col")
-	div(class="Head bg-emerald-500 p-2 rounded-md")
-		span(class="text-black font-bold ") {{ OilProperties.name }} Properties
-	ul(class="bg-gray-500 mt-4 p-2 rounded-md")
-		li(v-for="val , key in OilProperties") {{key}} : {{ val }}
+div(class="flex flex-col min-h-[200px] ")
+	div(class="Head bg-yellow-500 p-2 rounded-md")
+		span(class="text-black font-bold ") {{ OilProperties.name || 'Oil' }} Properties.
+	ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md min-h-[100px]")
+		li(v-for="val , key in OilProperties") {{key}} : #[span(class="float-right") {{ val }}]
 
 </template>

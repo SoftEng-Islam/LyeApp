@@ -6,7 +6,6 @@ The production of toilet soaps usually entails saponification of triglycerides, 
 
 So This app can calc lye with any vegetable or animal oils and fats
 
-
 ## Features
 
 All Features You need.
