@@ -7,10 +7,6 @@ export default {
 			type: Object,
 			required: true
 		},
-		msg: {
-			type: String,
-			required: true,
-		},
 	},
 	data() {
 		return {
@@ -25,12 +21,11 @@ export default {
 	},
 	setup() {
 		const uOilStore = useOilStore();
-        // const uOil = ref({});
 		const handleClickd = (val: Object) => {
 			uOilStore.ClickedOil(val);
 		}
 		return {
-			handleClickd, // uOil
+			handleClickd,
 		}
 	},
 	watch: {
