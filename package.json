@@ -48,7 +48,7 @@
 		"vue-pug-plugin": "^2.0.3",
 		"vue-template-compiler": "^2.7.14",
 		"vue-tsc": "^1.2.0",
-		"postcss-loader": "^4.3.0",
+		"postcss-loader": "^7.3.3",
 		"raw-loader": "^4.0.2",
 		"pinia": "^2.1.6"
 	},
