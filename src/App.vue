@@ -13,7 +13,7 @@ const OilsStore = useOilStore();
 
 <template lang="pug">
 Header
-div(class="w-full h-full flex items-center bg-[var(--dark400)]")
+div(class="w-full h-full flex items-center dark:bg-[var(--dark400)]")
 	<Oils :OilsList="OilsStore" />
 	perfect-scrollbar(class="h-[90%] w-full flex items-center justify-center")
 		div(class="h-full w-full bg-[var(--dark400)] ")
