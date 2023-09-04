@@ -6,7 +6,6 @@ import electron from "vite-plugin-electron";
 import renderer from "vite-plugin-electron-renderer";
 import pkg from "./package.json";
 import vuePugPlugin from "vue-pug-plugin";
-// import ckeditor5 from '@ckeditor/vite-plugin-ckeditor5';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
