@@ -14,6 +14,15 @@ ul(class="h-20 w-full mb-5 py-2 px-4 flex flex-row items-center justify-between 
 		span Weight of Oils
 
 	li(class="") Hi
-	li(class="") Hi
+	li(class="")
+		div(class="")
+			span(class="") Super Fat
+			input(class="" value="5")
+			span(class="") %
+		div(class="")
+			span(class="") Fragrance
+			input(class="")
+		div(class="")
+			span
 
 </template>

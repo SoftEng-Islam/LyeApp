@@ -2,7 +2,7 @@ const oilsAPI: {
 	name: String;
 	iodine: number;
 	ins: number;
-	sap: number;
+	"KOH SAP": number;
 	palmitic?: number;
 	stearic?: number;
 	oleic?: number;
@@ -31,7 +31,7 @@ const oilsAPI: {
 		name: "Abyssinian Oil",
 		iodine: 98,
 		ins: 70,
-		sap: 0.168,
+		"KOH SAP": 0.168,
 		palmitic: 3,
 		stearic: 2,
 		oleic: 18,
@@ -51,7 +51,7 @@ const oilsAPI: {
 		name: "Almond Butter",
 		iodine: 70,
 		ins: 118,
-		sap: 0.188,
+		"KOH SAP": 0.188,
 		myristic: 1,
 		palmitic: 9,
 		stearic: 15,
@@ -71,7 +71,7 @@ const oilsAPI: {
 		name: "Almond Oil, sweet",
 		iodine: 99,
 		ins: 97,
-		sap: 0.195,
+		"KOH SAP": 0.195,
 		palmitic: 7,
 		oleic: 71,
 		linoleic: 18,
@@ -89,7 +89,7 @@ const oilsAPI: {
 		name: "Aloe Butter",
 		iodine: 9,
 		ins: 241,
-		sap: 0.24,
+		"KOH SAP": 0.24,
 		lauric: 45,
 		myristic: 18,
 		palmitic: 8,
@@ -110,7 +110,7 @@ const oilsAPI: {
 		name: "Andiroba Oil",
 		iodine: 68,
 		ins: 120,
-		sap: 0.188,
+		"KOH SAP": 0.188,
 		palmitic: 28,
 		stearic: 8,
 		oleic: 51,
@@ -129,7 +129,7 @@ const oilsAPI: {
 		name: "Apricot Kernal Oil",
 		iodine: 100,
 		ins: 91,
-		sap: 0.195,
+		"KOH SAP": 0.195,
 		palmitic: 6,
 		oleic: 66,
 		linoleic: 27,
@@ -147,7 +147,7 @@ const oilsAPI: {
 		name: "Argan Oil",
 		iodine: 95,
 		ins: 95,
-		sap: 0.191,
+		"KOH SAP": 0.191,
 		myristic: 1,
 		palmitic: 14,
 		oleic: 46,
@@ -169,7 +169,7 @@ const oilsAPI: {
 
 		iodine: 67,
 		ins: 120,
-		sap: 0.187,
+		"KOH SAP": 0.187,
 
 		palmitic: 21,
 		stearic: 10,
@@ -193,7 +193,7 @@ const oilsAPI: {
 
 		iodine: 86,
 		ins: 99,
-		sap: 0.186,
+		"KOH SAP": 0.186,
 		palmitic: 20,
 		stearic: 2,
 		oleic: 58,
@@ -215,7 +215,7 @@ const oilsAPI: {
 
 		iodine: 15,
 		ins: 230,
-		sap: 0.245,
+		"KOH SAP": 0.245,
 
 		lauric: 50,
 		myristic: 20,
@@ -239,7 +239,7 @@ const oilsAPI: {
 
 		iodine: 75,
 		ins: 125,
-		sap: 0.2,
+		"KOH SAP": 0.2,
 
 		myristic: 1,
 		palmitic: 24,
@@ -264,7 +264,7 @@ const oilsAPI: {
 
 		iodine: 10,
 		ins: 84,
-		sap: 0.094,
+		"KOH SAP": 0.094,
 
 		hardness: 0,
 		cleansing: 0,
@@ -282,7 +282,7 @@ const oilsAPI: {
 
 		iodine: 133,
 		ins: 62,
-		sap: 0.195,
+		"KOH SAP": 0.195,
 
 		palmitic: 13,
 		stearic: 3,
@@ -306,7 +306,7 @@ const oilsAPI: {
 
 		iodine: 178,
 		ins: 12,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 6,
 		stearic: 2,
@@ -330,7 +330,7 @@ const oilsAPI: {
 
 		iodine: 135,
 		ins: 55,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 10,
 		stearic: 4,
@@ -353,7 +353,7 @@ const oilsAPI: {
 
 		iodine: 100,
 		ins: 90,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 		palmitic: 13,
 		stearic: 11,
 		oleic: 39,
@@ -374,7 +374,7 @@ const oilsAPI: {
 
 		iodine: 105,
 		ins: 67,
-		sap: 0.172,
+		"KOH SAP": 0.172,
 
 		palmitic: 3,
 		stearic: 1,
@@ -399,7 +399,7 @@ const oilsAPI: {
 
 		iodine: 70,
 		ins: 153,
-		sap: 0.223,
+		"KOH SAP": 0.223,
 
 		palmitic: 17,
 		stearic: 2,
@@ -422,7 +422,7 @@ const oilsAPI: {
 
 		iodine: 144,
 		ins: 44,
-		sap: 0.188,
+		"KOH SAP": 0.188,
 
 		palmitic: 6,
 		stearic: 2,
@@ -444,7 +444,7 @@ const oilsAPI: {
 
 		iodine: 78,
 		ins: 115,
-		sap: 0.193,
+		"KOH SAP": 0.193,
 		palmitic: 9,
 		stearic: 2,
 		oleic: 77,
@@ -465,7 +465,7 @@ const oilsAPI: {
 
 		iodine: 32,
 		ins: 12,
-		sap: 0.044,
+		"KOH SAP": 0.044,
 		hardness: 0,
 		cleansing: 0,
 		bubbly: 0,
@@ -481,7 +481,7 @@ const oilsAPI: {
 
 		iodine: 110,
 		ins: 56,
-		sap: 0.186,
+		"KOH SAP": 0.186,
 
 		palmitic: 4,
 		stearic: 2,
@@ -505,7 +505,7 @@ const oilsAPI: {
 
 		iodine: 96,
 		ins: 90,
-		sap: 0.186,
+		"KOH SAP": 0.186,
 
 		palmitic: 4,
 		stearic: 2,
@@ -529,7 +529,7 @@ const oilsAPI: {
 
 		iodine: 56,
 		ins: 0,
-		sap: 0.144,
+		"KOH SAP": 0.144,
 		palmitic: 4,
 		oleic: 80,
 		linoleic: 13,
@@ -550,7 +550,7 @@ const oilsAPI: {
 
 		iodine: 86,
 		ins: 95,
-		sap: 0.18,
+		"KOH SAP": 0.18,
 		ricinoleic: 90,
 		oleic: 4,
 		linoleic: 4,
@@ -571,7 +571,7 @@ const oilsAPI: {
 
 		iodine: 128,
 		ins: 62,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 8,
 		stearic: 3,
@@ -595,7 +595,7 @@ const oilsAPI: {
 
 		iodine: 118,
 		ins: 74,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 		palmitic: 6,
 		stearic: 3,
 		oleic: 50,
@@ -616,7 +616,7 @@ const oilsAPI: {
 
 		iodine: 69,
 		ins: 130,
-		sap: 0.195,
+		"KOH SAP": 0.195,
 
 		myristic: 1,
 		palmitic: 25,
@@ -640,7 +640,7 @@ const oilsAPI: {
 
 		iodine: 37,
 		ins: 157,
-		sap: 0.194,
+		"KOH SAP": 0.194,
 		palmitic: 28,
 		stearic: 33,
 		oleic: 35,
@@ -662,7 +662,7 @@ const oilsAPI: {
 
 		iodine: 10,
 		ins: 258,
-		sap: 0.257,
+		"KOH SAP": 0.257,
 
 		lauric: 48,
 		myristic: 19,
@@ -687,7 +687,7 @@ const oilsAPI: {
 
 		iodine: 3,
 		ins: 258,
-		sap: 0.257,
+		"KOH SAP": 0.257,
 
 		lauric: 48,
 		myristic: 19,
@@ -712,7 +712,7 @@ const oilsAPI: {
 
 		iodine: 1,
 		ins: 324,
-		sap: 0.325,
+		"KOH SAP": 0.325,
 		caprylic: 54,
 		capric: 43,
 		lauric: 2,
@@ -734,7 +734,7 @@ const oilsAPI: {
 
 		iodine: 85,
 		ins: 100,
-		sap: 0.185,
+		"KOH SAP": 0.185,
 
 		palmitic: 38,
 		stearic: 8,
@@ -758,7 +758,7 @@ const oilsAPI: {
 
 		iodine: 87,
 		ins: 93,
-		sap: 0.18,
+		"KOH SAP": 0.18,
 		palmitic: 40,
 		oleic: 8,
 		linoleic: 38,
@@ -780,7 +780,7 @@ const oilsAPI: {
 
 		iodine: 30,
 		ins: 175,
-		sap: 0.205,
+		"KOH SAP": 0.205,
 
 		lauric: 51,
 		myristic: 13,
@@ -805,7 +805,7 @@ const oilsAPI: {
 
 		iodine: 117,
 		ins: 69,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 
 		palmitic: 12,
 		stearic: 2,
@@ -829,7 +829,7 @@ const oilsAPI: {
 
 		iodine: 108,
 		ins: 89,
-		sap: 0.194,
+		"KOH SAP": 0.194,
 
 		palmitic: 13,
 		stearic: 13,
@@ -853,7 +853,7 @@ const oilsAPI: {
 
 		iodine: 150,
 		ins: 40,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 6,
 		stearic: 2,
@@ -877,7 +877,7 @@ const oilsAPI: {
 
 		iodine: 111,
 		ins: 82,
-		sap: 0.193,
+		"KOH SAP": 0.193,
 
 		palmitic: 20,
 		stearic: 5,
@@ -901,7 +901,7 @@ const oilsAPI: {
 
 		iodine: 93,
 		ins: 115,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 		palmitic: 13,
 		stearic: 13,
 		oleic: 18,
@@ -923,7 +923,7 @@ const oilsAPI: {
 
 		iodine: 39,
 		ins: 153,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 		palmitic: 8,
 		stearic: 35,
 		oleic: 42,
@@ -945,7 +945,7 @@ const oilsAPI: {
 
 		iodine: 72,
 		ins: 122,
-		sap: 0.194,
+		"KOH SAP": 0.194,
 
 		myristic: 1,
 		palmitic: 26,
@@ -970,7 +970,7 @@ const oilsAPI: {
 
 		iodine: 60,
 		ins: 128,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 		palmitic: 23,
 		stearic: 9,
 		oleic: 47,
@@ -992,7 +992,7 @@ const oilsAPI: {
 
 		iodine: 160,
 		ins: 30,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 		linoleic: 80,
 		linolenic: 9,
 
@@ -1012,7 +1012,7 @@ const oilsAPI: {
 
 		iodine: 180,
 		ins: -6,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 6,
 		stearic: 3,
@@ -1036,7 +1036,7 @@ const oilsAPI: {
 
 		iodine: 30,
 		ins: 191,
-		sap: 0.227,
+		"KOH SAP": 0.227,
 
 		lauric: 4,
 		myristic: 11,
@@ -1062,7 +1062,7 @@ const oilsAPI: {
 
 		iodine: 65,
 		ins: 130,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 		palmitic: 21,
 		stearic: 6,
 		oleic: 54,
@@ -1084,7 +1084,7 @@ const oilsAPI: {
 
 		iodine: 131,
 		ins: 66,
-		sap: 0.181,
+		"KOH SAP": 0.181,
 		palmitic: 8,
 		stearic: 4,
 		oleic: 20,
@@ -1105,7 +1105,7 @@ const oilsAPI: {
 
 		iodine: 97,
 		ins: 94,
-		sap: 0.195,
+		"KOH SAP": 0.195,
 		palmitic: 5,
 		stearic: 3,
 		oleic: 75,
@@ -1126,7 +1126,7 @@ const oilsAPI: {
 
 		iodine: 165,
 		ins: 39,
-		sap: 0.193,
+		"KOH SAP": 0.193,
 
 		palmitic: 6,
 		stearic: 2,
@@ -1149,7 +1149,7 @@ const oilsAPI: {
 
 		iodine: 79,
 		ins: 117,
-		sap: 0.196,
+		"KOH SAP": 0.196,
 
 		myristic: 3,
 		palmitic: 26,
@@ -1174,7 +1174,7 @@ const oilsAPI: {
 
 		iodine: 33,
 		ins: 152,
-		sap: 0.185,
+		"KOH SAP": 0.185,
 		palmitic: 17,
 		stearic: 45,
 		oleic: 35,
@@ -1195,7 +1195,7 @@ const oilsAPI: {
 
 		iodine: 11,
 		ins: 204,
-		sap: 0.215,
+		"KOH SAP": 0.215,
 		myristic: 1,
 		palmitic: 80,
 		stearic: 7,
@@ -1216,7 +1216,7 @@ const oilsAPI: {
 
 		iodine: 102,
 		ins: 91,
-		sap: 0.193,
+		"KOH SAP": 0.193,
 		palmitic: 9,
 		stearic: 7,
 		oleic: 44,
@@ -1237,7 +1237,7 @@ const oilsAPI: {
 
 		iodine: 83,
 		ins: 11,
-		sap: 0.092,
+		"KOH SAP": 0.092,
 		oleic: 12,
 
 		hardness: 0,
@@ -1255,7 +1255,7 @@ const oilsAPI: {
 
 		iodine: 85,
 		ins: 98,
-		sap: 0.183,
+		"KOH SAP": 0.183,
 		palmitic: 6,
 		stearic: 6,
 		oleic: 58,
@@ -1276,7 +1276,7 @@ const oilsAPI: {
 
 		iodine: 35,
 		ins: 155,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 		palmitic: 4,
 		stearic: 56,
 		oleic: 36,
@@ -1297,7 +1297,7 @@ const oilsAPI: {
 
 		iodine: 42,
 		ins: 149,
-		sap: 0.191,
+		"KOH SAP": 0.191,
 		palmitic: 6,
 		stearic: 44,
 		oleic: 49,
@@ -1318,7 +1318,7 @@ const oilsAPI: {
 
 		iodine: 168,
 		ins: 24,
-		sap: 0.189,
+		"KOH SAP": 0.189,
 
 		palmitic: 6,
 		stearic: 2,
@@ -1342,7 +1342,7 @@ const oilsAPI: {
 
 		iodine: 27,
 		ins: 83,
-		sap: 0.106,
+		"KOH SAP": 0.106,
 
 		hardness: 0,
 		cleansing: 0,
@@ -1360,7 +1360,7 @@ const oilsAPI: {
 
 		iodine: 57,
 		ins: 139,
-		sap: 0.198,
+		"KOH SAP": 0.198,
 
 		myristic: 1,
 		palmitic: 28,
@@ -1384,7 +1384,7 @@ const oilsAPI: {
 
 		iodine: 74,
 		ins: 124,
-		sap: 0.198,
+		"KOH SAP": 0.198,
 
 		lauric: 25,
 		myristic: 1,
@@ -1410,7 +1410,7 @@ const oilsAPI: {
 
 		iodine: 0,
 		ins: 280,
-		sap: 0.28,
+		"KOH SAP": 0.28,
 		lauric: 99,
 		myristic: 1,
 
@@ -1430,7 +1430,7 @@ const oilsAPI: {
 
 		iodine: 180,
 		ins: -6,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 6,
 		stearic: 3,
@@ -1454,7 +1454,7 @@ const oilsAPI: {
 
 		iodine: 108,
 		ins: 79,
-		sap: 0.187,
+		"KOH SAP": 0.187,
 		palmitic: 9,
 		stearic: 18,
 		oleic: 30,
@@ -1476,7 +1476,7 @@ const oilsAPI: {
 
 		iodine: 70,
 		ins: 118,
-		sap: 0.188,
+		"KOH SAP": 0.188,
 
 		myristic: 1,
 		palmitic: 6,
@@ -1501,7 +1501,7 @@ const oilsAPI: {
 
 		iodine: 76,
 		ins: 119,
-		sap: 0.195,
+		"KOH SAP": 0.195,
 		palmitic: 9,
 		stearic: 5,
 		oleic: 59,
@@ -1523,7 +1523,7 @@ const oilsAPI: {
 
 		iodine: 66,
 		ins: 132,
-		sap: 0.198,
+		"KOH SAP": 0.198,
 
 		myristic: 1,
 		palmitic: 37,
@@ -1548,7 +1548,7 @@ const oilsAPI: {
 
 		iodine: 45,
 		ins: 146,
-		sap: 0.191,
+		"KOH SAP": 0.191,
 		palmitic: 7,
 		stearic: 42,
 		oleic: 45,
@@ -1570,7 +1570,7 @@ const oilsAPI: {
 
 		iodine: 60,
 		ins: 130,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 8,
 		stearic: 27,
@@ -1593,7 +1593,7 @@ const oilsAPI: {
 
 		iodine: 73,
 		ins: 119,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 		palmitic: 11,
 		stearic: 7,
 		oleic: 75,
@@ -1614,7 +1614,7 @@ const oilsAPI: {
 
 		iodine: 92,
 		ins: 77,
-		sap: 0.169,
+		"KOH SAP": 0.169,
 		eicosenoic: 61,
 		docosenoid: 16,
 		docosadienoic: 18,
@@ -1635,7 +1635,7 @@ const oilsAPI: {
 
 		iodine: 30,
 		ins: 191,
-		sap: 0.227,
+		"KOH SAP": 0.227,
 
 		lauric: 4,
 		myristic: 11,
@@ -1661,7 +1661,7 @@ const oilsAPI: {
 
 		iodine: 115,
 		ins: 81,
-		sap: 0.196,
+		"KOH SAP": 0.196,
 		palmitic: 7,
 		stearic: 2,
 		oleic: 26,
@@ -1683,7 +1683,7 @@ const oilsAPI: {
 
 		iodine: 55,
 		ins: 141,
-		sap: 0.196,
+		"KOH SAP": 0.196,
 
 		hardness: 0,
 		cleansing: 0,
@@ -1701,7 +1701,7 @@ const oilsAPI: {
 
 		iodine: 9,
 		ins: 246,
-		sap: 0.255,
+		"KOH SAP": 0.255,
 
 		lauric: 44,
 		myristic: 16,
@@ -1725,7 +1725,7 @@ const oilsAPI: {
 
 		iodine: 68,
 		ins: 124,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 		palmitic: 7,
 		stearic: 7,
 		oleic: 71,
@@ -1747,7 +1747,7 @@ const oilsAPI: {
 
 		iodine: 62,
 		ins: 132,
-		sap: 0.194,
+		"KOH SAP": 0.194,
 		palmitic: 24,
 		stearic: 22,
 		oleic: 36,
@@ -1769,7 +1769,7 @@ const oilsAPI: {
 
 		iodine: 25,
 		ins: 250,
-		sap: 0.275,
+		"KOH SAP": 0.275,
 
 		lauric: 47,
 		myristic: 26,
@@ -1794,7 +1794,7 @@ const oilsAPI: {
 
 		iodine: 101,
 		ins: 72,
-		sap: 0.173,
+		"KOH SAP": 0.173,
 
 		palmitic: 2,
 		stearic: 2,
@@ -1818,7 +1818,7 @@ const oilsAPI: {
 
 		iodine: 1,
 		ins: 246,
-		sap: 0.247,
+		"KOH SAP": 0.247,
 		myristic: 99,
 
 		hardness: 99,
@@ -1837,7 +1837,7 @@ const oilsAPI: {
 
 		iodine: 90,
 		ins: 90,
-		sap: 0.18,
+		"KOH SAP": 0.18,
 
 		hardness: 0,
 		cleansing: 0,
@@ -1855,7 +1855,7 @@ const oilsAPI: {
 
 		iodine: 72,
 		ins: 121,
-		sap: 0.193,
+		"KOH SAP": 0.193,
 
 		myristic: 2,
 		palmitic: 21,
@@ -1879,7 +1879,7 @@ const oilsAPI: {
 
 		iodine: 46,
 		ins: 116,
-		sap: 0.1624,
+		"KOH SAP": 0.1624,
 		lauric: 3,
 		myristic: 83,
 		palmitic: 4,
@@ -1901,7 +1901,7 @@ const oilsAPI: {
 
 		iodine: 104,
 		ins: 86,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 		palmitic: 15,
 		stearic: 2,
 		oleic: 40,
@@ -1923,7 +1923,7 @@ const oilsAPI: {
 
 		iodine: 92,
 		ins: 110,
-		sap: 0.202,
+		"KOH SAP": 0.202,
 		oleic: 99,
 
 		hardness: 0,
@@ -1941,7 +1941,7 @@ const oilsAPI: {
 
 		iodine: 85,
 		ins: 105,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 14,
 		stearic: 3,
@@ -1964,7 +1964,7 @@ const oilsAPI: {
 
 		iodine: 84,
 		ins: 104,
-		sap: 0.188,
+		"KOH SAP": 0.188,
 
 		palmitic: 14,
 		stearic: 3,
@@ -1988,7 +1988,7 @@ const oilsAPI: {
 
 		iodine: 97,
 		ins: 128,
-		sap: 0.1946,
+		"KOH SAP": 0.1946,
 
 		lauric: 3,
 		myristic: 1,
@@ -2014,7 +2014,7 @@ const oilsAPI: {
 
 		iodine: 20,
 		ins: 227,
-		sap: 0.247,
+		"KOH SAP": 0.247,
 
 		lauric: 49,
 		myristic: 16,
@@ -2039,7 +2039,7 @@ const oilsAPI: {
 
 		iodine: 20,
 		ins: 227,
-		sap: 0.247,
+		"KOH SAP": 0.247,
 
 		lauric: 49,
 		myristic: 17,
@@ -2063,7 +2063,7 @@ const oilsAPI: {
 
 		iodine: 53,
 		ins: 145,
-		sap: 0.199,
+		"KOH SAP": 0.199,
 
 		myristic: 1,
 		palmitic: 44,
@@ -2087,7 +2087,7 @@ const oilsAPI: {
 
 		iodine: 48,
 		ins: 151,
-		sap: 0.199,
+		"KOH SAP": 0.199,
 
 		myristic: 2,
 		palmitic: 60,
@@ -2111,7 +2111,7 @@ const oilsAPI: {
 
 		iodine: 2,
 		ins: 213,
-		sap: 0.215,
+		"KOH SAP": 0.215,
 		palmitic: 98,
 
 		hardness: 98,
@@ -2130,7 +2130,7 @@ const oilsAPI: {
 
 		iodine: 58,
 		ins: 142,
-		sap: 0.2,
+		"KOH SAP": 0.2,
 
 		myristic: 1,
 		palmitic: 40,
@@ -2154,7 +2154,7 @@ const oilsAPI: {
 
 		iodine: 67,
 		ins: 91,
-		sap: 0.158,
+		"KOH SAP": 0.158,
 		palmitic: 13,
 		stearic: 5,
 		oleic: 76,
@@ -2176,7 +2176,7 @@ const oilsAPI: {
 
 		iodine: 136,
 		ins: 47,
-		sap: 0.183,
+		"KOH SAP": 0.183,
 
 		palmitic: 10,
 		stearic: 3,
@@ -2200,7 +2200,7 @@ const oilsAPI: {
 
 		iodine: 77,
 		ins: 123,
-		sap: 0.2,
+		"KOH SAP": 0.2,
 
 		palmitic: 13,
 		stearic: 4,
@@ -2224,7 +2224,7 @@ const oilsAPI: {
 
 		iodine: 108,
 		ins: 87,
-		sap: 0.191,
+		"KOH SAP": 0.191,
 
 		palmitic: 6,
 		stearic: 2,
@@ -2248,7 +2248,7 @@ const oilsAPI: {
 
 		iodine: 92,
 		ins: 99,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 		palmitic: 8,
 		stearic: 3,
 		oleic: 56,
@@ -2270,7 +2270,7 @@ const oilsAPI: {
 
 		iodine: 113,
 		ins: 77,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 7,
 		stearic: 2,
@@ -2294,7 +2294,7 @@ const oilsAPI: {
 
 		iodine: 196,
 		ins: -6,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 6,
 		stearic: 2,
@@ -2318,7 +2318,7 @@ const oilsAPI: {
 
 		iodine: 0,
 		ins: 0,
-		sap: 0.06,
+		"KOH SAP": 0.06,
 
 		hardness: 0,
 		cleansing: 0,
@@ -2336,7 +2336,7 @@ const oilsAPI: {
 
 		iodine: 95,
 		ins: 92,
-		sap: 0.186,
+		"KOH SAP": 0.186,
 		palmitic: 11,
 		stearic: 1,
 		oleic: 63,
@@ -2358,7 +2358,7 @@ const oilsAPI: {
 
 		iodine: 98,
 		ins: 96,
-		sap: 0.194,
+		"KOH SAP": 0.194,
 		palmitic: 3,
 		oleic: 68,
 		linoleic: 23,
@@ -2378,7 +2378,7 @@ const oilsAPI: {
 
 		iodine: 22,
 		ins: 168,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 3,
 		stearic: 3,
@@ -2401,7 +2401,7 @@ const oilsAPI: {
 
 		iodine: 140,
 		ins: 54,
-		sap: 0.194,
+		"KOH SAP": 0.194,
 
 		palmitic: 10,
 		stearic: 2,
@@ -2424,7 +2424,7 @@ const oilsAPI: {
 
 		iodine: 68,
 		ins: 107,
-		sap: 0.175,
+		"KOH SAP": 0.175,
 
 		lauric: 1,
 		myristic: 1,
@@ -2450,7 +2450,7 @@ const oilsAPI: {
 
 		iodine: 128,
 		ins: 67,
-		sap: 0.195,
+		"KOH SAP": 0.195,
 		palmitic: 11,
 		stearic: 8,
 		oleic: 33,
@@ -2472,7 +2472,7 @@ const oilsAPI: {
 
 		iodine: 85,
 		ins: 116,
-		sap: 0.201,
+		"KOH SAP": 0.201,
 
 		myristic: 3,
 		palmitic: 30,
@@ -2497,7 +2497,7 @@ const oilsAPI: {
 
 		iodine: 106,
 		ins: 69,
-		sap: 0.175,
+		"KOH SAP": 0.175,
 
 		palmitic: 4,
 		stearic: 1,
@@ -2521,7 +2521,7 @@ const oilsAPI: {
 
 		iodine: 163,
 		ins: 24,
-		sap: 0.187,
+		"KOH SAP": 0.187,
 		palmitic: 3,
 		oleic: 13,
 		linoleic: 55,
@@ -2543,7 +2543,7 @@ const oilsAPI: {
 
 		iodine: 53,
 		ins: 145,
-		sap: 0.199,
+		"KOH SAP": 0.199,
 
 		myristic: 1,
 		palmitic: 44,
@@ -2567,7 +2567,7 @@ const oilsAPI: {
 
 		iodine: 100,
 		ins: 87,
-		sap: 0.187,
+		"KOH SAP": 0.187,
 
 		myristic: 1,
 		palmitic: 22,
@@ -2592,7 +2592,7 @@ const oilsAPI: {
 
 		iodine: 188,
 		ins: 10,
-		sap: 0.187,
+		"KOH SAP": 0.187,
 
 		palmitic: 4,
 		stearic: 2,
@@ -2616,7 +2616,7 @@ const oilsAPI: {
 
 		iodine: 141,
 		ins: 47,
-		sap: 0.188,
+		"KOH SAP": 0.188,
 
 		palmitic: 4,
 		stearic: 3,
@@ -2640,7 +2640,7 @@ const oilsAPI: {
 
 		iodine: 145,
 		ins: 47,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 		palmitic: 7,
 		oleic: 15,
 		linoleic: 75,
@@ -2660,7 +2660,7 @@ const oilsAPI: {
 
 		iodine: 93,
 		ins: 97,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 		palmitic: 5,
 		stearic: 2,
 		oleic: 77,
@@ -2682,7 +2682,7 @@ const oilsAPI: {
 
 		iodine: 39,
 		ins: 146,
-		sap: 0.185,
+		"KOH SAP": 0.185,
 		palmitic: 6,
 		stearic: 44,
 		oleic: 40,
@@ -2704,7 +2704,7 @@ const oilsAPI: {
 
 		iodine: 169,
 		ins: 16,
-		sap: 0.185,
+		"KOH SAP": 0.185,
 
 		myristic: 5,
 		palmitic: 19,
@@ -2732,7 +2732,7 @@ const oilsAPI: {
 
 		iodine: 45,
 		ins: 185,
-		sap: 0.23,
+		"KOH SAP": 0.23,
 
 		lauric: 29,
 		myristic: 11,
@@ -2758,7 +2758,7 @@ const oilsAPI: {
 
 		iodine: 44,
 		ins: 176,
-		sap: 0.22,
+		"KOH SAP": 0.22,
 
 		lauric: 29,
 		myristic: 13,
@@ -2784,7 +2784,7 @@ const oilsAPI: {
 
 		iodine: 165,
 		ins: 30,
-		sap: 0.195,
+		"KOH SAP": 0.195,
 		palmitic: 7,
 		stearic: 3,
 		oleic: 14,
@@ -2804,7 +2804,7 @@ const oilsAPI: {
 		name: "Sea Buckthorn Oil, seed and berry",
 		iodine: 86,
 		ins: 97,
-		sap: 0.183,
+		"KOH SAP": 0.183,
 		palmitic: 30,
 		stearic: 1,
 		oleic: 28,
@@ -2823,7 +2823,7 @@ const oilsAPI: {
 		name: "Sesame Oil",
 		iodine: 110,
 		ins: 81,
-		sap: 0.188,
+		"KOH SAP": 0.188,
 		palmitic: 10,
 		stearic: 5,
 		oleic: 40,
@@ -2842,7 +2842,7 @@ const oilsAPI: {
 		name: "Shea Butter",
 		iodine: 59,
 		ins: 116,
-		sap: 0.179,
+		"KOH SAP": 0.179,
 		palmitic: 5,
 		stearic: 40,
 		oleic: 48,
@@ -2862,7 +2862,7 @@ const oilsAPI: {
 
 		iodine: 83,
 		ins: 102,
-		sap: 0.185,
+		"KOH SAP": 0.185,
 		palmitic: 6,
 		stearic: 10,
 		oleic: 73,
@@ -2882,7 +2882,7 @@ const oilsAPI: {
 
 		iodine: 59,
 		ins: 153,
-		sap: 0.212,
+		"KOH SAP": 0.212,
 
 		lauric: 13,
 		myristic: 6,
@@ -2908,7 +2908,7 @@ const oilsAPI: {
 
 		iodine: 56,
 		ins: 156,
-		sap: 0.213,
+		"KOH SAP": 0.213,
 
 		lauric: 13,
 		myristic: 5,
@@ -2932,7 +2932,7 @@ const oilsAPI: {
 
 		iodine: 131,
 		ins: 61,
-		sap: 0.191,
+		"KOH SAP": 0.191,
 
 		palmitic: 11,
 		stearic: 5,
@@ -2955,7 +2955,7 @@ const oilsAPI: {
 
 		iodine: 78,
 		ins: 113,
-		sap: 0.191,
+		"KOH SAP": 0.191,
 
 		palmitic: 9,
 		stearic: 15,
@@ -2978,7 +2978,7 @@ const oilsAPI: {
 
 		iodine: 1,
 		ins: 191,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 		palmitic: 11,
 		stearic: 87,
 
@@ -2998,7 +2998,7 @@ const oilsAPI: {
 
 		iodine: 2,
 		ins: 196,
-		sap: 0.198,
+		"KOH SAP": 0.198,
 		stearic: 99,
 
 		hardness: 99,
@@ -3016,7 +3016,7 @@ const oilsAPI: {
 
 		iodine: 133,
 		ins: 63,
-		sap: 0.189,
+		"KOH SAP": 0.189,
 
 		palmitic: 7,
 		stearic: 4,
@@ -3040,7 +3040,7 @@ const oilsAPI: {
 
 		iodine: 83,
 		ins: 106,
-		sap: 0.189,
+		"KOH SAP": 0.189,
 
 		palmitic: 3,
 		stearic: 4,
@@ -3064,7 +3064,7 @@ const oilsAPI: {
 
 		iodine: 92,
 		ins: 100,
-		sap: 0.1946,
+		"KOH SAP": 0.1946,
 
 		myristic: 2,
 		palmitic: 7,
@@ -3088,7 +3088,7 @@ const oilsAPI: {
 
 		iodine: 45,
 		ins: 147,
-		sap: 0.2,
+		"KOH SAP": 0.2,
 
 		lauric: 2,
 		myristic: 6,
@@ -3113,7 +3113,7 @@ const oilsAPI: {
 
 		iodine: 31,
 		ins: 166,
-		sap: 0.193,
+		"KOH SAP": 0.193,
 
 		myristic: 1,
 		palmitic: 20,
@@ -3138,7 +3138,7 @@ const oilsAPI: {
 
 		iodine: 40,
 		ins: 152,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 
 		lauric: 5,
 		myristic: 11,
@@ -3162,7 +3162,7 @@ const oilsAPI: {
 
 		iodine: 54,
 		ins: 156,
-		sap: 0.194,
+		"KOH SAP": 0.194,
 		lauric: 4,
 		myristic: 10,
 		palmitic: 24,
@@ -3184,7 +3184,7 @@ const oilsAPI: {
 
 		iodine: 111,
 		ins: 82,
-		sap: 0.208,
+		"KOH SAP": 0.208,
 
 		palmitic: 12,
 		stearic: 13,
@@ -3208,7 +3208,7 @@ const oilsAPI: {
 
 		iodine: 13,
 		ins: 175,
-		sap: 0.238,
+		"KOH SAP": 0.238,
 		lauric: 48,
 		myristic: 23,
 		palmitic: 6,
@@ -3230,7 +3230,7 @@ const oilsAPI: {
 
 		iodine: 38,
 		ins: 167,
-		sap: 0.205,
+		"KOH SAP": 0.205,
 		stearic: 31,
 		oleic: 44,
 		linoleic: 5,
@@ -3251,7 +3251,7 @@ const oilsAPI: {
 
 		iodine: 49,
 		ins: 151,
-		sap: 0.198,
+		"KOH SAP": 0.198,
 
 		lauric: 1,
 		myristic: 4,
@@ -3277,7 +3277,7 @@ const oilsAPI: {
 
 		iodine: 145,
 		ins: 45,
-		sap: 0.189,
+		"KOH SAP": 0.189,
 		palmitic: 7,
 		stearic: 2,
 		oleic: 18,
@@ -3299,7 +3299,7 @@ const oilsAPI: {
 
 		iodine: 119,
 		ins: 71,
-		sap: 0.19,
+		"KOH SAP": 0.19,
 
 		palmitic: 11,
 		stearic: 10,
@@ -3323,7 +3323,7 @@ const oilsAPI: {
 
 		iodine: 128,
 		ins: 58,
-		sap: 0.183,
+		"KOH SAP": 0.183,
 		palmitic: 17,
 		stearic: 2,
 		oleic: 17,
@@ -3345,7 +3345,7 @@ const oilsAPI: {
 
 		iodine: 95,
 		ins: 97,
-		sap: 0.192,
+		"KOH SAP": 0.192,
 
 		palmitic: 18,
 		stearic: 5,
@@ -3369,7 +3369,7 @@ const oilsAPI: {
 
 		iodine: 72,
 		ins: 116,
-		sap: 0.188,
+		"KOH SAP": 0.188,
 		palmitic: 9,
 		stearic: 21,
 		oleic: 52,
