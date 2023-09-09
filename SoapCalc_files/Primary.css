@@ -1,0 +1,20 @@
+@charset utf-8;
+body{font:100% Verdana, Arial, Helvetica, sans-serif;background:#FFFFCA;text-align:center;color:#565656;margin:0;padding:0;}
+.SoapCalc3col #container{position:relative;width:1056px;background:#FFFFCA;border:1px solid #FCF7FA;text-align:left;margin:5px auto 0;}
+#Header{height:90px;padding-top:6px;width:1054px;border-bottom:1px solid #fcf7fa;}
+#Header table a{font-size:16px}
+#SidebarLeft{width:160px;height:900px;background:#FFFFCA;color:#000;vertical-align:top;}
+#SidebarRight{width:160px;height:900px;background:#FFFFCA;color:#000;vertical-align:top;text-align:center;}
+#Content{width:730px;height:900px;background:#FFFFCA;color:#565656;border-left:1px solid #FCF7FA;border-right:1px solid #FCF7FA;}
+#divTopAdBanner{padding-top:5px;}
+#divCentering{padding:10px 35px;}
+a:link{font-size:12px;font-weight:600;color:#2b4c7e;}
+a:visited{font-size:12px;font-weight:600;color:#2B4C7E;}
+a:hover{font-size:12px;font-weight:600;}
+#footer{border-top:1px solid #fcf7fa;padding-top:8px;padding-bottom:8px;}
+#footer tr td a{font-size:12px;color:#565656;text-decoration:none;}
+#footer tr td{width:25%;padding-left:20px;}
+.inf_field {
+  display:none;
+  visibility:hidden;
+}

@@ -13,7 +13,12 @@ ul(class="h-20 w-full mb-5 py-2 px-4 flex flex-row items-center justify-between 
 	li(class="")
 		span Weight of Oils
 
-	li(class="") Hi
+	li(class="")
+		select(class="")
+			option(value="Water as % of Oils")
+			option(value="Lye Concentration")
+			option(value="Water : Lye Ratio")
+		input(type="text" value="38")
 	li(class="")
 		div(class="")
 			span(class="") Super Fat
@@ -22,7 +27,9 @@ ul(class="h-20 w-full mb-5 py-2 px-4 flex flex-row items-center justify-between 
 		div(class="")
 			span(class="") Fragrance
 			input(class="")
+			span(class="") oz/lb
 		div(class="")
-			span
+			span Amount
+			input(class="")
 
 </template>

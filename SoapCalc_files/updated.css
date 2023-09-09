@@ -1,0 +1,154 @@
+body{
+  background:#F3F3F3;
+}
+a:visited {
+    color: #D56827 !important;
+}
+a, a:link {
+    color: #D56827 !important;
+}
+.SoapCalc3col #container{
+  background:#F3F3F3 !important;
+  border:1px solid #F3F3F3;
+}
+#Header{
+  border-bottom:1px solid #F3F3F3;
+}
+#SidebarLeft{
+  background:#F3F3F3 !important;
+}
+#SidebarRight{
+  background:#F3F3F3 !important;
+}
+#Content{
+  background:#F3F3F3;
+  border-left:1px solid #F3F3F3;
+  border-right:1px solid #F3F3F3;
+}
+#footer{
+  border-top:1px solid #F3F3F3;
+  background: #F3F3F3;
+}
+#footer a {
+  color: #404040 !important;
+}
+#footer .contact {
+  text-transform: uppercase;
+  color: #D56827 !important;
+}
+#footer .contact:hover {
+  text-decoration: underline !important;
+}
+header {
+  background: #E0DEC6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-bottom: 3px solid #bab79e;
+  padding: 33px 0;
+}
+.panel-container {
+  width:1056px;
+  margin: 0 auto;
+}
+.logo {
+    width: 245px;
+    float: left;
+}
+.main-nav {
+  width: 811px;
+  float: right;
+}
+.menu {
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li a {
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #404040 !important;
+  font-size: 16px;
+  line-height: 40px;
+  background: transparent;
+  transition: background 0.5s ease;
+}
+.menu li a:hover {
+  background: #D56827;
+  color: #fff !important;
+}
+
+/**popup**/
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom: 0;
+  z-index: 9000;
+  background-color: #404040;
+  display: none;
+  width:100%;
+}
+#boxes .window {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 9999;
+  border-radius: 15px;
+  text-align: left;
+}
+#boxes #dialog {
+  width: 35%;
+  height: auto;
+  padding: 25px 50px;
+  background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #404040;
+}
+#popupfoot {
+  font-size: 20px;
+  padding: 30px 0 0;
+  text-align: right;
+}
+#dialog button {
+  border-color: #D56827 !important;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 20px;
+  background: #E0DEC6;
+}
+#dialog button:hover {
+  background: #42494B;
+  color: #f3f3f3;
+  cursor: pointer;
+}
+#dialog label {
+    width: 200px !important;
+    text-align: right;
+    clear: left;
+    float: left;
+    padding: 0 10px 0;
+}
+.infusion-field {
+  padding: 5px 0;
+}
+#dialog input[type="submit"] {
+    margin-left: 328px;
+    background: #D56827;
+    border: 1px solid #404040;
+    padding: 4px 10px;
+    color: #f3f3f3;
+    cursor: pointer;
+}
+#dialog input[type="submit"]:hover {
+    margin-left: 328px;
+    background: #404040;
+    border: 1px solid #D56827;
+    padding: 4px 10px;
+    color: #f3f3f3;
+}

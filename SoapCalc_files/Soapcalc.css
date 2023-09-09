@@ -1,0 +1,57 @@
+@charset utf-8;
+.SoapCalc_LN_RR #SidebarLeft table{width:158px;height:auto;}
+.SoapCalc_LN_RR #SidebarLeft table td{vertical-align:middle;width:158px;height:auto;font:inherit;padding-top:8px;padding-bottom:5px;color:#fcf7fa;}
+.SoapCalc_LN_RR #SidebarRight{float:right;width:160px;padding-top:120px;vertical-align:top;background:#f3f3f3;}
+.SoapCalc_LN_RR #SidebarRight table{width:158px;}
+.SoapCalc_LN_RR #SidebarRight table td{vertical-align:middle;text-align:center;width:158px;height:auto;font:inherit;padding-top:8px;padding-bottom:5px;color:#17621A;}
+.SoapCalc_LN_RR #SidebarRight table td img{border:1px solid #fcf7fa;background:#BEFABE;width:135px;height:auto;padding:3px;}
+#CalculatorHeader{position:relative;width:730px;height:auto;border-bottom:1px solid #fcf7fa;border-top:1px solid #fcf7fa;margin-top:3px;margin-bottom:3px;font-size:12px;}
+.helpButton{width:25px;height:25px;font-size:14px;line-height:11px;font-weight:900;cursor:pointer;color:#565656;}
+#tblTopRow{width:730px;height:125px;border-bottom:1px solid #fcf7fa;}
+#tdMain1col1{width:16%;font-size:11px;padding-left:5px;vertical-align:top;background-color:#f3f3f3;border-right:1px solid #fcf7fa;}
+#tdMain1col1 table tr td{text-align:left;vertical-align:text-top;}
+#tdMain1col2{width:19%;height:100%;font-size:11px;vertical-align:top;background-color:#f3f3f3;border-right:1px solid #fcf7fa;padding-left:5px;}
+#tdMain1col2 table td{text-align:left;}
+#tdMain1col3{width:38%;height:100%;vertical-align:top;text-align:center;font-size:11px;padding-left:3px;padding-right:6px;border-right:1px solid #fcf7fa;background-color:#f3f3f3;}
+#tdMain1col3 table td{text-align:left;padding-right:2px;background-color:#f3f3f3;}
+#txtWaterPercent{width:45px;}
+#txtDiscount{width:30px;}
+#spnLyeConc{width:52px;}
+#spnWaterLyeRatio{width:60px;}
+#tdMain1col4{width:27%;height:100%;vertical-align:top;text-align:left;font-size:11px;background-color:#f3f3f3;overflow:visible;}
+#Main2col1{width:168px;vertical-align:top;padding-left:2px;background-color:#f3f3f3;font-size:12px;}
+#Main2col2{width:152px;vertical-align:top;padding-left:2px;}
+#selOil{width:100%;font-size:12px;}
+#Main2col3{width:370px;vertical-align:text-top;background-color:#f3f3f3;}
+#tblRecipe{width:100%;height:100%;}
+#tblRecipe a{font-weight:700;font-size:12px;color:red;text-decoration:none;}
+#tdPlusMinus{width:33px;}
+#tdOilNumber{width:15px;}
+#tdOilName{width:165px;}
+.RecipePlus{font-size:14px;font-family:sans-serif;font-weight:900;}
+.OilNumber{font-size:10px;color:#33C;font-weight:400;width:10px;text-align:center;}
+.RecipeOilNameInput{text-align:left;background-color:#FFE;width:150px;margin:0 1px;}
+.lblSQ_FA{font-size:12px;text-align:left;vertical-align:top;height:15px;width:40px;padding:3px 0 0;}
+.txtSQ_FA{font-size:12px;text-align:center;padding-right:1px;height:15px;width:28px;background:#FFF;margin:1px 2px;}
+.txtSQ_FA2{font-size:12px;text-align:center;height:15px;width:28px;background-color:#DEFEFE;margin:1px;}
+.infoTable{height:9px;width:14px;background-color:#C9FCD0;border:solid 1px #0C0;}
+.infoCell{vertical-align:middle;}
+.infoLink{vertical-align:bottom;color:#000;font-weight:700;font-size:14px;font-family:Courier;}
+.inputRRO{text-align:right;margin-bottom:0;padding-right:3px;margin-top:2px;width:85%;background-color:#FFF;}
+.inputLRO{text-align:left;margin-bottom:0;padding-left:3px;margin-top:0;width:85%;border-left:1px solid #000;border-top:1px solid #000;border-right:1px solid #000;border-bottom:1px solid #fcf7fa;}
+#divInvisible{position:absolute;top:0;left:0;height:100%;width:100%;z-index:2;visibility:hidden;border:thick solid red;}
+#divOnPageHelp{position:absolute;z-index:191;background-color:#CFFBCF;border-bottom:3px solid #fcf7fa;border-top:3px solid #fcf7fa;border-left:3px solid #fcf7fa;border-right:3px solid #fcf7fa;display:none;vertical-align:top;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;text-align:left;width:300px;height:250px;overflow:scroll;padding:0 0 0 5px;}
+#divHelpMsg{width:220px;padding-left:5px;padding-right:5px;float:left;}
+.closehelp{top:0;float:right;width:45px;padding-top:45px;border:1px solid green;text-align:center;color:#000;background-color:#CCC;cursor:pointer;}
+#divRanges{position:absolute;top:295px;left:165px;z-index:19191;background-color:#BEFABE;border-bottom:2px solid #fcf7fa;border-top:2px solid #fcf7fa;border-left:2px solid #fcf7fa;border-right:2px solid #fcf7fa;width:300px;display:none;font-size:12px;text-align:left;padding:5px;}
+#divFADetail{position:absolute;top:445px;left:165px;z-index:100;background-color:#BEFABE;border-bottom:2px solid #fcf7fa;border-top:2px solid #fcf7fa;border-left:2px solid #fcf7fa;border-right:2px solid #fcf7fa;width:250px;display:none;font-size:12px;text-align:left;padding:5px;}
+#divSatRatio{position:absolute;top:50px;left:200px;z-index:1000;background-color:#FF6;border-bottom:2px solid #03F;border-top:2px solid #03F;border-left:2px solid #03F;border-right:2px solid #03F;width:450px;display:none;font-size:12px;padding:5px;}
+.leftpadding{padding-left:20px;}
+.botbor{border-bottom:1px solid #fcf7fa;}
+table.sideBarStyle img{border:1px solid #fcf7fa;width:127px;max-width:127px;height:auto;}
+#divRecipeSaved{position:absolute;top:350px;left:600px;z-index:10000;color:#f3f3f3;background-color:#fcf7fa;border-bottom:2px solid #060;border-top:2px solid #060;border-left:2px solid #060;border-right:2px solid #060;width:250px;height:50px;display:none;font-size:24px;font-weight:700;padding:24px 5px 5px;}
+.SoapCalc_LN_RR #SidebarRight div,#tblRecipe td,#tdRecipes{text-align:center;}
+#tdMain1col1 table,#tdMain1col2 table,#tdMain1col3 table,#tdMain1col4 table,#tblRecipes{width:100%;}
+#tdUsePercent,#tdUseWeight{width:70px;}
+.RecipePercent{text-align:left;padding-left:2px;width:50px;}
+.RecipeWeight{text-align:left;padding-left:2px;width:55px;}
