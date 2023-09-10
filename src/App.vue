@@ -24,6 +24,15 @@ div(class="w-full h-full flex items-start dark:bg-[var(--dark400)]")
 					<AddedOils :OilSelected="OilsStore.selectedOilArray" />
 					RecipeTotal
 					SoapProperties
+	div(class="fixed bottom-5 right-5 flex items-center justify-center" style="-webkit-app-region: no-drag")
+		ul(class=" w-9 p-1 px-3 rounded-full flex flex-col items-center justify-center bg-[var(--dark200)]" id="favColorsUL")
+			li(data-color="var(--blue)"   class="duration-200 hover:scale-95 cursor-pointer h-5 w-5 rounded-lg m-1 border-2 border-solid border-white bg-[var(--blue)]")
+			li(data-color="var(--sky)"    class="duration-200 hover:scale-95 cursor-pointer h-5 w-5 rounded-lg m-1 border-2 border-solid border-white bg-[var(--sky)]")
+			li(data-color="var(--purple)" class="duration-200 hover:scale-95 cursor-pointer h-5 w-5 rounded-lg m-1 border-2 border-solid border-white bg-[var(--purple)]")
+			li(data-color="var(--green)"  class="duration-200 hover:scale-95 cursor-pointer h-5 w-5 rounded-lg m-1 border-2 border-solid border-white bg-[var(--green)]")
+			li(data-color="var(--yellow)" class="duration-200 hover:scale-95 cursor-pointer h-5 w-5 rounded-lg m-1 border-2 border-solid border-white bg-[var(--yellow)] scale-125 mx-2")
+			li(data-color="var(--pink)"   class="duration-200 hover:scale-95 cursor-pointer h-5 w-5 rounded-lg m-1 border-2 border-solid border-white bg-[var(--pink)]")
+
 </template>
 
 <style></style>
