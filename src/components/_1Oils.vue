@@ -31,12 +31,11 @@ export default {
 	watch: {
 
 	},
-	computed: { // only use computed when something not rereander again
+	computed: {
 
 	},
 	methods: {
 		searchResults(event: any) {
-			// console.log("searchResults");
 			this.theResult = event.target.value
 		},
 	},
