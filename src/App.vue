@@ -32,7 +32,7 @@ div(class="w-full h-full flex items-start dark:bg-[var(--dark400)]")
 			li(data-color="var(--green)"  class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--green)]")
 			li(data-color="var(--yellow)" class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--yellow)] scale-125 mx-2")
 			li(data-color="var(--pink)"   class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--pink)]")
-
+		//- dfsfs
 </template>
 
 <style></style>
