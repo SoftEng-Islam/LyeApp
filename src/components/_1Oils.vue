@@ -28,12 +28,6 @@ export default {
 			handleClickd,
 		}
 	},
-	watch: {
-
-	},
-	computed: {
-
-	},
 	methods: {
 		searchResults(event: any) {
 			this.theResult = event.target.value
