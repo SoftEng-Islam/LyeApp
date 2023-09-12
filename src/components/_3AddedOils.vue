@@ -7,10 +7,6 @@ export default {
 			required: true,
 		},
 	},
-	data() {
-		return {
-		}
-	},
 	setup() {
 		const uOilStore = useOilStore();
 		const handleRemove = (val: Object) => {
