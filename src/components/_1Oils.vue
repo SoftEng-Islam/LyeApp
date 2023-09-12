@@ -14,9 +14,7 @@ export default {
 			theResult: "",
 			show: "hidden",
 			clkOil: <object>{},
-			count: ref(0),
-			MyMessage: this.msg
-
+			count: ref(0)
 		};
 	},
 	setup() {
