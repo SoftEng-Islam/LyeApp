@@ -1,4 +1,5 @@
 <script lang="ts">
+// The Header
 export default {
 	data() {
 		return {
