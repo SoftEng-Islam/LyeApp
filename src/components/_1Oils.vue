@@ -1,5 +1,5 @@
 <script lang="ts">
-import {useOilStore} from "../store/index";
+import { useOilStore } from "../store/index";
 import { ref } from 'vue'
 export default {
 	props: {
@@ -34,6 +34,7 @@ export default {
 };
 </script>
 <template lang="pug">
+//- Oils list Section
 div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 border-r-2 border-solid border-[var(--favColor)]" id="notes")
 	div(class="w-full h-full flex flex-col items-center")
 		//- Search
