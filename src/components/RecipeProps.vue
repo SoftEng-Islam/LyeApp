@@ -1,4 +1,5 @@
 <script lang="ts">
+// Your Code
 </script>
 <template lang="pug">
 ul(class="overflow-hidden w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between bg-[var(--dark100)]")
