@@ -9,6 +9,7 @@ export default {
 };
 </script>
 <template lang="pug">
+//- Info Section
 div(class="lyeWidget flex flex-col min-h-[200px] ")
 	div(class="Head bg-yellow-500 p-2 rounded-md")
 		span(class="text-black font-bold ") {{ OilProperties.name || 'Oil' }} Properties.
