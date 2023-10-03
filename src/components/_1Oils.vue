@@ -1,6 +1,6 @@
 <script lang="ts">
 import { useOilStore } from "../store/index";
-import { ref } from 'vue'
+import { ref } from 'vue';
 export default {
 	props: {
 		OilsList: {
