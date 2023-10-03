@@ -1,5 +1,5 @@
 <script lang="ts">
-import {useOilStore} from "../store/index";
+import { useOilStore } from "../store/index";
 export default {
 	props: {
 		OilSelected: {
@@ -19,6 +19,7 @@ export default {
 };
 </script>
 <template lang="pug">
+//- The Added Oils
 div(class="lyeWidget flex flex-col min-h-[200px] ")
 	div(class="Head bg-green-500 p-2 rounded-md")
 		span(class="text-black font-bold ") Added Oils.
