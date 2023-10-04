@@ -26,6 +26,7 @@ const oilsAPI: {
 	eicosenoic?: number;
 	docosenoid?: number;
 	docosadienoic?: number;
+	order: number;
 }[] = [
 	{
 		name: "Abyssinian Oil",
@@ -46,6 +47,7 @@ const oilsAPI: {
 		monoSaturated: 18,
 		polySaturated: 11,
 		total_saponifiable: 38,
+		order: 1,
 	},
 	{
 		name: "Almond Butter",
@@ -66,6 +68,7 @@ const oilsAPI: {
 		monoSaturated: 58,
 		polySaturated: 16,
 		total_saponifiable: 99,
+		order: 2,
 	},
 	{
 		name: "Almond Oil, sweet",
@@ -84,6 +87,7 @@ const oilsAPI: {
 		monoSaturated: 71,
 		polySaturated: 18,
 		total_saponifiable: 96,
+		order: 3,
 	},
 	{
 		name: "Aloe Butter",
@@ -105,6 +109,7 @@ const oilsAPI: {
 		monoSaturated: 7,
 		polySaturated: 2,
 		total_saponifiable: 83,
+		order: 4,
 	},
 	{
 		name: "Andiroba Oil",
@@ -124,6 +129,7 @@ const oilsAPI: {
 		monoSaturated: 51,
 		polySaturated: 9,
 		total_saponifiable: 96,
+		order: 5,
 	},
 	{
 		name: "Apricot Kernal Oil",
@@ -142,6 +148,7 @@ const oilsAPI: {
 		monoSaturated: 66,
 		polySaturated: 27,
 		total_saponifiable: 99,
+		order: 6,
 	},
 	{
 		name: "Argan Oil",
@@ -163,6 +170,7 @@ const oilsAPI: {
 		monoSaturated: 46,
 		polySaturated: 34,
 		total_saponifiable: 96,
+		order: 7,
 	},
 	{
 		name: "Avocado butter",
@@ -187,6 +195,7 @@ const oilsAPI: {
 		monoSaturated: 53,
 		polySaturated: 6,
 		total_saponifiable: 92,
+		order: 8,
 	},
 	{
 		name: "Avocado Oil",
@@ -209,6 +218,7 @@ const oilsAPI: {
 		monoSaturated: 58,
 		polySaturated: 12,
 		total_saponifiable: 92,
+		order: 9,
 	},
 	{
 		name: "Babassu Oil",
@@ -233,6 +243,7 @@ const oilsAPI: {
 		monoSaturated: 10,
 		polySaturated: 0,
 		total_saponifiable: 95,
+		order: 10,
 	},
 	{
 		name: "Baobab Oil",
@@ -258,6 +269,7 @@ const oilsAPI: {
 		monoSaturated: 37,
 		polySaturated: 28,
 		total_saponifiable: 96,
+		order: 11,
 	},
 	{
 		name: "Beeswax",
@@ -276,6 +288,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 0,
+		order: 12,
 	},
 	{
 		name: "Black Cumin Seed Oil, nigella sativa",
@@ -300,6 +313,7 @@ const oilsAPI: {
 		monoSaturated: 22,
 		polySaturated: 60,
 		total_saponifiable: 99,
+		order: 13,
 	},
 	{
 		name: "Black Current Seed Oil",
@@ -324,6 +338,7 @@ const oilsAPI: {
 		monoSaturated: 13,
 		polySaturated: 46,
 		total_saponifiable: 96,
+		order: 14,
 	},
 	{
 		name: "Borage Oil",
@@ -347,6 +362,7 @@ const oilsAPI: {
 		monoSaturated: 20,
 		polySaturated: 43,
 		total_saponifiable: 82,
+		order: 15,
 	},
 	{
 		name: "Brazil Nut Oil",
@@ -368,6 +384,7 @@ const oilsAPI: {
 		monoSaturated: 39,
 		polySaturated: 36,
 		total_saponifiable: 99,
+		order: 16,
 	},
 	{
 		name: "Broccoli Seed Oil, Brassica Oleracea",
@@ -393,6 +410,7 @@ const oilsAPI: {
 		monoSaturated: 64,
 		polySaturated: 11,
 		total_saponifiable: 88,
+		order: 17,
 	},
 	{
 		name: "Buriti Oil",
@@ -416,6 +434,7 @@ const oilsAPI: {
 		monoSaturated: 71,
 		polySaturated: 7,
 		total_saponifiable: 98,
+		order: 18,
 	},
 	{
 		name: "Camelina Seed Oil",
@@ -438,6 +457,7 @@ const oilsAPI: {
 		monoSaturated: 24,
 		polySaturated: 19,
 		total_saponifiable: 96,
+		order: 19,
 	},
 	{
 		name: "Camellia Oil, Tea Seed",
@@ -459,6 +479,7 @@ const oilsAPI: {
 		monoSaturated: 77,
 		polySaturated: 8,
 		total_saponifiable: 96,
+		order: 20,
 	},
 	{
 		name: "Candelilla Wax",
@@ -475,6 +496,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 0,
+		order: 21,
 	},
 	{
 		name: "Canola Oil",
@@ -499,6 +521,7 @@ const oilsAPI: {
 		monoSaturated: 61,
 		polySaturated: 21,
 		total_saponifiable: 97,
+		order: 22,
 	},
 	{
 		name: "Canola Oil, high oleic",
@@ -523,6 +546,7 @@ const oilsAPI: {
 		monoSaturated: 74,
 		polySaturated: 12,
 		total_saponifiable: 96,
+		order: 23,
 	},
 	{
 		name: "Carrot Seed Oil, cold pressed",
@@ -544,6 +568,7 @@ const oilsAPI: {
 		monoSaturated: 80,
 		polySaturated: 13,
 		total_saponifiable: 97,
+		order: 24,
 	},
 	{
 		name: "Castor Oil",
@@ -565,6 +590,7 @@ const oilsAPI: {
 		monoSaturated: 94,
 		polySaturated: 4,
 		total_saponifiable: 98,
+		order: 25,
 	},
 	{
 		name: "Cherry Kern1 Oil, p. avium",
@@ -589,6 +615,7 @@ const oilsAPI: {
 		monoSaturated: 31,
 		polySaturated: 45,
 		total_saponifiable: 98,
+		order: 26,
 	},
 	{
 		name: "Cherry Kern2 Oil, p. cerasus",
@@ -610,6 +637,7 @@ const oilsAPI: {
 		monoSaturated: 50,
 		polySaturated: 40,
 		total_saponifiable: 99,
+		order: 27,
 	},
 	{
 		name: "Chicken Fat",
@@ -634,6 +662,7 @@ const oilsAPI: {
 		monoSaturated: 38,
 		polySaturated: 21,
 		total_saponifiable: 92,
+		order: 28,
 	},
 	{
 		name: "Cocoa Butter",
@@ -656,6 +685,7 @@ const oilsAPI: {
 		monoSaturated: 35,
 		polySaturated: 3,
 		total_saponifiable: 99,
+		order: 29,
 	},
 	{
 		name: "Coconut Oil, 76 deg",
@@ -681,6 +711,7 @@ const oilsAPI: {
 		monoSaturated: 8,
 		polySaturated: 2,
 		total_saponifiable: 89,
+		order: 30,
 	},
 	{
 		name: "Coconut Oil, 92 deg",
@@ -706,6 +737,7 @@ const oilsAPI: {
 		monoSaturated: 8,
 		polySaturated: 2,
 		total_saponifiable: 89,
+		order: 31,
 	},
 	{
 		name: "Coconut Oil, fractionated",
@@ -728,6 +760,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 100,
+		order: 32,
 	},
 	{
 		name: "Coffee Bean Oil, green",
@@ -752,6 +785,7 @@ const oilsAPI: {
 		monoSaturated: 9,
 		polySaturated: 39,
 		total_saponifiable: 96,
+		order: 33,
 	},
 	{
 		name: "Coffee Bean Oil, roasted",
@@ -774,6 +808,7 @@ const oilsAPI: {
 		monoSaturated: 8,
 		polySaturated: 38,
 		total_saponifiable: 88,
+		order: 34,
 	},
 	{
 		name: "Cohune Oil",
@@ -799,6 +834,7 @@ const oilsAPI: {
 		monoSaturated: 18,
 		polySaturated: 3,
 		total_saponifiable: 96,
+		order: 35,
 	},
 	{
 		name: "Corn Oil",
@@ -823,6 +859,7 @@ const oilsAPI: {
 		monoSaturated: 32,
 		polySaturated: 51,
 		total_saponifiable: 98,
+		order: 36,
 	},
 	{
 		name: "Cottonseed Oil",
@@ -847,6 +884,7 @@ const oilsAPI: {
 		monoSaturated: 18,
 		polySaturated: 52,
 		total_saponifiable: 97,
+		order: 37,
 	},
 	{
 		name: "Cranberry Seed Oil",
@@ -871,6 +909,7 @@ const oilsAPI: {
 		monoSaturated: 23,
 		polySaturated: 37,
 		total_saponifiable: 100,
+		order: 38,
 	},
 	{
 		name: "Crisco, new w/palm",
@@ -895,6 +934,7 @@ const oilsAPI: {
 		monoSaturated: 28,
 		polySaturated: 40,
 		total_saponifiable: 99,
+		order: 39,
 	},
 	{
 		name: "Crisco, old",
@@ -917,6 +957,7 @@ const oilsAPI: {
 		monoSaturated: 18,
 		polySaturated: 52,
 		total_saponifiable: 96,
+		order: 40,
 	},
 	{
 		name: "Cupuacu Butter",
@@ -939,6 +980,7 @@ const oilsAPI: {
 		monoSaturated: 42,
 		polySaturated: 2,
 		total_saponifiable: 87,
+		order: 41,
 	},
 	{
 		name: "Duck Fat, flesh and skin",
@@ -964,6 +1006,7 @@ const oilsAPI: {
 		monoSaturated: 44,
 		polySaturated: 13,
 		total_saponifiable: 94,
+		order: 42,
 	},
 	{
 		name: "Emu Oil",
@@ -986,6 +1029,7 @@ const oilsAPI: {
 		monoSaturated: 47,
 		polySaturated: 8,
 		total_saponifiable: 87,
+		order: 43,
 	},
 	{
 		name: "Evening Primrose Oil",
@@ -1006,6 +1050,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 80,
 		total_saponifiable: 89,
+		order: 44,
 	},
 	{
 		name: "Flax Oil, linseed",
@@ -1030,6 +1075,7 @@ const oilsAPI: {
 		monoSaturated: 27,
 		polySaturated: 13,
 		total_saponifiable: 99,
+		order: 45,
 	},
 	{
 		name: "Ghee, any bovine",
@@ -1056,6 +1102,7 @@ const oilsAPI: {
 		monoSaturated: 19,
 		polySaturated: 2,
 		total_saponifiable: 77,
+		order: 46,
 	},
 	{
 		name: "Goose Fat",
@@ -1078,6 +1125,7 @@ const oilsAPI: {
 		monoSaturated: 54,
 		polySaturated: 10,
 		total_saponifiable: 91,
+		order: 47,
 	},
 	{
 		name: "Grapeseed Oil",
@@ -1099,6 +1147,7 @@ const oilsAPI: {
 		monoSaturated: 20,
 		polySaturated: 68,
 		total_saponifiable: 100,
+		order: 48,
 	},
 	{
 		name: "Hazelnut Oil",
@@ -1120,6 +1169,7 @@ const oilsAPI: {
 		monoSaturated: 75,
 		polySaturated: 10,
 		total_saponifiable: 93,
+		order: 49,
 	},
 	{
 		name: "Hemp Oil",
@@ -1143,6 +1193,7 @@ const oilsAPI: {
 		monoSaturated: 12,
 		polySaturated: 57,
 		total_saponifiable: 98,
+		order: 50,
 	},
 	{
 		name: "Horse Oil",
@@ -1168,6 +1219,7 @@ const oilsAPI: {
 		monoSaturated: 10,
 		polySaturated: 20,
 		total_saponifiable: 83,
+		order: 51,
 	},
 	{
 		name: "Illipe Butter",
@@ -1189,6 +1241,7 @@ const oilsAPI: {
 		monoSaturated: 35,
 		polySaturated: 0,
 		total_saponifiable: 97,
+		order: 52,
 	},
 	{
 		name: "Japan Wax",
@@ -1210,6 +1263,7 @@ const oilsAPI: {
 		monoSaturated: 4,
 		polySaturated: 0,
 		total_saponifiable: 92,
+		order: 53,
 	},
 	{
 		name: "Jatropha Oil, soapnut seed oil",
@@ -1231,6 +1285,7 @@ const oilsAPI: {
 		monoSaturated: 44,
 		polySaturated: 34,
 		total_saponifiable: 94,
+		order: 54,
 	},
 	{
 		name: "Jojoba Oil (a Liquid Wax Ester)",
@@ -1249,6 +1304,7 @@ const oilsAPI: {
 		monoSaturated: 12,
 		polySaturated: 0,
 		total_saponifiable: 12,
+		order: 55,
 	},
 	{
 		name: "Karanja Oil",
@@ -1270,6 +1326,7 @@ const oilsAPI: {
 		monoSaturated: 58,
 		polySaturated: 15,
 		total_saponifiable: 85,
+		order: 56,
 	},
 	{
 		name: "Kokum Butter",
@@ -1291,6 +1348,7 @@ const oilsAPI: {
 		monoSaturated: 36,
 		polySaturated: 1,
 		total_saponifiable: 97,
+		order: 57,
 	},
 	{
 		name: "Kpangnan Butter",
@@ -1312,6 +1370,7 @@ const oilsAPI: {
 		monoSaturated: 49,
 		polySaturated: 1,
 		total_saponifiable: 100,
+		order: 58,
 	},
 	{
 		name: "Kukui nut Oil",
@@ -1336,6 +1395,7 @@ const oilsAPI: {
 		monoSaturated: 20,
 		polySaturated: 42,
 		total_saponifiable: 99,
+		order: 59,
 	},
 	{
 		name: "Lanolin liquid Wax",
@@ -1354,6 +1414,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 0,
+		order: 60,
 	},
 	{
 		name: "Lard, Pig Tallow (Manteca)",
@@ -1378,6 +1439,7 @@ const oilsAPI: {
 		monoSaturated: 46,
 		polySaturated: 6,
 		total_saponifiable: 94,
+		order: 61,
 	},
 	{
 		name: "Laurel Fruit Oil",
@@ -1404,6 +1466,7 @@ const oilsAPI: {
 		monoSaturated: 31,
 		polySaturated: 26,
 		total_saponifiable: 100,
+		order: 62,
 	},
 	{
 		name: "Lauric Acid",
@@ -1424,6 +1487,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 100,
+		order: 63,
 	},
 	{
 		name: "Linseed Oil, flax",
@@ -1448,6 +1512,7 @@ const oilsAPI: {
 		monoSaturated: 27,
 		polySaturated: 13,
 		total_saponifiable: 99,
+		order: 64,
 	},
 	{
 		name: "Loofa Seed Oil, Luffa cylinderica",
@@ -1470,6 +1535,7 @@ const oilsAPI: {
 		monoSaturated: 30,
 		polySaturated: 47,
 		total_saponifiable: 104,
+		order: 65,
 	},
 	{
 		name: "Macadamia Nut Butter",
@@ -1495,6 +1561,7 @@ const oilsAPI: {
 		monoSaturated: 56,
 		polySaturated: 3,
 		total_saponifiable: 79,
+		order: 66,
 	},
 	{
 		name: "Macadamia Nut Oil",
@@ -1517,6 +1584,7 @@ const oilsAPI: {
 		monoSaturated: 59,
 		polySaturated: 2,
 		total_saponifiable: 75,
+		order: 67,
 	},
 	{
 		name: "Mafura Butter, Trichilia emetica ",
@@ -1542,6 +1610,7 @@ const oilsAPI: {
 		monoSaturated: 49,
 		polySaturated: 11,
 		total_saponifiable: 102,
+		order: 68,
 	},
 	{
 		name: "Mango Seed Butter",
@@ -1564,6 +1633,7 @@ const oilsAPI: {
 		monoSaturated: 45,
 		polySaturated: 3,
 		total_saponifiable: 97,
+		order: 69,
 	},
 	{
 		name: "Mango Seed Oil",
@@ -1587,6 +1657,7 @@ const oilsAPI: {
 		monoSaturated: 52,
 		polySaturated: 8,
 		total_saponifiable: 96,
+		order: 70,
 	},
 	{
 		name: "Marula Oil",
@@ -1608,6 +1679,7 @@ const oilsAPI: {
 		monoSaturated: 75,
 		polySaturated: 4,
 		total_saponifiable: 97,
+		order: 71,
 	},
 	{
 		name: "Meadowfoam Oil",
@@ -1629,6 +1701,7 @@ const oilsAPI: {
 		monoSaturated: 77,
 		polySaturated: 18,
 		total_saponifiable: 95,
+		order: 72,
 	},
 	{
 		name: "Milk Fat, any bovine",
@@ -1655,6 +1728,7 @@ const oilsAPI: {
 		monoSaturated: 19,
 		polySaturated: 2,
 		total_saponifiable: 77,
+		order: 73,
 	},
 	{
 		name: "Milk Thistle Oil",
@@ -1677,6 +1751,7 @@ const oilsAPI: {
 		monoSaturated: 26,
 		polySaturated: 64,
 		total_saponifiable: 99,
+		order: 74,
 	},
 	{
 		name: "Mink Oil",
@@ -1695,6 +1770,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 0,
+		order: 75,
 	},
 	{
 		name: "Monoi de Tahiti  Oil",
@@ -1719,6 +1795,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 2,
 		total_saponifiable: 75,
+		order: 76,
 	},
 	{
 		name: "Moringa Oil",
@@ -1741,6 +1818,7 @@ const oilsAPI: {
 		monoSaturated: 71,
 		polySaturated: 2,
 		total_saponifiable: 87,
+		order: 77,
 	},
 	{
 		name: "Mowrah Butter",
@@ -1763,6 +1841,7 @@ const oilsAPI: {
 		monoSaturated: 36,
 		polySaturated: 15,
 		total_saponifiable: 97,
+		order: 78,
 	},
 	{
 		name: "Murumuru Butter",
@@ -1788,6 +1867,7 @@ const oilsAPI: {
 		monoSaturated: 15,
 		polySaturated: 3,
 		total_saponifiable: 100,
+		order: 79,
 	},
 	{
 		name: "Mustard Oil, kachi ghani",
@@ -1812,6 +1892,7 @@ const oilsAPI: {
 		monoSaturated: 18,
 		polySaturated: 14,
 		total_saponifiable: 45,
+		order: 80,
 	},
 	{
 		name: "Myristic Acid",
@@ -1831,6 +1912,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 99,
+		order: 81,
 	},
 	{
 		name: "Neatsfoot Oil",
@@ -1849,6 +1931,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 0,
+		order: 82,
 	},
 	{
 		name: "Neem Seed Oil",
@@ -1873,6 +1956,7 @@ const oilsAPI: {
 		monoSaturated: 46,
 		polySaturated: 12,
 		total_saponifiable: 97,
+		order: 83,
 	},
 	{
 		name: "Nutmeg Butter",
@@ -1895,6 +1979,7 @@ const oilsAPI: {
 		monoSaturated: 5,
 		polySaturated: 0,
 		total_saponifiable: 95,
+		order: 84,
 	},
 	{
 		name: "Oat Oil",
@@ -1917,6 +2002,7 @@ const oilsAPI: {
 		monoSaturated: 40,
 		polySaturated: 39,
 		total_saponifiable: 96,
+		order: 85,
 	},
 	{
 		name: "Oleic Acid",
@@ -1935,6 +2021,7 @@ const oilsAPI: {
 		monoSaturated: 99,
 		polySaturated: 0,
 		total_saponifiable: 99,
+		order: 86,
 	},
 	{
 		name: "Olive Oil",
@@ -1958,6 +2045,7 @@ const oilsAPI: {
 		monoSaturated: 69,
 		polySaturated: 12,
 		total_saponifiable: 99,
+		order: 87,
 	},
 	{
 		name: "Olive Oil  pomace",
@@ -1982,6 +2070,7 @@ const oilsAPI: {
 		monoSaturated: 69,
 		polySaturated: 12,
 		total_saponifiable: 100,
+		order: 88,
 	},
 	{
 		name: "Ostrich Oil",
@@ -2008,6 +2097,7 @@ const oilsAPI: {
 		monoSaturated: 37,
 		polySaturated: 17,
 		total_saponifiable: 93,
+		order: 89,
 	},
 	{
 		name: "Palm Kernel Oil",
@@ -2033,6 +2123,7 @@ const oilsAPI: {
 		monoSaturated: 15,
 		polySaturated: 3,
 		total_saponifiable: 93,
+		order: 90,
 	},
 	{
 		name: "Palm Kernel Oil Flakes, hydrogenated",
@@ -2057,6 +2148,7 @@ const oilsAPI: {
 		monoSaturated: 4,
 		polySaturated: 0,
 		total_saponifiable: 94,
+		order: 91,
 	},
 	{
 		name: "Palm Oil",
@@ -2081,6 +2173,7 @@ const oilsAPI: {
 		monoSaturated: 39,
 		polySaturated: 10,
 		total_saponifiable: 99,
+		order: 92,
 	},
 	{
 		name: "Palm Stearin",
@@ -2105,6 +2198,7 @@ const oilsAPI: {
 		monoSaturated: 26,
 		polySaturated: 7,
 		total_saponifiable: 100,
+		order: 93,
 	},
 	{
 		name: "Palmitic Acid",
@@ -2124,6 +2218,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 98,
+		order: 94,
 	},
 	{
 		name: "Palmolein",
@@ -2148,6 +2243,7 @@ const oilsAPI: {
 		monoSaturated: 43,
 		polySaturated: 11,
 		total_saponifiable: 100,
+		order: 95,
 	},
 	{
 		name: "Papaya seed oil, Carica papaya",
@@ -2170,6 +2266,7 @@ const oilsAPI: {
 		monoSaturated: 76,
 		polySaturated: 3,
 		total_saponifiable: 97,
+		order: 96,
 	},
 	{
 		name: "Passion Fruit Seed Oil",
@@ -2194,6 +2291,7 @@ const oilsAPI: {
 		monoSaturated: 15,
 		polySaturated: 70,
 		total_saponifiable: 99,
+		order: 97,
 	},
 	{
 		name: "Pataua (Patawa) Oil",
@@ -2218,6 +2316,7 @@ const oilsAPI: {
 		monoSaturated: 78,
 		polySaturated: 3,
 		total_saponifiable: 99,
+		order: 98,
 	},
 	{
 		name: "Peach Kernel Oil",
@@ -2242,6 +2341,7 @@ const oilsAPI: {
 		monoSaturated: 65,
 		polySaturated: 25,
 		total_saponifiable: 99,
+		order: 99,
 	},
 	{
 		name: "Peanut Oil",
@@ -2264,6 +2364,7 @@ const oilsAPI: {
 		monoSaturated: 56,
 		polySaturated: 26,
 		total_saponifiable: 93,
+		order: 100,
 	},
 	{
 		name: "Pecan Oil",
@@ -2288,6 +2389,7 @@ const oilsAPI: {
 		monoSaturated: 50,
 		polySaturated: 39,
 		total_saponifiable: 100,
+		order: 101,
 	},
 	{
 		name: "Perilla Seed Oil",
@@ -2312,6 +2414,7 @@ const oilsAPI: {
 		monoSaturated: 15,
 		polySaturated: 16,
 		total_saponifiable: 95,
+		order: 102,
 	},
 	{
 		name: "Pine Tar, lye calc only no FA",
@@ -2330,6 +2433,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 0,
+		order: 103,
 	},
 	{
 		name: "Pistachio Oil",
@@ -2352,6 +2456,7 @@ const oilsAPI: {
 		monoSaturated: 63,
 		polySaturated: 25,
 		total_saponifiable: 100,
+		order: 104,
 	},
 	{
 		name: "Plum Kernel Oil",
@@ -2372,6 +2477,7 @@ const oilsAPI: {
 		monoSaturated: 68,
 		polySaturated: 23,
 		total_saponifiable: 94,
+		order: 105,
 	},
 	{
 		name: "Pomegranate Seed Oil",
@@ -2395,6 +2501,7 @@ const oilsAPI: {
 		monoSaturated: 7,
 		polySaturated: 7,
 		total_saponifiable: 98,
+		order: 106,
 	},
 	{
 		name: "Poppy Seed Oil",
@@ -2418,6 +2525,7 @@ const oilsAPI: {
 		monoSaturated: 17,
 		polySaturated: 69,
 		total_saponifiable: 100,
+		order: 107,
 	},
 	{
 		name: "Pracaxi (Pracachy) Seed Oil - hair conditioner",
@@ -2444,6 +2552,7 @@ const oilsAPI: {
 		monoSaturated: 44,
 		polySaturated: 2,
 		total_saponifiable: 54,
+		order: 108,
 	},
 	{
 		name: "Pumpkin Seed Oil virgin",
@@ -2466,6 +2575,7 @@ const oilsAPI: {
 		monoSaturated: 33,
 		polySaturated: 50,
 		total_saponifiable: 102,
+		order: 109,
 	},
 	{
 		name: "Rabbit Fat",
@@ -2491,6 +2601,7 @@ const oilsAPI: {
 		monoSaturated: 30,
 		polySaturated: 20,
 		total_saponifiable: 94,
+		order: 110,
 	},
 	{
 		name: "Rapeseed Oil, unrefined canola",
@@ -2515,6 +2626,7 @@ const oilsAPI: {
 		monoSaturated: 17,
 		polySaturated: 13,
 		total_saponifiable: 44,
+		order: 111,
 	},
 	{
 		name: "Raspberry Seed Oil",
@@ -2537,6 +2649,7 @@ const oilsAPI: {
 		monoSaturated: 13,
 		polySaturated: 55,
 		total_saponifiable: 97,
+		order: 112,
 	},
 	{
 		name: "Red Palm Butter",
@@ -2561,6 +2674,7 @@ const oilsAPI: {
 		monoSaturated: 39,
 		polySaturated: 10,
 		total_saponifiable: 99,
+		order: 113,
 	},
 	{
 		name: "Rice Bran Oil, refined",
@@ -2586,6 +2700,7 @@ const oilsAPI: {
 		monoSaturated: 38,
 		polySaturated: 34,
 		total_saponifiable: 100,
+		order: 114,
 	},
 	{
 		name: "Rosehip Oil",
@@ -2610,6 +2725,7 @@ const oilsAPI: {
 		monoSaturated: 12,
 		polySaturated: 46,
 		total_saponifiable: 95,
+		order: 115,
 	},
 	{
 		name: "Sacha Inchi, Plukenetia volubilis",
@@ -2634,6 +2750,7 @@ const oilsAPI: {
 		monoSaturated: 10,
 		polySaturated: 35,
 		total_saponifiable: 100,
+		order: 116,
 	},
 	{
 		name: "Safflower Oil",
@@ -2654,6 +2771,7 @@ const oilsAPI: {
 		monoSaturated: 15,
 		polySaturated: 75,
 		total_saponifiable: 97,
+		order: 117,
 	},
 	{
 		name: "Safflower Oil, high oleic",
@@ -2676,6 +2794,7 @@ const oilsAPI: {
 		monoSaturated: 77,
 		polySaturated: 15,
 		total_saponifiable: 99,
+		order: 118,
 	},
 	{
 		name: "Sal Butter",
@@ -2698,6 +2817,7 @@ const oilsAPI: {
 		monoSaturated: 40,
 		polySaturated: 2,
 		total_saponifiable: 92,
+		order: 119,
 	},
 	{
 		name: "Salmon Oil",
@@ -2726,6 +2846,7 @@ const oilsAPI: {
 		monoSaturated: 50,
 		polySaturated: 18,
 		total_saponifiable: 96,
+		order: 120,
 	},
 	{
 		name: "Saw Palmetto Extract",
@@ -2752,6 +2873,7 @@ const oilsAPI: {
 		monoSaturated: 35,
 		polySaturated: 4,
 		total_saponifiable: 90,
+		order: 121,
 	},
 	{
 		name: "Saw Palmetto Oil",
@@ -2778,6 +2900,7 @@ const oilsAPI: {
 		monoSaturated: 31,
 		polySaturated: 4,
 		total_saponifiable: 89,
+		order: 122,
 	},
 	{
 		name: "Sea Buckthorn Oil, seed",
@@ -2799,6 +2922,7 @@ const oilsAPI: {
 		monoSaturated: 14,
 		polySaturated: 36,
 		total_saponifiable: 98,
+		order: 123,
 	},
 	{
 		name: "Sea Buckthorn Oil, seed and berry",
@@ -2818,6 +2942,7 @@ const oilsAPI: {
 		monoSaturated: 28,
 		polySaturated: 10,
 		total_saponifiable: 69,
+		order: 124,
 	},
 	{
 		name: "Sesame Oil",
@@ -2837,6 +2962,7 @@ const oilsAPI: {
 		monoSaturated: 40,
 		polySaturated: 43,
 		total_saponifiable: 98,
+		order: 125,
 	},
 	{
 		name: "Shea Butter",
@@ -2856,6 +2982,7 @@ const oilsAPI: {
 		monoSaturated: 48,
 		polySaturated: 6,
 		total_saponifiable: 99,
+		order: 126,
 	},
 	{
 		name: "Shea Oil, fractionated",
@@ -2876,6 +3003,7 @@ const oilsAPI: {
 		monoSaturated: 73,
 		polySaturated: 11,
 		total_saponifiable: 100,
+		order: 127,
 	},
 	{
 		name: "SoapQuick, conventional",
@@ -2902,6 +3030,7 @@ const oilsAPI: {
 		monoSaturated: 47,
 		polySaturated: 8,
 		total_saponifiable: 95,
+		order: 128,
 	},
 	{
 		name: "SoapQuick, organic",
@@ -2926,6 +3055,7 @@ const oilsAPI: {
 		monoSaturated: 45,
 		polySaturated: 10,
 		total_saponifiable: 96,
+		order: 129,
 	},
 	{
 		name: "Soybean Oil",
@@ -2949,6 +3079,7 @@ const oilsAPI: {
 		monoSaturated: 24,
 		polySaturated: 50,
 		total_saponifiable: 98,
+		order: 130,
 	},
 	{
 		name: "Soybean, 27.5% hydrogenated",
@@ -2972,6 +3103,7 @@ const oilsAPI: {
 		monoSaturated: 41,
 		polySaturated: 7,
 		total_saponifiable: 73,
+		order: 131,
 	},
 	{
 		name: "Soybean, fully hydrogenated (soy wax)",
@@ -2992,6 +3124,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 98,
+		order: 132,
 	},
 	{
 		name: "Stearic Acid",
@@ -3010,6 +3143,7 @@ const oilsAPI: {
 		monoSaturated: 0,
 		polySaturated: 0,
 		total_saponifiable: 99,
+		order: 133,
 	},
 	{
 		name: "Sunflower Oil",
@@ -3034,6 +3168,7 @@ const oilsAPI: {
 		monoSaturated: 16,
 		polySaturated: 70,
 		total_saponifiable: 98,
+		order: 134,
 	},
 	{
 		name: "Sunflower Oil, high oleic",
@@ -3058,6 +3193,7 @@ const oilsAPI: {
 		monoSaturated: 83,
 		polySaturated: 4,
 		total_saponifiable: 95,
+		order: 135,
 	},
 	{
 		name: "Tallow Bear",
@@ -3082,6 +3218,7 @@ const oilsAPI: {
 		monoSaturated: 70,
 		polySaturated: 9,
 		total_saponifiable: 91,
+		order: 136,
 	},
 	{
 		name: "Tallow Beef",
@@ -3107,6 +3244,7 @@ const oilsAPI: {
 		monoSaturated: 36,
 		polySaturated: 3,
 		total_saponifiable: 98,
+		order: 137,
 	},
 	{
 		name: "Tallow Deer",
@@ -3132,6 +3270,7 @@ const oilsAPI: {
 		monoSaturated: 30,
 		polySaturated: 15,
 		total_saponifiable: 93,
+		order: 138,
 	},
 	{
 		name: "Tallow Goat",
@@ -3156,6 +3295,7 @@ const oilsAPI: {
 		monoSaturated: 29,
 		polySaturated: 2,
 		total_saponifiable: 100,
+		order: 139,
 	},
 	{
 		name: "Tallow Sheep",
@@ -3178,6 +3318,7 @@ const oilsAPI: {
 		monoSaturated: 26,
 		polySaturated: 5,
 		total_saponifiable: 82,
+		order: 140,
 	},
 	{
 		name: "Tamanu Oil, kamani",
@@ -3202,6 +3343,7 @@ const oilsAPI: {
 		monoSaturated: 34,
 		polySaturated: 38,
 		total_saponifiable: 98,
+		order: 141,
 	},
 	{
 		name: "Tucuma Seed Butter",
@@ -3224,6 +3366,7 @@ const oilsAPI: {
 		monoSaturated: 13,
 		polySaturated: 0,
 		total_saponifiable: 90,
+		order: 142,
 	},
 	{
 		name: "Ucuuba Butter",
@@ -3245,6 +3388,7 @@ const oilsAPI: {
 		monoSaturated: 44,
 		polySaturated: 5,
 		total_saponifiable: 80,
+		order: 143,
 	},
 	{
 		name: "Walmart GV Shortening, tallow, palm",
@@ -3271,6 +3415,7 @@ const oilsAPI: {
 		monoSaturated: 37,
 		polySaturated: 6,
 		total_saponifiable: 98,
+		order: 144,
 	},
 	{
 		name: "Walnut Oil",
@@ -3293,6 +3438,7 @@ const oilsAPI: {
 		monoSaturated: 18,
 		polySaturated: 60,
 		total_saponifiable: 87,
+		order: 145,
 	},
 	{
 		name: "Watermelon Seed Oil",
@@ -3317,6 +3463,7 @@ const oilsAPI: {
 		monoSaturated: 18,
 		polySaturated: 60,
 		total_saponifiable: 100,
+		order: 146,
 	},
 	{
 		name: "Wheat Germ Oil",
@@ -3339,6 +3486,7 @@ const oilsAPI: {
 		monoSaturated: 17,
 		polySaturated: 58,
 		total_saponifiable: 94,
+		order: 147,
 	},
 	{
 		name: "Yangu, cape chestnut",
@@ -3363,6 +3511,7 @@ const oilsAPI: {
 		monoSaturated: 45,
 		polySaturated: 30,
 		total_saponifiable: 99,
+		order: 148,
 	},
 	{
 		name: "Zapote seed oil, (Aceite de Sapuyul or Mamey)",
@@ -3385,6 +3534,7 @@ const oilsAPI: {
 		monoSaturated: 52,
 		polySaturated: 13,
 		total_saponifiable: 95,
+		order: 149,
 	},
 ];
 
