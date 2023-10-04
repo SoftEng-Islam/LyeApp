@@ -1,4 +1,7 @@
 <script lang="ts">
+export default {
+
+}
 </script>
 <template lang="pug">
 div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover:border-pink-500")
