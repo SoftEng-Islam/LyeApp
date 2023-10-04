@@ -5,6 +5,7 @@ export const useOilStore = defineStore("taskStore", {
 		Oils: OilsAPIJsonFile,
 		selectedOilProprt: {},
 		selectedOilArray: new Array(),
+		typeOfLye: "NaOH",
 	}),
 	getters: {
 		GetOil(): Object {
@@ -17,15 +18,15 @@ export const useOilStore = defineStore("taskStore", {
 	},
 	actions: {
 		ClickedOil(selectedOil: any) {
-			if(this.selectedOilArray.includes(selectedOil) === false) {
+			if (this.selectedOilArray.includes(selectedOil) === false) {
 				this.selectedOilArray.push(selectedOil);
 			}
 			this.selectedOilProprt = selectedOil;
 		},
 		RemoveOils(OilToRemove: object) {
-			if(this.selectedOilArray.includes(OilToRemove) === true) {
-				this.selectedOilArray = this.selectedOilArray.filter((o)=>{
-					return o != OilToRemove
+			if (this.selectedOilArray.includes(OilToRemove) === true) {
+				this.selectedOilArray = this.selectedOilArray.filter((o) => {
+					return o != OilToRemove;
 				});
 			}
 		},
