@@ -10,7 +10,7 @@ export default {
 </script>
 <template lang="pug">
 //- Info Section
-div(class="lyeWidget flex flex-col min-h-[200px] ")
+div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover:border-yellow-500")
 	div(class="Head bg-yellow-500 p-2 rounded-md")
 		span(class="text-black font-bold ") {{ OilProperties.name || 'Oil' }} Properties.
 	ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md h-full")
