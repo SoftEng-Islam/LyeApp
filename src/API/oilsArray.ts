@@ -593,7 +593,7 @@ const oilsAPI: {
 		order: 25,
 	},
 	{
-		name: "Cherry Kern1 Oil, p. avium",
+		name: "Cherry Kernel Oil, p. avium",
 
 		iodine: 128,
 		ins: 62,
