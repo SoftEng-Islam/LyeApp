@@ -20,7 +20,7 @@ export default {
 </script>
 <template lang="pug">
 //- The Added Oils
-div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover:border-red-500")
+div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover:border-green-500")
 	div(class="Head bg-green-500 p-2 rounded-md")
 		span(class="text-black font-bold ") Added Oils.
 	ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md h-full overflow-hidden")
