@@ -4,11 +4,11 @@ export default {
 }
 </script>
 <template lang="pug">
-div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover:border-pink-500")
+div(class="lyeWidget flex flex-col min-h-[200px] max-h-[600px] border border-transparent hover:border-pink-500")
 	div(class="Head bg-pink-500 p-2 rounded-md")
 		span(class="text-black font-bold ") Soap Properties.
 	perfect-scrollbar
-		ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md h-full")
+		ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md overflow-hidden")
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white") Hardness
 				span(class="text-blue-500 ml-auto") 100 #[span(class="text-gray-500") GRAM]
@@ -30,9 +30,9 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white") INS
 				span(class="text-blue-500 ml-auto") 100 #[span(class="text-gray-500") GRAM]
-			li()
+			li(class="p-4")
 				hr(class="opacity-50")
-			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
+			li(class="flex overflow-hidden py-2")
 				span(class="text-sm text-white") Lauric
 				span(class="text-blue-500 ml-auto") 100 #[span(class="text-gray-500") GRAM]
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
