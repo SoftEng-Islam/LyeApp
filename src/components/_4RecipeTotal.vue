@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template lang="pug">
-div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover:border-green-500")
+div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover:border-blue-500")
 	div(class="Head bg-blue-500 p-2 rounded-md")
 		span(class="text-black font-bold ") Recipe Total.
 	ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md h-full")
