@@ -1,15 +1,26 @@
 <script lang="ts">
+import { useOilStore } from "../store/index";
+import { ref } from 'vue';
 export default {
-
+	setup() {
+		let STypeLye = ref("NaOH"); // Default => NaOH
+		const SetTypeOfLye = () => {
+			useOilStore().setTypeOfLye(STypeLye.value);
+		};
+		return {
+			STypeLye,
+			SetTypeOfLye
+		}
+	}
 }
 </script>
 <template lang="pug">
 ul(class="overflow-hidden w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between bg-[var(--dark100)]")
 	li(class="hover:border-[var(--favColor)] border border-transparent flex items-center justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		span(class="text-white") Type of #[span(class="text-[var(--favColor)]") Lye]:
-		select(class="ml-2 text-sm text-green-500 h-6 bg-[var(--dark400)] outline-none" id="Units")
-			option(value="NaOH")  NaOH
-			option(value="KOH")  KOH
+		select(class="ml-2 text-sm text-green-500 h-6 bg-[var(--dark400)] outline-none" id="Units" v-model="STypeLye" @change="SetTypeOfLye()")
+			option(value="NaOH") NaOH
+			option(value="KOH") KOH
 	li(class="hover:border-[var(--favColor)] border border-transparent flex flex-col items-center justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		span(class="text-white text-sm") Weight of #[span(class="text-[var(--favColor)]") Oils]:
 		div(class="flex flex-row items-center justify-center")

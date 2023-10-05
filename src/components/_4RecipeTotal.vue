@@ -1,10 +1,13 @@
 <script lang="ts">
+import { storeToRefs } from 'pinia';
 import { useOilStore } from "../store/index";
-import { ref } from 'vue';
-export default {
-	props: ['typeOfLye'],
-	setup() {
 
+export default {
+	setup() {
+		const { getTypeOfLye } = storeToRefs(useOilStore());
+		return {
+			getTypeOfLye
+		}
 	}
 }
 </script>
@@ -17,7 +20,7 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 			span(class="text-sm text-white") Water
 			span(class="text-blue-500 ml-auto") 100 #[span(class="text-gray-500") GRAM]
 		li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
-			span(class="text-sm text-white") Lye - {{typeOfLye}}
+			span(class="text-sm text-white") Lye - {{getTypeOfLye}}
 			span(class="text-blue-500 ml-auto") 100 #[span(class="text-gray-500") GRAM]
 		li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 			span(class="text-sm text-white") Oils
