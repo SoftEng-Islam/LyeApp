@@ -3,13 +3,23 @@ import OilsAPIJsonFile from "../API/oilsArray";
 export const useOilStore = defineStore("taskStore", {
 	state: () => ({
 		Oils: OilsAPIJsonFile,
-		selectedOilProprt: Object,
+		selectedOilProprt: new Object(),
 		selectedOilArray: new Array(),
 		addedOils: new Array(),
 		weightLye: 0,
 		weightWater: 0,
 		headerOptions: {
 			typeOfLye: "NaOH",
+			weightOfOilsValue: 0,
+			weightOfOilsUnit: "Grams",
+			water: {
+				waterAsOfOils: 38,
+				lyeConcentration: 70,
+				WaterToLyeRatio: "2:1",
+			},
+			superFat: 5,
+			Fragrance: 3,
+			Amount: 2,
 		},
 	}),
 	getters: {
@@ -21,13 +31,13 @@ export const useOilStore = defineStore("taskStore", {
 			return this.selectedOilArray;
 		},
 		getTypeOfLye(): string {
-			return this.typeOfLye;
+			return this.headerOptions.typeOfLye;
 		},
 	},
 	actions: {
 		setTypeOfLye(value: string) {
 			// if (value === "NaOH" || "KOH") {
-			this.headerOptions = value;
+			this.headerOptions.typeOfLye = value;
 			// }
 		},
 		ClickedOil(selectedOil: any) {
