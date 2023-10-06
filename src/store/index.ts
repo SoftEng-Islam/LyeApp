@@ -8,6 +8,7 @@ export const useOilStore = defineStore("taskStore", {
 		addedOils: new Array(),
 		weightLye: 0,
 		weightWater: 0,
+		weightOils: 0,
 		headerOptions: {
 			typeOfLye: "NaOH",
 			weightOfOilsValue: 0,
@@ -18,7 +19,7 @@ export const useOilStore = defineStore("taskStore", {
 				WaterToLyeRatio: "2:1",
 			},
 			superFat: 5,
-			Fragrance: 3,
+			fragrance: 3,
 			Amount: 2,
 		},
 		soapProperties: {
@@ -53,9 +54,9 @@ export const useOilStore = defineStore("taskStore", {
 	},
 	actions: {
 		setTypeOfLye(value: string) {
-			// if (value === "NaOH" || "KOH") {
-			this.headerOptions.typeOfLye = value;
-			// }
+			if (value === "NaOH" || "KOH") {
+				this.headerOptions.typeOfLye = value;
+			}
 		},
 		ClickedOil(selectedOil: any) {
 			if (this.selectedOilArray.includes(selectedOil) === false) {
@@ -75,6 +76,7 @@ export const useOilStore = defineStore("taskStore", {
 		AddedOilsWeight(OilName: string, OilWeight: number) {
 			this.weightLye = 0;
 			this.weightWater = 0;
+			this.weightOils = 0;
 			this.selectedOilArray.forEach((oi) => {
 				if (OilName === oi.name) {
 					oi.weight = OilWeight;
@@ -86,6 +88,7 @@ export const useOilStore = defineStore("taskStore", {
 						Math.pow(10, 3));
 
 				this.weightLye += NaOH;
+				this.weightOils += oi.weight;
 			});
 			this.weightWater = +(this.weightLye * 3).toFixed(2);
 		},

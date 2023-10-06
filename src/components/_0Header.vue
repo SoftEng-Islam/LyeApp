@@ -15,7 +15,7 @@ header(class="border-[var(--dark200)] border-b w-full flex items-center p-2 sele
 
 	//- Main App Fram
 	div(class="h-7 ml-auto mr-2 flex items-center justify-center" style="-webkit-app-region: no-drag")
-		button(class="duration-150 hover:opacity-50 w-8 h-8 		rounded-lg bg-yellow-500" id="minimize")
+		button(class="duration-150 hover:opacity-50 w-8 h-8 rounded-lg bg-yellow-500" id="minimize")
 			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M12 16L6 10H18L12 16Z"/></svg>
 		button(class="duration-150 hover:opacity-50 w-8 h-8 mx-2 	rounded-lg bg-green-500" id="maximize")
 			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M12 8L18 14H6L12 8Z"/></svg>
