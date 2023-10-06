@@ -19,7 +19,7 @@ export default {
 
 		const ClickdOnOil = (val: object) => {
 			useOilStore().ClickedOil(val);
-			console.log(val)
+			// console.log(val)
 		};
 
 		return {

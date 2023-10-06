@@ -7,6 +7,8 @@ export const useOilStore = defineStore("taskStore", {
 		selectedOilArray: new Array(),
 		typeOfLye: "NaOH",
 		addedOils: new Array(),
+		weightLye: 0,
+		weightWater: 0,
 	}),
 	getters: {
 		GetOil(): Object {
@@ -28,6 +30,8 @@ export const useOilStore = defineStore("taskStore", {
 		},
 		ClickedOil(selectedOil: any) {
 			if (this.selectedOilArray.includes(selectedOil) === false) {
+				// console.log(this.selectedOilArray);
+				// console.log(selectedOil);
 				this.selectedOilArray.push(selectedOil);
 			}
 			this.selectedOilProprt = selectedOil;
@@ -40,15 +44,21 @@ export const useOilStore = defineStore("taskStore", {
 			}
 		},
 		AddedOilsWeight(OilName: string, OilWeight: number) {
-			console.log(OilName);
-			console.log(OilWeight);
-			if (this.addedOils.length > 0) {
-				this.addedOils.push({ oilName: OilName, oilWeight: OilWeight });
-			} else {
-				this.addedOils.forEach((oi) => {
-					console.log(oi);
-				});
-			}
+			this.weightLye = 0;
+			this.weightWater = 0;
+			this.selectedOilArray.forEach((oi) => {
+				if (OilName === oi.name) {
+					oi.weight = OilWeight;
+				}
+
+				let NaOH =
+					OilWeight *
+					(Math.round((40 / 56.1) * oi["KOH SAP"] * Math.pow(10, 3)) /
+						Math.pow(10, 3));
+
+				this.weightLye += +NaOH.toFixed(2);
+			});
+			this.weightWater = +(this.weightLye / 3).toFixed(2);
 		},
 	},
 });
