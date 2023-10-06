@@ -31,6 +31,7 @@ export const useOilStore = defineStore("taskStore", {
 			INS: 0,
 			Lauric: 0,
 			Myristic: 0,
+			Palmitic: 0,
 			Stearic: 0,
 			Ricinoleic: 0,
 			Oleic: 0,
