@@ -58,7 +58,7 @@ export const useOilStore = defineStore("taskStore", {
 
 				this.weightLye += +NaOH.toFixed(2);
 			});
-			this.weightWater = +(this.weightLye / 3).toFixed(2);
+			this.weightWater = +(this.weightLye * 3).toFixed(2);
 		},
 	},
 });
