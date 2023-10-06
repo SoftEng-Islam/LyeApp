@@ -3,7 +3,7 @@ import OilsAPIJsonFile from "../API/oilsArray";
 export const useOilStore = defineStore("taskStore", {
 	state: () => ({
 		Oils: OilsAPIJsonFile,
-		selectedOilProprt: new Object(),
+		selectedOilProprt: { name: "Oil Properties" },
 		selectedOilArray: new Array(),
 		addedOils: new Array(),
 		weightLye: 0,
@@ -20,6 +20,22 @@ export const useOilStore = defineStore("taskStore", {
 			superFat: 5,
 			Fragrance: 3,
 			Amount: 2,
+		},
+		soapProperties: {
+			Hardness: 0,
+			Cleansing: 0,
+			Conditioning: 0,
+			Bubbly: 0,
+			Creamy: 0,
+			Iodine: 0,
+			INS: 0,
+			Lauric: 0,
+			Myristic: 0,
+			Stearic: 0,
+			Ricinoleic: 0,
+			Oleic: 0,
+			Linoleic: 0,
+			Linolenic: 0,
 		},
 	}),
 	getters: {
@@ -68,7 +84,7 @@ export const useOilStore = defineStore("taskStore", {
 					(Math.round((40 / 56.1) * oi["KOH SAP"] * Math.pow(10, 3)) /
 						Math.pow(10, 3));
 
-				this.weightLye += +NaOH.toFixed(2);
+				this.weightLye += NaOH;
 			});
 			this.weightWater = +(this.weightLye * 3).toFixed(2);
 		},
