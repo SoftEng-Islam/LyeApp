@@ -5,10 +5,12 @@ export const useOilStore = defineStore("taskStore", {
 		Oils: OilsAPIJsonFile,
 		selectedOilProprt: Object,
 		selectedOilArray: new Array(),
-		typeOfLye: "NaOH",
 		addedOils: new Array(),
 		weightLye: 0,
 		weightWater: 0,
+		headerOptions: {
+			typeOfLye: "NaOH",
+		},
 	}),
 	getters: {
 		GetOil(): Object {
@@ -25,7 +27,7 @@ export const useOilStore = defineStore("taskStore", {
 	actions: {
 		setTypeOfLye(value: string) {
 			// if (value === "NaOH" || "KOH") {
-			this.typeOfLye = value;
+			this.headerOptions = value;
 			// }
 		},
 		ClickedOil(selectedOil: any) {
