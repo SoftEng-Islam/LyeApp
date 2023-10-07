@@ -83,14 +83,14 @@ export const useOilStore = defineStore("taskStore", {
 				}
 
 				let NaOH =
-					OilWeight *
+					oi.weight *
 					(Math.round((40 / 56.1) * oi["KOH SAP"] * Math.pow(10, 3)) /
 						Math.pow(10, 3));
 
 				this.weightLye += parseInt(NaOH.toFixed(0));
 				this.weightOils += parseInt(oi.weight.toFixed(0));
 			});
-			this.weightWater = parseInt((this.weightLye * 3).toFixed(0));
+			this.weightWater += parseInt((this.weightLye * 3).toFixed(0));
 		},
 	},
 });
