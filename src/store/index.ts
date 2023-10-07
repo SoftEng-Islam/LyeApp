@@ -87,10 +87,10 @@ export const useOilStore = defineStore("taskStore", {
 					(Math.round((40 / 56.1) * oi["KOH SAP"] * Math.pow(10, 3)) /
 						Math.pow(10, 3));
 
-				this.weightLye += NaOH;
-				this.weightOils += oi.weight;
+				this.weightLye += parseInt(NaOH.toFixed(0));
+				this.weightOils += parseInt(oi.weight.toFixed(0));
 			});
-			this.weightWater = +(this.weightLye * 3).toFixed(2);
+			this.weightWater = parseInt((this.weightLye * 3).toFixed(0));
 		},
 	},
 });
