@@ -27,7 +27,7 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 			span(class="text-blue-500 ml-auto") {{OilStore.weightOils || 0}} #[span(class="text-gray-500") Gram]
 		li(class="flex overflow-hidden py-2 border-t border-t-[var(--dark200)]")
 			span(class="text-sm text-white") Fragrance
-			span(class="text-blue-500 ml-auto") {{OilStore.headerOptions.value.fragrance}} #[span(class="text-gray-500") Gram]
+			span(class="text-blue-500 ml-auto") {{OilStore.headerOptions.value.fragrance.value}} #[span(class="text-gray-500") Gram]
 		li(class="p-4")
 			hr(class="opacity-50")
 		li(class="flex overflow-hidden py-2")

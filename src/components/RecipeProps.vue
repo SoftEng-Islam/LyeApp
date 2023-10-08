@@ -39,7 +39,7 @@ ul(class="overflow-hidden w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start 
 			option(value="Water as % of Oils") Water as % of Oils
 			option(value="Lye Concentration") Lye Concentration
 			option(value="Water : Lye Ratio") Water : Lye Ratio
-		input(class=" bg-[var(--dark200)] placeholder:text-white text-white pl-2 py-1 rounded-md scale-90" type="text" value="38")
+		input(class="bg-[var(--dark200)] placeholder:text-white text-white pl-2 py-1 rounded-md scale-90" type="text" value="38")
 	li(class="hover:border-[var(--favColor)] border border-transparent text-sm flex flex-col items-start justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		div(class="flex justify-between items-center")
 			span(class="text-orange-400 mr-10") Super Fat
