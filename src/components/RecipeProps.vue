@@ -49,9 +49,6 @@ ul(class="overflow-hidden w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start 
 			span(class="text-orange-400") %
 		div(class="flex justify-between items-center")
 			span(class="text-fuchsia-400 mr-auto") Fragrance
-			input(class="pl-2 w-1/3 mx-auto bg-[var(--dark200)] placeholder:text-white text-white  py-1 rounded-md scale-90" type="number" value="3")
+			input(class="pl-2 w-1/3 mx-auto bg-[var(--dark200)] placeholder:text-white text-white  py-1 rounded-md scale-90" type="number" v-model="OilStore.headerOptions.fragrance")
 			span(class="text-fuchsia-400") oz/lb
-		div(class="flex justify-between items-center")
-			span(class="text-green-400 mr-auto") Amount
-			input(class="pl-2 w-1/3 mx-auto bg-[var(--dark200)] placeholder:text-white text-white  py-1 rounded-md scale-90" type="number" value="2")
 </template>

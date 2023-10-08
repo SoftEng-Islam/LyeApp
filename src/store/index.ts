@@ -20,8 +20,10 @@ export const useOilStore = defineStore("taskStore", {
 				WaterToLyeRatio: "2:1",
 			},
 			superFat: 5,
-			fragrance: 3,
-			Amount: 2,
+			fragrance: {
+				value: 3,
+				frWeight: "oz/lb",
+			},
 		},
 		soapProperties: {
 			Hardness: 0,
