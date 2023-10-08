@@ -1,6 +1,5 @@
 <script lang="ts">
 import { ref } from "vue";
-import { storeToRefs } from 'pinia';
 import { useOilStore } from "../store/index";
 export default {
 	props: ['oil'],

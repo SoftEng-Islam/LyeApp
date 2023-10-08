@@ -56,6 +56,25 @@ export const useOilStore = defineStore("taskStore", {
 		setTypeOfLye(value: string) {
 			if (value === "NaOH" || "KOH") {
 				this.headerOptions.typeOfLye = value;
+				this.weightLye = 0;
+				// this.weightWater = 0;
+
+				this.selectedOilArray.forEach((oi) => {
+					if (this.headerOptions.typeOfLye === "NaOH") {
+						let NaOH =
+							oi.weight *
+							(Math.round(
+								(40 / 56.1) * oi["KOH SAP"] * Math.pow(10, 3)
+							) /
+								Math.pow(10, 3));
+
+						this.weightLye += parseInt(NaOH.toFixed(0));
+					} else {
+						this.weightLye += parseInt(
+							(oi.weight * oi["KOH SAP"]).toFixed(0)
+						);
+					}
+				});
 			}
 		},
 		ClickedOil(selectedOil: any) {
@@ -81,13 +100,20 @@ export const useOilStore = defineStore("taskStore", {
 				if (OilName === oi.name) {
 					oi.weight = OilWeight;
 				}
+				if (this.headerOptions.typeOfLye === "NaOH") {
+					let NaOH =
+						oi.weight *
+						(Math.round(
+							(40 / 56.1) * oi["KOH SAP"] * Math.pow(10, 3)
+						) /
+							Math.pow(10, 3));
 
-				let NaOH =
-					oi.weight *
-					(Math.round((40 / 56.1) * oi["KOH SAP"] * Math.pow(10, 3)) /
-						Math.pow(10, 3));
-
-				this.weightLye += parseInt(NaOH.toFixed(0));
+					this.weightLye += parseInt(NaOH.toFixed(0));
+				} else {
+					this.weightLye += parseInt(
+						(oi.weight * oi["KOH SAP"]).toFixed(0)
+					);
+				}
 				this.weightOils += parseInt(oi.weight.toFixed(0));
 			});
 			this.weightWater += parseInt((this.weightLye * 3).toFixed(0));

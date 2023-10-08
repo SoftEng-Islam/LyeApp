@@ -1,13 +1,16 @@
 <script lang="ts">
-import { useOilStore } from "../store/index";
 import { ref } from 'vue';
+import { storeToRefs } from 'pinia';
+import { useOilStore } from "../store/index";
 export default {
 	setup() {
 		let STypeLye = ref("NaOH"); // Default => NaOH
+		const OilStore = useOilStore();
 		const SetTypeOfLye = () => {
 			useOilStore().setTypeOfLye(STypeLye.value);
 		};
 		return {
+			OilStore,
 			STypeLye,
 			SetTypeOfLye
 		}
@@ -24,11 +27,11 @@ ul(class="overflow-hidden w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start 
 	li(class="hover:border-[var(--favColor)] border border-transparent flex flex-col items-center justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		span(class="text-white text-sm") Weight of #[span(class="text-[var(--favColor)]") Oils]:
 		div(class="flex flex-row items-center justify-center")
-			input(type="number" class="w-1/4 bg-[var(--dark200)] placeholder:text-white text-white pl-2 py-1 rounded-md scale-90" value="100")
+			input(type="number" class="w-1/4 bg-[var(--dark200)] placeholder:text-white text-white pl-2 py-1 rounded-md scale-90" v-model="OilStore.weightOils")
 			select(class="bg-[var(--dark200)] text-red-500 pl-2 py-1 rounded-md scale-90")
 				option(value="Pounds") Pounds
 				option(value="Ounces") Ounces
-				option(value="Grams") Grams
+				option(value="Grams" selected) Grams
 				option(value="Kilo") Kilo
 				option(value="Tons") Tons
 	li(class="hover:border-[var(--favColor)] border border-transparent text-sm flex flex-col items-center justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
