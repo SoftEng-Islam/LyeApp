@@ -33,13 +33,13 @@ ul(class="overflow-hidden w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start 
 			option(value="Grams" selected) Grams
 			option(value="Kilo") Kilo
 			option(value="Tons") Tons
-	li(class="hover:border-[var(--favColor)] border border-transparent text-sm flex items-center justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2 overflow-hidden")
-		span(class="text-[var(--favColor)]") Water #[span(class="text-white") :]
+	li(class="w-1/4 h-full p-2 text-sm flex items-center justify-center bg-[var(--dark300)] rounded-lg overflow-hidden hover:border-[var(--favColor)] border border-transparent")
+		span(class="text-[var(--favColor)] mr-3") Water#[span(class="text-white") :]
+		input(class="w-12 pl-2 py-1 rounded-md scale-9 bg-[var(--dark200)] placeholder:text-white text-white" type="text" value="38")
 		select(class="bg-[var(--dark200)] text-blue-500 pl-2 py-1 rounded-md scale-90")
 			option(value="Water as % of Oils") Water as % of Oils
 			option(value="Lye Concentration") Lye Concentration
 			option(value="Water : Lye Ratio") Water : Lye Ratio
-		input(class="bg-[var(--dark200)] placeholder:text-white text-white pl-2 py-1 rounded-md scale-90" type="text" value="38")
 	li(class="hover:border-[var(--favColor)] border border-transparent text-sm flex flex-col items-start justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		div(class="flex justify-between items-center")
 			span(class="text-orange-400 mr-10") Super Fat
