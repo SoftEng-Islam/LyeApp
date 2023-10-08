@@ -1,4 +1,4 @@
-import { createPinia } from 'pinia'
+import { createPinia } from "pinia";
 import { createApp } from "vue";
 import App from "./App.vue";
 
@@ -6,18 +6,17 @@ import "./samples/node-api";
 import "./style.css";
 import "animate.css";
 
-
 import PerfectScrollbar from "vue3-perfect-scrollbar";
-import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css';
+import "vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css";
 
-createApp(App,)
+createApp(App)
 	.use(createPinia())
-	.use(PerfectScrollbar,{
+	.use(PerfectScrollbar, {
 		watchOptions: true,
 		options: {
-
-			suppressScrollX: false
-		}
+			swipeEasing: true,
+			// suppressScrollX: false,
+		},
 	})
 	.mount("#app")
 	.$nextTick(() => {

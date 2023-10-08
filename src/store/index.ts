@@ -88,6 +88,9 @@ export const useOilStore = defineStore("taskStore", {
 			}
 			this.selectedOilProprt = selectedOil;
 		},
+		showTheInfo(selectedOil: any) {
+			this.selectedOilProprt = selectedOil;
+		},
 		RemoveOils(OilToRemove: object) {
 			if (this.selectedOilArray.includes(OilToRemove) === true) {
 				this.selectedOilArray = this.selectedOilArray.filter((o) => {

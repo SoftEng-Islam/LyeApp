@@ -21,11 +21,15 @@ export default {
 			useOilStore().ClickedOil(val);
 			// console.log(val)
 		};
+		const ShowTheInfo = (val: object) => {
+			useOilStore().showTheInfo(val);
+		}
 
 		return {
 			searchForOil,
 			filteredOils,
-			ClickdOnOil
+			ClickdOnOil,
+			ShowTheInfo
 		}
 	}
 }
@@ -54,19 +58,48 @@ div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 bord
 						li(class="") Z-A
 						li(class="") Custom
 				li(class="mx-4 hover:text-white hover:cursor-pointer") Select
-		//- Notes
-		div(class="w-full h-[90%] overflow-hidden pt-7 p-3 border-t border-solid border-[var(--dark100)]")
-			perfect-scrollbar
-				transition-group(name="list" tag="ul" class="h-full w-full")
-					li(v-for="Oil in filteredOils()" :key="Oil.order" class="cursor-pointer hover:bg-[var(--dark200)] p-2 my-5 rounded-lg text-[var(--favColor)] bg-[var(--dark300)] text-sm flex flex-nowrap items-center gap-2" @click="ClickdOnOil(Oil)") #[span(class="opacity-50 bg-[var(--dark400)] py-1 px-2 rounded-md border border-[var(--favColor)] inline-block h-full") {{ Oil.order }}] #[span(class="inline-block") {{ Oil.name }}]
+		//- Oils
+		div(class="OilsList w-full h-[90%] py-7 border-t border-solid border-[var(--dark100)]")
+			perfect-scrollbar(class="h-full w-full")
+				transition-group(name="list" tag="ul" class="h-full w-full pl-5")
+					li(v-for="Oil in filteredOils()" :key="Oil.order" class="py-2 my-5 text-sm rounded-lg flex flex-nowrap items-center gap-2 text-[var(--favColor)] hover:bg-[var(--dark400)]" @click="ShowTheInfo(Oil)" @dblclick="ClickdOnOil(Oil)")
+						span(class="bg-[var(--favColor)] text-black font-bold px-2 rounded-md inline-block h-full")
+							| {{ Oil.order }}
+						span(class="inline-block") {{ Oil.name }}
+						button(type="button" class="h-5 w-5 px-2 ml-auto font-bold text-xl rounded-md flex items-center justify-center bg-green-500 text-black hover:opacity-50" @click="ClickdOnOil(Oil)") +
 		//- Close
 	button(type="button" id="closeOrResize" class="hover:shadow-lg hover:shadow-[var(--favColor)] hover:cursor-pointer w-8 h-8 rounded-full bg-[var(--dark300)] text-[var(--favColor)] border-2 border-solid border-[var(--favColor)] absolute top-1/2 right-[-1rem] translate-y-[-50%]")
 		<svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-left"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
 </template>
-<style scoped>
-.ps {
-	height: 100%;
+<style lang="scss">
+.OilsList {
+	.ps {
+		.ps__rail-y {
+			left: 0;
+		}
+
+		.ps__rail-x,
+		.ps__rail-y,
+		.ps__rail-x,
+		.ps__rail-y,
+		.ps__rail-x:hover,
+		.ps__rail-y:hover,
+		.ps__rail-x:focus,
+		.ps__rail-y:focus,
+		.ps__rail-x.ps--clicking,
+		.ps__rail-y.ps--clicking {
+			background-color: var(--dark300) !important;
+			opacity: 1;
+		}
+	}
+
+	.ps__thumb-y {
+		width: 11px;
+		background-color: var(--favColor) !important;
+	}
 }
+
+
 
 .list-move,
 /* apply transition to moving elements */
