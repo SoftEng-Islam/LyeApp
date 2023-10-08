@@ -18,7 +18,7 @@ export default {
 }
 </script>
 <template lang="pug">
-ul(class="overflow-hidden w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between bg-[var(--dark100)]")
+ul(class="w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between bg-[var(--dark100)]")
 	li(class="hover:border-[var(--favColor)] border border-transparent flex items-center justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		span(class="text-white") Type of #[span(class="text-[var(--favColor)]") Lye]:
 		select(class="ml-2 p-1 px-2 text-lg text-green-500 bg-[var(--dark400)] border border-[var(--dark100)] outline-none" id="Units" v-model="STypeLye" @change="SetTypeOfLye()")

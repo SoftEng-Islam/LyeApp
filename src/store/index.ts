@@ -21,8 +21,8 @@ export const useOilStore = defineStore("taskStore", {
 			},
 			superFat: 5,
 			fragrance: {
-				value: 3,
-				frWeight: "gr/kg",
+				value: 29,
+				frWeight: "g/Kg",
 			},
 		},
 		soapProperties: {

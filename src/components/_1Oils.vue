@@ -63,13 +63,14 @@ div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 bord
 			perfect-scrollbar(class="h-full w-full")
 				transition-group(name="list" tag="ul" class="h-full w-full pl-5")
 					li(v-for="Oil in filteredOils()" :key="Oil.order" class="py-2 my-5 text-sm rounded-lg flex flex-nowrap items-center gap-2 text-[var(--favColor)] hover:bg-[var(--dark400)]" @click="ShowTheInfo(Oil)" @dblclick="ClickdOnOil(Oil)")
-						span(class="bg-[var(--favColor)] text-black font-bold px-2 rounded-md inline-block h-full")
+						span(v-show="false" class="bg-[var(--favColor)] text-black font-bold px-2 rounded-md inline-block h-full")
 							| {{ Oil.order }}
-						span(class="inline-block") {{ Oil.name }}
-						button(type="button" class="h-5 w-5 px-2 ml-auto font-bold text-xl rounded-md flex items-center justify-center bg-green-500 text-black hover:opacity-50" @click="ClickdOnOil(Oil)") +
+						button(type="button" class="h-5 w-5 mx-2  font-bold text-xl rounded-md flex items-center justify-center bg-green-500 text-black hover:opacity-50" @click="ClickdOnOil(Oil)")
+							<svg class="w-full" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"/></svg>
+						span(class="w-full inline-block p-1 rounded-lg bg-[var(--dark200)] hover:bg-[var(--dark400)] cursor-default") {{ Oil.name }}
 		//- Close
-	button(type="button" id="closeOrResize" class="hover:shadow-lg hover:shadow-[var(--favColor)] hover:cursor-pointer w-8 h-8 rounded-full bg-[var(--dark300)] text-[var(--favColor)] border-2 border-solid border-[var(--favColor)] absolute top-1/2 right-[-1rem] translate-y-[-50%]")
-		<svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-left"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
+	button(type="button" id="closeOrResize" class="w-5 h-9 rounded-lg bg-[var(--dark300)] text-[var(--favColor)] border-2 border-solid border-[var(--favColor)] absolute top-1/2 right-[-.7rem] translate-y-[-50%]")
+		| |
 </template>
 <style lang="scss">
 .OilsList {
