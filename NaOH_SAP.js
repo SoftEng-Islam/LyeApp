@@ -5,3 +5,4 @@ Math.round((40 / 56.1) * b * Math.pow(10, 3)) / Math.pow(10, 3);
 function roundNumber(b, a) {
 	return Math.round(b * Math.pow(10, a)) / Math.pow(10, a);
 }
+document.getElementById("spnHard2").value = " " + roundNumber(Hard, 0);
