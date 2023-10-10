@@ -2399,3 +2399,4 @@ const oilsAPI: {
 		linolenic: 0,
 	},
 ];
+export default oilsAPI;
