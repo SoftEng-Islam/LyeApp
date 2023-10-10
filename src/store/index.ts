@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import OilsAPIJsonFile from "../API/oilsArray";
+import OilsAPIJsonFile from "../API/oilsArray2";
 export const useOilStore = defineStore("taskStore", {
 	state: () => ({
 		Oils: OilsAPIJsonFile,
