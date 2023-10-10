@@ -1111,4 +1111,6 @@ aryAllOils.push(
 	)
 );
 
-console.log(aryAllOils);
+aryAllOils.forEach((ele) => {
+	console.log(ele);
+})

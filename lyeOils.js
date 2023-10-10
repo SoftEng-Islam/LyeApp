@@ -164,4 +164,6 @@ aryAllOils.push(new Oil(135, "Watermelon Seed Oil", 0.19, 119, 71, 0, 0, 11, 10,
 aryAllOils.push(new Oil(50, "Wheat Germ Oil", 0.183, 128, 58, 0, 0, 17, 2, 0, 17, 58, 0));
 aryAllOils.push(new Oil(98, "Yangu, cape chestnut", 0.192, 95, 97, 0, 0, 18, 5, 0, 45, 30, 1));
 aryAllOils.push(new Oil(118, "Zapote seed oil, (Aceite de Sapuyul or Mamey)", 0.188, 72, 116, 0, 0, 9, 21, 0, 52, 13, 0));
-console.log(aryAllOils);
+aryAllOils.forEach(function (ele) {
+    console.log(ele);
+});
