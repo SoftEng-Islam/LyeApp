@@ -2,6 +2,7 @@ function Oil(b: number, a: string, c: number, d: number, g: number, f: number, e
 	this.id = b;
 	this.name = a;
 	this.sap = c;
+	this.NaOH = Math.round((40 / 56.1) * c * Math.pow(10, 3)) / Math.pow(10, 3);
 	this.iodine = d;
 	this.ins = g;
 	this.lauric = f;
