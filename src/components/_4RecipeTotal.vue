@@ -31,6 +31,6 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 		li(class="p-4")
 			hr(class="opacity-50")
 		li(class="flex overflow-hidden py-2")
-			span(class="text-sm text-white") Total Weight
+			span(class="text-sm text-white") Weight of Recipe
 			span(class="text-blue-500 ml-auto bg-[var(--dark400)] rounded-full px-2 border border-[var(--dark200)]") {{ OilStore.weightWater.value + OilStore.weightLye.value + OilStore.weightOils.value + OilStore.headerOptions.value.fragrance.value || 0 }} #[span(class="text-gray-500") Gram]
 </template>

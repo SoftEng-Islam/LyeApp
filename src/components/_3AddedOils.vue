@@ -8,13 +8,16 @@ export default {
 		AddedOil
 	},
 	setup() {
-
+		const OilStore = storeToRefs(useOilStore());
 		const { selectedOilArray } = storeToRefs(useOilStore());
 		const RemoveThisOil = (val: Object) => {
 			useOilStore().RemoveOils(val);
 		}
-
+		if (OilStore.weightOils.value > 1000) {
+			console.log(OilStore.weightOils.value / 1000); // Gram to k.g
+		}
 		return {
+			OilStore,
 			selectedOilArray,
 			RemoveThisOil,
 		}
@@ -28,4 +31,10 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 		span(class="text-black font-bold ") Added Oils.
 	ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md h-full overflow-hidden")
 		added-oil(v-for="oil of selectedOilArray" :oil="oil")
+		li(class="p-4")
+			hr(class="opacity-50")
+		li(class="flex overflow-hidden py-2")
+			span(class="text-sm text-white") Weight of oils
+			span(class="text-green-500 ml-auto bg-[var(--dark400)] rounded-full px-2 border border-[var(--dark200)]") {{ OilStore.weightOils }} #[span(class="text-gray-300") Gram]
+
 </template>
