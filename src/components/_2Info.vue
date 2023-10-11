@@ -4,6 +4,16 @@ import { useOilStore } from "../store/index";
 export default {
 
 	setup() {
+		let aryRanges = Array(7);
+		aryRanges[0] = "Hardness (in the All column): 29 to 54, higher is harder.";
+		aryRanges[1] = "Cleansing (in the All column): 12 to 22, all soap cleanses but the higher numbers more so.";
+		aryRanges[2] = "Conditioning (in the All column): 44 to 69, higher offers more skin conditioning.";
+		aryRanges[3] = "Bubbly (in the All column): 14 to 46, higher gives a more bubbly lather.";
+		aryRanges[4] = "Creamy (in the All column): 16 to 48, higher gives a more creamy lather.";
+		aryRanges[5] = "Iodine Value (in the All column): 41 to 70, lower equals harder bar, much above 70 and bar could possibly be too soft.";
+		aryRanges[6] = "INS (in the All column): 136 to 165, the commonly accepted ideal is 160.&nbsp; This value gauges the physical qualities of the bar; primarily hardness, with higher being harder.";
+
+
 		const { selectedOilProprt } = storeToRefs(useOilStore());
 		return {
 			selectedOilProprt

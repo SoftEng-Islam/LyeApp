@@ -86,7 +86,6 @@ export const useOilStore = defineStore("taskStore", {
 				// console.log(selectedOil);
 				this.selectedOilArray.push(selectedOil);
 			}
-			this.selectedOilProprt = selectedOil;
 		},
 		showTheInfo(selectedOil: any) {
 			this.selectedOilProprt = selectedOil;
@@ -123,6 +122,8 @@ export const useOilStore = defineStore("taskStore", {
 			this.weightWater = 0;
 			this.weightOils = 0;
 			this.FragranceWeight = 0;
+
+
 			this.selectedOilArray.forEach((oi) => {
 				if (OilName === oi.name) {
 					oi.weight = OilWeight;

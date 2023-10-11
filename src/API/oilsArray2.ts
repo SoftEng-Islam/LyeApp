@@ -13,6 +13,7 @@ const oilsAPI: {
   oleic: number;
   linoleic: number;
   linolenic: number;
+  weight: number
 }[] =
   [
     {
@@ -30,6 +31,7 @@ const oilsAPI: {
       oleic: 18,
       linoleic: 11,
       linolenic: 4
+      , weight: 0
     }
     , {
       id: 114,
@@ -46,6 +48,7 @@ const oilsAPI: {
       oleic: 58,
       linoleic: 16,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 1,
@@ -62,6 +65,7 @@ const oilsAPI: {
       oleic: 71,
       linoleic: 18,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 68,
@@ -78,6 +82,7 @@ const oilsAPI: {
       oleic: 7,
       linoleic: 2,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 96,
@@ -94,6 +99,7 @@ const oilsAPI: {
       oleic: 51,
       linoleic: 9,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 2,
@@ -110,6 +116,7 @@ const oilsAPI: {
       oleic: 66,
       linoleic: 27,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 58,
@@ -126,6 +133,7 @@ const oilsAPI: {
       oleic: 46,
       linoleic: 34,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 53,
@@ -142,6 +150,7 @@ const oilsAPI: {
       oleic: 53,
       linoleic: 6,
       linolenic: 2
+      , weight: 0
     }
     , {
       id: 3,
@@ -158,6 +167,7 @@ const oilsAPI: {
       oleic: 58,
       linoleic: 12,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 4,
@@ -174,6 +184,7 @@ const oilsAPI: {
       oleic: 10,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 59,
@@ -190,6 +201,7 @@ const oilsAPI: {
       oleic: 37,
       linoleic: 28,
       linolenic: 2
+      , weight: 0
     }
     , {
       id: 5,
@@ -206,6 +218,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 6,
@@ -222,6 +235,7 @@ const oilsAPI: {
       oleic: 22,
       linoleic: 60,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 136,
@@ -238,6 +252,7 @@ const oilsAPI: {
       oleic: 13,
       linoleic: 46,
       linolenic: 29
+      , weight: 0
     }
     , {
       id: 66,
@@ -254,6 +269,7 @@ const oilsAPI: {
       oleic: 20,
       linoleic: 43,
       linolenic: 5
+      , weight: 0
     }
     , {
       id: 146,
@@ -270,6 +286,7 @@ const oilsAPI: {
       oleic: 39,
       linoleic: 36,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 138,
@@ -286,6 +303,7 @@ const oilsAPI: {
       oleic: 14,
       linoleic: 11,
       linolenic: 9
+      , weight: 0
     }
     , {
       id: 147,
@@ -302,6 +320,7 @@ const oilsAPI: {
       oleic: 71,
       linoleic: 7,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 60,
@@ -318,6 +337,7 @@ const oilsAPI: {
       oleic: 24,
       linoleic: 19,
       linolenic: 45
+      , weight: 0
     }
     , {
       id: 80,
@@ -334,6 +354,7 @@ const oilsAPI: {
       oleic: 77,
       linoleic: 8,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 142,
@@ -350,6 +371,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 7,
@@ -366,6 +388,7 @@ const oilsAPI: {
       oleic: 61,
       linoleic: 21,
       linolenic: 9
+      , weight: 0
     }
     , {
       id: 84,
@@ -382,6 +405,7 @@ const oilsAPI: {
       oleic: 74,
       linoleic: 12,
       linolenic: 4
+      , weight: 0
     }
     , {
       id: 144,
@@ -398,6 +422,7 @@ const oilsAPI: {
       oleic: 80,
       linoleic: 13,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 8,
@@ -414,6 +439,7 @@ const oilsAPI: {
       oleic: 4,
       linoleic: 4,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 79,
@@ -430,6 +456,7 @@ const oilsAPI: {
       oleic: 31,
       linoleic: 45,
       linolenic: 11
+      , weight: 0
     }
     , {
       id: 90,
@@ -446,6 +473,7 @@ const oilsAPI: {
       oleic: 50,
       linoleic: 40,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 56,
@@ -462,6 +490,7 @@ const oilsAPI: {
       oleic: 38,
       linoleic: 21,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 9,
@@ -478,6 +507,7 @@ const oilsAPI: {
       oleic: 35,
       linoleic: 3,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 10,
@@ -494,6 +524,7 @@ const oilsAPI: {
       oleic: 8,
       linoleic: 2,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 72,
@@ -510,6 +541,7 @@ const oilsAPI: {
       oleic: 8,
       linoleic: 2,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 65,
@@ -526,6 +558,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 93,
@@ -542,6 +575,7 @@ const oilsAPI: {
       oleic: 9,
       linoleic: 39,
       linolenic: 2
+      , weight: 0
     }
     , {
       id: 74,
@@ -558,6 +592,7 @@ const oilsAPI: {
       oleic: 8,
       linoleic: 38,
       linolenic: 2
+      , weight: 0
     }
     , {
       id: 102,
@@ -574,6 +609,7 @@ const oilsAPI: {
       oleic: 18,
       linoleic: 3,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 11,
@@ -590,6 +626,7 @@ const oilsAPI: {
       oleic: 32,
       linoleic: 51,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 12,
@@ -606,6 +643,7 @@ const oilsAPI: {
       oleic: 18,
       linoleic: 52,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 92,
@@ -622,6 +660,7 @@ const oilsAPI: {
       oleic: 23,
       linoleic: 37,
       linolenic: 32
+      , weight: 0
     }
     , {
       id: 104,
@@ -638,6 +677,7 @@ const oilsAPI: {
       oleic: 28,
       linoleic: 40,
       linolenic: 6
+      , weight: 0
     }
     , {
       id: 13,
@@ -654,6 +694,7 @@ const oilsAPI: {
       oleic: 18,
       linoleic: 52,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 101,
@@ -670,6 +711,7 @@ const oilsAPI: {
       oleic: 42,
       linoleic: 2,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 87,
@@ -686,6 +728,7 @@ const oilsAPI: {
       oleic: 44,
       linoleic: 13,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 14,
@@ -702,6 +745,7 @@ const oilsAPI: {
       oleic: 47,
       linoleic: 8,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 15,
@@ -718,6 +762,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 80,
       linolenic: 9
+      , weight: 0
     }
     , {
       id: 16,
@@ -734,6 +779,7 @@ const oilsAPI: {
       oleic: 27,
       linoleic: 13,
       linolenic: 50
+      , weight: 0
     }
     , {
       id: 95,
@@ -750,6 +796,7 @@ const oilsAPI: {
       oleic: 19,
       linoleic: 2,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 17,
@@ -766,6 +813,7 @@ const oilsAPI: {
       oleic: 54,
       linoleic: 10,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 18,
@@ -782,6 +830,7 @@ const oilsAPI: {
       oleic: 20,
       linoleic: 68,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 19,
@@ -798,6 +847,7 @@ const oilsAPI: {
       oleic: 75,
       linoleic: 10,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 20,
@@ -814,6 +864,7 @@ const oilsAPI: {
       oleic: 12,
       linoleic: 57,
       linolenic: 21
+      , weight: 0
     }
     , {
       id: 94,
@@ -830,6 +881,7 @@ const oilsAPI: {
       oleic: 10,
       linoleic: 20,
       linolenic: 19
+      , weight: 0
     }
     , {
       id: 62,
@@ -846,6 +898,7 @@ const oilsAPI: {
       oleic: 35,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 143,
@@ -862,6 +915,7 @@ const oilsAPI: {
       oleic: 4,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 108,
@@ -878,6 +932,7 @@ const oilsAPI: {
       oleic: 44,
       linoleic: 34,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 21,
@@ -894,6 +949,7 @@ const oilsAPI: {
       oleic: 12,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 51,
@@ -910,6 +966,7 @@ const oilsAPI: {
       oleic: 58,
       linoleic: 15,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 23,
@@ -926,6 +983,7 @@ const oilsAPI: {
       oleic: 36,
       linoleic: 1,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 86,
@@ -942,6 +1000,7 @@ const oilsAPI: {
       oleic: 49,
       linoleic: 1,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 24,
@@ -958,6 +1017,7 @@ const oilsAPI: {
       oleic: 20,
       linoleic: 42,
       linolenic: 29
+      , weight: 0
     }
     , {
       id: 25,
@@ -974,6 +1034,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 26,
@@ -990,6 +1051,7 @@ const oilsAPI: {
       oleic: 46,
       linoleic: 6,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 127,
@@ -1006,6 +1068,7 @@ const oilsAPI: {
       oleic: 31,
       linoleic: 26,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 125,
@@ -1022,6 +1085,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 27,
@@ -1038,6 +1102,7 @@ const oilsAPI: {
       oleic: 27,
       linoleic: 13,
       linolenic: 50
+      , weight: 0
     }
     , {
       id: 119,
@@ -1054,6 +1119,7 @@ const oilsAPI: {
       oleic: 30,
       linoleic: 47,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 124,
@@ -1070,6 +1136,7 @@ const oilsAPI: {
       oleic: 56,
       linoleic: 3,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 28,
@@ -1086,6 +1153,7 @@ const oilsAPI: {
       oleic: 59,
       linoleic: 2,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 141,
@@ -1102,6 +1170,7 @@ const oilsAPI: {
       oleic: 49,
       linoleic: 11,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 29,
@@ -1118,6 +1187,7 @@ const oilsAPI: {
       oleic: 45,
       linoleic: 3,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 30,
@@ -1134,6 +1204,7 @@ const oilsAPI: {
       oleic: 52,
       linoleic: 8,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 99,
@@ -1150,6 +1221,7 @@ const oilsAPI: {
       oleic: 75,
       linoleic: 4,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 31,
@@ -1166,6 +1238,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 32,
@@ -1182,6 +1255,7 @@ const oilsAPI: {
       oleic: 19,
       linoleic: 2,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 130,
@@ -1198,6 +1272,7 @@ const oilsAPI: {
       oleic: 26,
       linoleic: 64,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 67,
@@ -1214,6 +1289,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 69,
@@ -1230,6 +1306,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 2,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 109,
@@ -1246,6 +1323,7 @@ const oilsAPI: {
       oleic: 71,
       linoleic: 2,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 63,
@@ -1262,6 +1340,7 @@ const oilsAPI: {
       oleic: 36,
       linoleic: 15,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 106,
@@ -1278,6 +1357,7 @@ const oilsAPI: {
       oleic: 15,
       linoleic: 3,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 103,
@@ -1294,6 +1374,7 @@ const oilsAPI: {
       oleic: 18,
       linoleic: 14,
       linolenic: 9
+      , weight: 0
     }
     , {
       id: 76,
@@ -1310,6 +1391,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 121,
@@ -1326,6 +1408,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 33,
@@ -1342,6 +1425,7 @@ const oilsAPI: {
       oleic: 46,
       linoleic: 12,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 139,
@@ -1358,6 +1442,7 @@ const oilsAPI: {
       oleic: 5,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 117,
@@ -1374,6 +1459,7 @@ const oilsAPI: {
       oleic: 40,
       linoleic: 39,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 88,
@@ -1390,6 +1476,7 @@ const oilsAPI: {
       oleic: 99,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 34,
@@ -1406,6 +1493,7 @@ const oilsAPI: {
       oleic: 69,
       linoleic: 12,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 52,
@@ -1422,6 +1510,7 @@ const oilsAPI: {
       oleic: 69,
       linoleic: 12,
       linolenic: 2
+      , weight: 0
     }
     , {
       id: 82,
@@ -1438,6 +1527,7 @@ const oilsAPI: {
       oleic: 37,
       linoleic: 17,
       linolenic: 3
+      , weight: 0
     }
     , {
       id: 35,
@@ -1454,6 +1544,7 @@ const oilsAPI: {
       oleic: 15,
       linoleic: 3,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 126,
@@ -1470,6 +1561,7 @@ const oilsAPI: {
       oleic: 4,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 36,
@@ -1486,6 +1578,7 @@ const oilsAPI: {
       oleic: 39,
       linoleic: 10,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 113,
@@ -1502,6 +1595,7 @@ const oilsAPI: {
       oleic: 26,
       linoleic: 7,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 77,
@@ -1518,6 +1612,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 131,
@@ -1534,6 +1629,7 @@ const oilsAPI: {
       oleic: 43,
       linoleic: 11,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 120,
@@ -1550,6 +1646,7 @@ const oilsAPI: {
       oleic: 76,
       linoleic: 3,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 37,
@@ -1566,6 +1663,7 @@ const oilsAPI: {
       oleic: 15,
       linoleic: 70,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 148,
@@ -1582,6 +1680,7 @@ const oilsAPI: {
       oleic: 78,
       linoleic: 3,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 70,
@@ -1598,6 +1697,7 @@ const oilsAPI: {
       oleic: 65,
       linoleic: 25,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 38,
@@ -1614,6 +1714,7 @@ const oilsAPI: {
       oleic: 56,
       linoleic: 26,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 137,
@@ -1630,6 +1731,7 @@ const oilsAPI: {
       oleic: 50,
       linoleic: 39,
       linolenic: 2
+      , weight: 0
     }
     , {
       id: 75,
@@ -1646,6 +1748,7 @@ const oilsAPI: {
       oleic: 15,
       linoleic: 16,
       linolenic: 56
+      , weight: 0
     }
     , {
       id: 85,
@@ -1662,6 +1765,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 39,
@@ -1678,6 +1782,7 @@ const oilsAPI: {
       oleic: 63,
       linoleic: 25,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 107,
@@ -1694,6 +1799,7 @@ const oilsAPI: {
       oleic: 68,
       linoleic: 23,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 128,
@@ -1710,6 +1816,7 @@ const oilsAPI: {
       oleic: 7,
       linoleic: 7,
       linolenic: 78
+      , weight: 0
     }
     , {
       id: 73,
@@ -1726,6 +1833,7 @@ const oilsAPI: {
       oleic: 17,
       linoleic: 69,
       linolenic: 2
+      , weight: 0
     }
     , {
       id: 149,
@@ -1742,6 +1850,7 @@ const oilsAPI: {
       oleic: 44,
       linoleic: 2,
       linolenic: 2
+      , weight: 0
     }
     , {
       id: 83,
@@ -1758,6 +1867,7 @@ const oilsAPI: {
       oleic: 33,
       linoleic: 50,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 91,
@@ -1774,6 +1884,7 @@ const oilsAPI: {
       oleic: 30,
       linoleic: 20,
       linolenic: 5
+      , weight: 0
     }
     , {
       id: 40,
@@ -1790,6 +1901,7 @@ const oilsAPI: {
       oleic: 17,
       linoleic: 13,
       linolenic: 9
+      , weight: 0
     }
     , {
       id: 129,
@@ -1806,6 +1918,7 @@ const oilsAPI: {
       oleic: 13,
       linoleic: 55,
       linolenic: 26
+      , weight: 0
     }
     , {
       id: 89,
@@ -1822,6 +1935,7 @@ const oilsAPI: {
       oleic: 39,
       linoleic: 10,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 41,
@@ -1838,6 +1952,7 @@ const oilsAPI: {
       oleic: 38,
       linoleic: 34,
       linolenic: 2
+      , weight: 0
     }
     , {
       id: 61,
@@ -1854,6 +1969,7 @@ const oilsAPI: {
       oleic: 12,
       linoleic: 46,
       linolenic: 31
+      , weight: 0
     }
     , {
       id: 122,
@@ -1870,6 +1986,7 @@ const oilsAPI: {
       oleic: 10,
       linoleic: 35,
       linolenic: 48
+      , weight: 0
     }
     , {
       id: 42,
@@ -1886,6 +2003,7 @@ const oilsAPI: {
       oleic: 15,
       linoleic: 75,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 78,
@@ -1902,6 +2020,7 @@ const oilsAPI: {
       oleic: 77,
       linoleic: 15,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 64,
@@ -1918,6 +2037,7 @@ const oilsAPI: {
       oleic: 40,
       linoleic: 2,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 140,
@@ -1934,6 +2054,7 @@ const oilsAPI: {
       oleic: 23,
       linoleic: 2,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 111,
@@ -1950,6 +2071,7 @@ const oilsAPI: {
       oleic: 35,
       linoleic: 4,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 110,
@@ -1966,6 +2088,7 @@ const oilsAPI: {
       oleic: 31,
       linoleic: 4,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 116,
@@ -1982,6 +2105,7 @@ const oilsAPI: {
       oleic: 14,
       linoleic: 36,
       linolenic: 38
+      , weight: 0
     }
     , {
       id: 115,
@@ -1998,6 +2122,7 @@ const oilsAPI: {
       oleic: 28,
       linoleic: 10,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 43,
@@ -2014,6 +2139,7 @@ const oilsAPI: {
       oleic: 40,
       linoleic: 43,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 44,
@@ -2030,6 +2156,7 @@ const oilsAPI: {
       oleic: 48,
       linoleic: 6,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 22,
@@ -2046,6 +2173,7 @@ const oilsAPI: {
       oleic: 73,
       linoleic: 11,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 133,
@@ -2062,6 +2190,7 @@ const oilsAPI: {
       oleic: 42,
       linoleic: 8,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 134,
@@ -2078,6 +2207,7 @@ const oilsAPI: {
       oleic: 45,
       linoleic: 10,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 45,
@@ -2094,6 +2224,7 @@ const oilsAPI: {
       oleic: 24,
       linoleic: 50,
       linolenic: 8
+      , weight: 0
     }
     , {
       id: 81,
@@ -2110,6 +2241,7 @@ const oilsAPI: {
       oleic: 41,
       linoleic: 7,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 132,
@@ -2126,6 +2258,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 46,
@@ -2142,6 +2275,7 @@ const oilsAPI: {
       oleic: 0,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 47,
@@ -2158,6 +2292,7 @@ const oilsAPI: {
       oleic: 16,
       linoleic: 70,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 71,
@@ -2174,6 +2309,7 @@ const oilsAPI: {
       oleic: 83,
       linoleic: 4,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 112,
@@ -2190,6 +2326,7 @@ const oilsAPI: {
       oleic: 70,
       linoleic: 9,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 48,
@@ -2206,6 +2343,7 @@ const oilsAPI: {
       oleic: 36,
       linoleic: 3,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 54,
@@ -2222,6 +2360,7 @@ const oilsAPI: {
       oleic: 30,
       linoleic: 15,
       linolenic: 3
+      , weight: 0
     }
     , {
       id: 123,
@@ -2238,6 +2377,7 @@ const oilsAPI: {
       oleic: 29,
       linoleic: 2,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 55,
@@ -2254,6 +2394,7 @@ const oilsAPI: {
       oleic: 26,
       linoleic: 5,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 57,
@@ -2270,6 +2411,7 @@ const oilsAPI: {
       oleic: 34,
       linoleic: 38,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 97,
@@ -2286,6 +2428,7 @@ const oilsAPI: {
       oleic: 13,
       linoleic: 0,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 100,
@@ -2302,6 +2445,7 @@ const oilsAPI: {
       oleic: 44,
       linoleic: 5,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 105,
@@ -2318,6 +2462,7 @@ const oilsAPI: {
       oleic: 37,
       linoleic: 6,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 49,
@@ -2334,6 +2479,7 @@ const oilsAPI: {
       oleic: 18,
       linoleic: 60,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 135,
@@ -2350,6 +2496,7 @@ const oilsAPI: {
       oleic: 18,
       linoleic: 60,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 50,
@@ -2366,6 +2513,7 @@ const oilsAPI: {
       oleic: 17,
       linoleic: 58,
       linolenic: 0
+      , weight: 0
     }
     , {
       id: 98,
@@ -2382,6 +2530,7 @@ const oilsAPI: {
       oleic: 45,
       linoleic: 30,
       linolenic: 1
+      , weight: 0
     }
     , {
       id: 118,
@@ -2398,6 +2547,7 @@ const oilsAPI: {
       oleic: 52,
       linoleic: 13,
       linolenic: 0
+      , weight: 0
     }
-]
+  ]
 export default oilsAPI;
