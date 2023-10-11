@@ -27,10 +27,10 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 			span(class="text-blue-500 ml-auto") {{OilStore.weightOils || 0}} #[span(class="text-gray-500") Gram]
 		li(class="flex overflow-hidden py-2 border-t border-t-[var(--dark200)]")
 			span(class="text-sm text-white") Fragrance
-			span(class="text-blue-500 ml-auto") {{OilStore.headerOptions.value.fragrance.value}} #[span(class="text-gray-500") Gram]
+			span(class="text-blue-500 ml-auto") {{OilStore.FragranceWeight}} #[span(class="text-gray-500") Gram]
 		li(class="p-4")
 			hr(class="opacity-50")
-		li(class="flex overflow-hidden py-2")
-			span(class="text-sm text-white") Weight of Recipe
+		li(class="flex overflow-hidden p-2")
+			span(class="text-sm text-white") Recipe
 			span(class="text-blue-500 ml-auto bg-[var(--dark400)] rounded-full px-2 border border-[var(--dark200)]") {{ OilStore.weightWater.value + OilStore.weightLye.value + OilStore.weightOils.value + OilStore.headerOptions.value.fragrance.value || 0 }} #[span(class="text-gray-500") Gram]
 </template>

@@ -33,8 +33,8 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 		added-oil(v-for="oil of selectedOilArray" :oil="oil")
 		li(class="p-4")
 			hr(class="opacity-50")
-		li(class="flex overflow-hidden py-2")
-			span(class="text-sm text-white") Weight of oils
+		li(class="flex overflow-hidden p-2")
+			span(class="text-sm text-white") Oils
 			span(class="text-green-500 ml-auto bg-[var(--dark400)] rounded-full px-2 border border-[var(--dark200)]") {{ OilStore.weightOils }} #[span(class="text-gray-300") Gram]
 
 </template>

@@ -9,7 +9,7 @@ export const useOilStore = defineStore("taskStore", {
 		weightLye: 0,
 		weightWater: 0,
 		weightOils: 0,
-
+		FragranceWeight: 0,
 		headerOptions: {
 			typeOfLye: "NaOH",
 			weightOfOilsValue: 0,
@@ -67,14 +67,14 @@ export const useOilStore = defineStore("taskStore", {
 						let NaOH =
 							oi.weight *
 							(Math.round(
-								(40 / 56.1) * oi["KOH SAP"] * Math.pow(10, 3)
+								(40 / 56.1) * oi.sap * Math.pow(10, 3)
 							) /
 								Math.pow(10, 3));
 
 						this.weightLye += parseInt(NaOH.toFixed(0));
 					} else {
 						this.weightLye += parseInt(
-							(oi.weight * oi["KOH SAP"]).toFixed(0)
+							(oi.weight * oi.sap).toFixed(0)
 						);
 					}
 				});
@@ -104,14 +104,13 @@ export const useOilStore = defineStore("taskStore", {
 						let NaOH =
 							oi.weight *
 							(Math.round(
-								(40 / 56.1) * oi["KOH SAP"] * Math.pow(10, 3)
+								(40 / 56.1) * oi.sap * Math.pow(10, 3)
 							) /
 								Math.pow(10, 3));
-
 						this.weightLye += parseInt(NaOH.toFixed(0));
 					} else {
 						this.weightLye += parseInt(
-							(oi.weight * oi["KOH SAP"]).toFixed(0)
+							(oi.weight * oi.sap).toFixed(0)
 						);
 					}
 					this.weightOils += parseInt(oi.weight.toFixed(0));
@@ -123,6 +122,7 @@ export const useOilStore = defineStore("taskStore", {
 			this.weightLye = 0;
 			this.weightWater = 0;
 			this.weightOils = 0;
+			this.FragranceWeight = 0;
 			this.selectedOilArray.forEach((oi) => {
 				if (OilName === oi.name) {
 					oi.weight = OilWeight;
@@ -131,19 +131,22 @@ export const useOilStore = defineStore("taskStore", {
 					let NaOH =
 						oi.weight *
 						(Math.round(
-							(40 / 56.1) * oi["KOH SAP"] * Math.pow(10, 3)
+							(40 / 56.1) * oi.sap * Math.pow(10, 3)
 						) /
 							Math.pow(10, 3));
 
 					this.weightLye += parseInt(NaOH.toFixed(0));
 				} else {
 					this.weightLye += parseInt(
-						(oi.weight * oi["KOH SAP"]).toFixed(0)
+						(oi.weight * oi.sap).toFixed(0)
 					);
 				}
 				this.weightOils += parseInt(oi.weight.toFixed(0));
 			});
 			this.weightWater += parseInt((this.weightLye * 3).toFixed(0));
+			// ((2000 / 100) * 29) / 1000 * 100
+			// this.FragranceWeight = (this.headerOptions.fragrance.value * this.weightOils / 1000 / this.weightOils ) * 1000 ;
+			this.FragranceWeight = Math.round(((this.weightOils / 100) * this.headerOptions.fragrance.value) / 1000 * 100);
 		},
 	},
 });
