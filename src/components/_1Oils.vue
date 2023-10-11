@@ -62,9 +62,9 @@ div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 bord
 		div(class="OilsList w-full h-[90%] py-2 border-t border-solid border-[var(--dark100)]")
 			perfect-scrollbar(class="h-full w-full")
 				transition-group(name="list" tag="ul" class="h-full w-full pl-5 pb-6")
-					li(v-for="Oil in filteredOils()" :key="Oil.order" class="py-2 my-2 text-sm rounded-lg flex flex-nowrap items-center gap-2 text-[var(--favColor)]" @click="ShowTheInfo(Oil)" @dblclick="ClickdOnOil(Oil)")
+					li(v-for="Oil in filteredOils()" :key="Oil.id" class="py-2 my-2 text-sm rounded-lg flex flex-nowrap items-center gap-2 text-[var(--favColor)]" @click="ShowTheInfo(Oil)" @dblclick="ClickdOnOil(Oil)")
 						span(v-show="false" class="bg-[var(--favColor)] text-black font-bold px-2 rounded-md inline-block h-full")
-							| {{ Oil.order }}
+							| {{ Oil.id }}
 						button(type="button" class="h-6 w-6 mx-1  font-bold text-xl rounded-md flex-none bg-purple-500 text-black hover:bg-green-500" @click="ClickdOnOil(Oil)")
 							<svg class="w-full" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"/></svg>
 						span(class="w-full inline-block p-1 rounded-lg hover:bg-[var(--dark300)] cursor-default") {{ Oil.name }}
