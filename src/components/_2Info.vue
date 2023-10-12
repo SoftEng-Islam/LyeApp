@@ -14,123 +14,120 @@ export default {
 		aryRanges[6] = "INS (in the All column): 136 to 165, the commonly accepted ideal is 160.&nbsp; This value gauges the physical qualities of the bar; primarily hardness, with higher being harder.";
 
 
-		const { selectedOilProprt } = storeToRefs(useOilStore());
+		const { selectedOilProprt, OilInfo } = storeToRefs(useOilStore());
 
-    let Conditioning,Creamy,Hard,INS,Iodine,PolyUnsaturated;
+		function getProperties(id: number, oilWeight: number) {
+			if (id === 31) {
+				OilInfo.value.Conditioning += 98 * oilWeight;
+				OilInfo.value.Creamy += 2 * oilWeight;
+				OilInfo.value.Hardness += 2 * oilWeight;
+				OilInfo.value.INS += 77 * oilWeight;
+				OilInfo.value.Iodine += 92 * oilWeight;
+				OilInfo.value.PolyUnsaturated += 100 * oilWeight;
+			}
+			if (id === 65) {
+				OilInfo.value.Hardness += 100 * oilWeight;
+				OilInfo.value.Cleansing += 100 * oilWeight;
+				OilInfo.value.Bubbly += 100 * oilWeight;
+				OilInfo.value.Lauric += 2 * oilWeight;
+				OilInfo.value.Myristic += 1 * oilWeight;
+				OilInfo.value.INS += 324 * oilWeight;
+				OilInfo.value.Iodine += 1 * oilWeight;
+				OilInfo.value.Saturated += 90 * oilWeight;
+			}
+			if (id === 138) {
+				OilInfo.value.Hardness += 7 * oilWeight;
+				OilInfo.value.Creamy += 6 * oilWeight;
+				OilInfo.value.Conditioning += 93 * oilWeight;
+				OilInfo.value.Oleic += 14 * oilWeight;
+				OilInfo.value.Linoleic += 11 * oilWeight;
+				OilInfo.value.Linolenic += 9 * oilWeight;
+				OilInfo.value.INS += 67 * oilWeight;
+				OilInfo.value.Iodine += 105 * oilWeight;
+				OilInfo.value.Saturated += 6 * oilWeight;
+				OilInfo.value.MonoUnsaturated += 70 * oilWeight;
+				OilInfo.value.PolyUnsaturated += 24 * oilWeight;
+			}
+			if (id === 40) {
+				OilInfo.value.Hardness += 5 * oilWeight
+				OilInfo.value.Creamy += 1 * oilWeight
+				OilInfo.value.Conditioning += 95 * oilWeight
+				OilInfo.value.Oleic += 17 * oilWeight
+				OilInfo.value.Linoleic += 13 * oilWeight
+				OilInfo.value.Linolenic += 9 * oilWeight
+				OilInfo.value.INS += 69 * oilWeight
+				OilInfo.value.Iodine += 106 * oilWeight
+				OilInfo.value.Saturated += 7 * oilWeight
+				OilInfo.value.MonoUnsaturated += 68 * oilWeight
+				OilInfo.value.PolyUnsaturated += 25 * oilWeight
+			}
+			if (id === 5) {
+				OilInfo.value.Hardness += 90 * oilWeight
+				OilInfo.value.Creamy += 50 * oilWeight
+				OilInfo.value.Conditioning += 50 * oilWeight
+				OilInfo.value.INS += 84 * oilWeight
+				OilInfo.value.Iodine += 10 * oilWeight
+			}
 
+			if (id === 140) {
+				OilInfo.value.Hardness += 28 * oilWeight
+				OilInfo.value.Creamy += 3 * oilWeight
+				OilInfo.value.Conditioning += 72 * oilWeight
+				OilInfo.value.Myristic += 5 * oilWeight
+				OilInfo.value.Palmitic += 19 * oilWeight
+				OilInfo.value.Stearic += 2 * oilWeight
+				OilInfo.value.Oleic += 23 * oilWeight
+				OilInfo.value.Linoleic += 2 * oilWeight
+				OilInfo.value.Linolenic += 1 * oilWeight
+				OilInfo.value.INS += 69 * oilWeight
+				OilInfo.value.Iodine += 106 * oilWeight
+				OilInfo.value.Saturated += 28 * oilWeight
+				OilInfo.value.MonoUnsaturated += 32 * oilWeight
+				OilInfo.value.PolyUnsaturated += 40 * oilWeight
+			}
 
-		function getProperties(id, oilWeight) {
-
-      if(id === 31) {
-        Conditioning += 98 * oilWeight;
-        Creamy += 2 * oilWeight;
-        Hard += 2 * oilWeight;
-        INS += 77 * oilWeight;
-        Iodine += 92 * oilWeight;
-        PolyUnsaturated += 100 * oilWeight;
-      }
-      if(id === 65) {
-        Hard += 100 * oilWeight;
-        Cleansing += 100 * oilWeight;
-        Bubbly += 100 * oilWeight;
-        Lauric += 2 * oilWeight;
-        Myristic += 1 * oilWeight;
-        INS += 324 * oilWeight;
-        Iodine += 1 * oilWeight;
-        Saturated += 90 * oilWeight;
-      }
-      if(id === 138){
-        Hard += 7 * oilWeight;
-        Creamy += 6 * oilWeight;
-        Conditioning += 93 * oilWeight;
-        Oleic += 14 * oilWeight;
-        Linoleic += 11 * oilWeight;
-        Linolenic += 9 * oilWeight;
-        INS += 67 * oilWeight;
-        Iodine += 105 * oilWeight;
-        Saturated += 6 * oilWeight;
-        MonoUnsaturated += 70 * oilWeight;
-        PolyUnsaturated += 24 * oilWeight;
-      }
-      if(id === 40) {
-        Hard += 5 * oilWeight
-        Creamy += 1 * oilWeight
-        Conditioning += 95 * oilWeight
-        Oleic += 17 * oilWeight
-        Linoleic += 13 * oilWeight
-        Linolenic += 9 * oilWeight
-        INS += 69 * oilWeight
-        Iodine += 106 * oilWeight
-        Saturated += 7 * oilWeight
-        MonoUnsaturated += 68 * oilWeight
-        PolyUnsaturated += 25 * oilWeight
-      }
-      if(id === 5) {
-        Hard += 90 * oilWeight
-        Creamy += 50 * oilWeight
-        Conditioning += 50 * oilWeight
-        INS += 84 * oilWeight
-        Iodine += 10 * oilWeight
-      }
-
-      if(id === 140){
-        Hard += 28 * oilWeight
-        Creamy += 3 * oilWeight
-        Conditioning += 72 * oilWeight
-        Myristic += 5 * oilWeight
-        Palmitic += 19 * oilWeight
-        Stearic += 2 * oilWeight
-        Oleic += 23 * oilWeight
-        Linoleic += 2 * oilWeight
-        Linolenic += 1 * oilWeight
-        INS += 69 * oilWeight
-        Iodine += 106 * oilWeight
-        Saturated += 28 * oilWeight
-        MonoUnsaturated += 32 * oilWeight
-        PolyUnsaturated += 40 * oilWeight
-      }
-
-      if(id === 140){
-        Hard += 68 * oilWeight
-        Creamy += 60 * oilWeight
-        Conditioning = 60 * oilWeight
-        INS += 12 * oilWeight
-        Iodine += 106 * oilWeight
-      }
-      if(id === 145) {
-          Hard += 6 * oilWeight
-          Creamy += 80 * oilWeight
-          Conditioning += 94 * oilWeight
-          Palmitic += 3 * oilWeight
-          Stearic += 2 * oilWeight
-          Oleic += 18 * oilWeight
-          Linoleic += 11 * oilWeight
-          Linolenic += 4 * oilWeight
-          INS += 70 * oilWeight
-          Iodine += 98 * oilWeight
-      }
-      if(id === 149) {
-        Hard += 6 * oilWeight
-        Cleansing += 2 * oilWeight
-        Creamy += 4 * oilWeight
-        Bubbly += 2 * oilWeight
-        Conditioning += 83 * oilWeight
-        Lauric += 1 * oilWeight
-        Myristic += 1 * oilWeight
-        Palmitic += 2 * oilWeight
-        Stearic += 2 * oilWeight
-        Oleic += 44 * oilWeight
-        Linoleic += 2 * oilWeight
-        Linolenic += 2 * oilWeight
-        INS += 107 * oilWeight
-        Iodine += 68 * oilWeight
-        Saturated += 54 * oilWeight
-        MonoUnsaturated += 42 * oilWeight
-        PolyUnsaturated += 2 * oilWeight
-      }
-}
+			if (id === 140) {
+				OilInfo.value.Hardness += 68 * oilWeight
+				OilInfo.value.Creamy += 60 * oilWeight
+				OilInfo.value.Conditioning = 60 * oilWeight
+				OilInfo.value.INS += 12 * oilWeight
+				OilInfo.value.Iodine += 106 * oilWeight
+			}
+			if (id === 145) {
+				OilInfo.value.Hardness += 6 * oilWeight
+				OilInfo.value.Creamy += 80 * oilWeight
+				OilInfo.value.Conditioning += 94 * oilWeight
+				OilInfo.value.Palmitic += 3 * oilWeight
+				OilInfo.value.Stearic += 2 * oilWeight
+				OilInfo.value.Oleic += 18 * oilWeight
+				OilInfo.value.Linoleic += 11 * oilWeight
+				OilInfo.value.Linolenic += 4 * oilWeight
+				OilInfo.value.INS += 70 * oilWeight
+				OilInfo.value.Iodine += 98 * oilWeight
+			}
+			if (id === 149) {
+				OilInfo.value.Hardness += 6 * oilWeight
+				OilInfo.value.Cleansing += 2 * oilWeight
+				OilInfo.value.Creamy += 4 * oilWeight
+				OilInfo.value.Bubbly += 2 * oilWeight
+				OilInfo.value.Conditioning += 83 * oilWeight
+				OilInfo.value.Lauric += 1 * oilWeight
+				OilInfo.value.Myristic += 1 * oilWeight
+				OilInfo.value.Palmitic += 2 * oilWeight
+				OilInfo.value.Stearic += 2 * oilWeight
+				OilInfo.value.Oleic += 44 * oilWeight
+				OilInfo.value.Linoleic += 2 * oilWeight
+				OilInfo.value.Linolenic += 2 * oilWeight
+				OilInfo.value.INS += 107 * oilWeight
+				OilInfo.value.Iodine += 68 * oilWeight
+				OilInfo.value.Saturated += 54 * oilWeight
+				OilInfo.value.MonoUnsaturated += 42 * oilWeight
+				OilInfo.value.PolyUnsaturated += 2 * oilWeight
+			}
+		}
 
 		return {
+			OilInfo,
 			selectedOilProprt
 		}
 	}
@@ -148,48 +145,48 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 		//- 	span(class="float-right text-yellow-500") {{ val }}
 		li
 			span(class="float-left text-white") Hardness#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Hardness}}
+			span(class="float-right text-yellow-500") {{OilInfo.Hardness}}
 		li
 			span(class="float-left text-white") Cleansing#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Cleansing}}
+			span(class="float-right text-yellow-500") {{OilInfo.Cleansing}}
 		li
 			span(class="float-left text-white") Condition#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Condition}}
+			span(class="float-right text-yellow-500") {{OilInfo.Conditioning}}
 		li
 			span(class="float-left text-white") Bubbly#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Bubbly}}
+			span(class="float-right text-yellow-500") {{OilInfo.Bubbly}}
 		li
 			span(class="float-left text-white") Creamy#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Creamy}}
+			span(class="float-right text-yellow-500") {{OilInfo.Creamy}}
 		li
 			span(class="float-left text-white") Iodine#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Iodine}}
+			span(class="float-right text-yellow-500") {{OilInfo.Iodine}}
 		li
 			span(class="float-left text-white") INS#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{INS}}
+			span(class="float-right text-yellow-500") {{OilInfo.INS}}
 		//- Part Two
 		li
 			span(class="float-left text-white") Lauric#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Lauric}}
+			span(class="float-right text-yellow-500") {{OilInfo.Lauric}}
 		li
 			span(class="float-left text-white") Myristic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Myristic}}
+			span(class="float-right text-yellow-500") {{OilInfo.Myristic}}
 		li
 			span(class="float-left text-white") Palmitic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Palmitic}}
+			span(class="float-right text-yellow-500") {{OilInfo.Palmitic}}
 		li
 			span(class="float-left text-white") Stearic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Stearic}}
+			span(class="float-right text-yellow-500") {{OilInfo.Stearic}}
 		li
 			span(class="float-left text-white") Ricinoleic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Ricinoleic}}
+			span(class="float-right text-yellow-500") {{OilInfo.Ricinoleic}}
 		li
 			span(class="float-left text-white") Oleic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Oleic}}
+			span(class="float-right text-yellow-500") {{OilInfo.Oleic}}
 		li
 			span(class="float-left text-white") Linoleic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Linoleic}}
+			span(class="float-right text-yellow-500") {{OilInfo.Linoleic}}
 		li
 			span(class="float-left text-white") Linolenic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{Linolenic}}
+			span(class="float-right text-yellow-500") {{OilInfo.Linolenic}}
 </template>
