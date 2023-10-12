@@ -29,7 +29,6 @@ export default {
         Iodine += 92 * oilWeight;
         PolyUnsaturated += 100 * oilWeight;
       }
-
       if(id === 65) {
         Hard += 100 * oilWeight;
         Cleansing += 100 * oilWeight;
@@ -40,103 +39,96 @@ export default {
         Iodine += 1 * oilWeight;
         Saturated += 90 * oilWeight;
       }
-
       if(id === 138){
-        ? ((Hard += 7 * a),
-          (Creamy += 6 * a),
-          (Conditioning += 93 * a),
-          (Oleic += 14 * a),
-          (Linoleic += 11 * a),
-          (Linolenic += 9 * a),
-          (INS += 67 * a),
-          (Iodine += 105 * a),
-          (Saturated += 6 * a),
-          (MonoUnsaturated += 70 * a),
-          (PolyUnsaturated += 24 * a))
+        Hard += 7 * oilWeight;
+        Creamy += 6 * oilWeight;
+        Conditioning += 93 * oilWeight;
+        Oleic += 14 * oilWeight;
+        Linoleic += 11 * oilWeight;
+        Linolenic += 9 * oilWeight;
+        INS += 67 * oilWeight;
+        Iodine += 105 * oilWeight;
+        Saturated += 6 * oilWeight;
+        MonoUnsaturated += 70 * oilWeight;
+        PolyUnsaturated += 24 * oilWeight;
+      }
+      if(id === 40) {
+        Hard += 5 * oilWeight
+        Creamy += 1 * oilWeight
+        Conditioning += 95 * oilWeight
+        Oleic += 17 * oilWeight
+        Linoleic += 13 * oilWeight
+        Linolenic += 9 * oilWeight
+        INS += 69 * oilWeight
+        Iodine += 106 * oilWeight
+        Saturated += 7 * oilWeight
+        MonoUnsaturated += 68 * oilWeight
+        PolyUnsaturated += 25 * oilWeight
+      }
+      if(id === 5) {
+        Hard += 90 * oilWeight
+        Creamy += 50 * oilWeight
+        Conditioning += 50 * oilWeight
+        INS += 84 * oilWeight
+        Iodine += 10 * oilWeight
       }
 
+      if(id === 140){
+        Hard += 28 * oilWeight
+        Creamy += 3 * oilWeight
+        Conditioning += 72 * oilWeight
+        Myristic += 5 * oilWeight
+        Palmitic += 19 * oilWeight
+        Stearic += 2 * oilWeight
+        Oleic += 23 * oilWeight
+        Linoleic += 2 * oilWeight
+        Linolenic += 1 * oilWeight
+        INS += 69 * oilWeight
+        Iodine += 106 * oilWeight
+        Saturated += 28 * oilWeight
+        MonoUnsaturated += 32 * oilWeight
+        PolyUnsaturated += 40 * oilWeight
+      }
 
-
-      : 40 === c
-      ? ((Hard += 5 * a),
-        (Creamy += 1 * a),
-        (Conditioning += 95 * a),
-        (Oleic += 17 * a),
-        (Linoleic += 13 * a),
-        (Linolenic += 9 * a),
-        (INS += 69 * a),
-        (Iodine += 106 * a),
-        (Saturated += 7 * a),
-        (MonoUnsaturated += 68 * a),
-        (PolyUnsaturated += 25 * a))
-
-
-      : 5 === c
-      ? ((Hard += 90 * a),
-        (Creamy += 50 * a),
-        (Conditioning += 50 * a),
-        (INS += 84 * a),
-        (Iodine += 10 * a))
-
-
-      : 140 === c
-      ? ((Hard += 28 * a),
-        (Creamy += 3 * a),
-        (Conditioning += 72 * a),
-        (Myristic += 5 * a),
-        (Palmitic += 19 * a),
-        (Stearic += 2 * a),
-        (Oleic += 23 * a),
-        (Linoleic += 2 * a),
-        (Linolenic += 1 * a),
-        (INS += 69 * a),
-        (Iodine += 106 * a),
-        (Saturated += 28 * a),
-        (MonoUnsaturated += 32 * a),
-        (PolyUnsaturated += 40 * a))
-
-
-      : 142 === c
-      ? ((Hard += 68 * a),
-        (Creamy += 60 * a),
-        (Conditioning = 60 * a),
-        (INS += 12 * a),
-        (Iodine += 106 * a))
-
-
-      : 145 === c
-      ? ((Hard += 6 * a),
-        (Creamy += 80 * a),
-        (Conditioning += 94 * a),
-        (Palmitic += 3 * a),
-        (Stearic += 2 * a),
-        (Oleic += 18 * a),
-        (Linoleic += 11 * a),
-        (Linolenic += 4 * a),
-        (INS += 70 * a),
-        (Iodine += 98 * a))
-
-
-      : 149 == c
-      ? ((Hard += 6 * a),
-        (Cleansing += 2 * a),
-        (Creamy += 4 * a),
-        (Bubbly += 2 * a),
-        (Conditioning += 83 * a),
-        (Lauric += 1 * a),
-        (Myristic += 1 * a),
-        (Palmitic += 2 * a),
-        (Stearic += 2 * a),
-        (Oleic += 44 * a),
-        (Linoleic += 2 * a),
-        (Linolenic += 2 * a),
-        (INS += 107 * a),
-        (Iodine += 68 * a),
-        (Saturated += 54 * a),
-        (MonoUnsaturated += 42 * a),
-        (PolyUnsaturated += 2 * a));
+      if(id === 140){
+        Hard += 68 * oilWeight
+        Creamy += 60 * oilWeight
+        Conditioning = 60 * oilWeight
+        INS += 12 * oilWeight
+        Iodine += 106 * oilWeight
+      }
+      if(id === 145) {
+          Hard += 6 * oilWeight
+          Creamy += 80 * oilWeight
+          Conditioning += 94 * oilWeight
+          Palmitic += 3 * oilWeight
+          Stearic += 2 * oilWeight
+          Oleic += 18 * oilWeight
+          Linoleic += 11 * oilWeight
+          Linolenic += 4 * oilWeight
+          INS += 70 * oilWeight
+          Iodine += 98 * oilWeight
+      }
+      if(id === 149) {
+        Hard += 6 * oilWeight
+        Cleansing += 2 * oilWeight
+        Creamy += 4 * oilWeight
+        Bubbly += 2 * oilWeight
+        Conditioning += 83 * oilWeight
+        Lauric += 1 * oilWeight
+        Myristic += 1 * oilWeight
+        Palmitic += 2 * oilWeight
+        Stearic += 2 * oilWeight
+        Oleic += 44 * oilWeight
+        Linoleic += 2 * oilWeight
+        Linolenic += 2 * oilWeight
+        INS += 107 * oilWeight
+        Iodine += 68 * oilWeight
+        Saturated += 54 * oilWeight
+        MonoUnsaturated += 42 * oilWeight
+        PolyUnsaturated += 2 * oilWeight
+      }
 }
-
 
 		return {
 			selectedOilProprt
