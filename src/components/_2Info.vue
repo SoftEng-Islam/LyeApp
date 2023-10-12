@@ -16,48 +16,47 @@ export default {
 
 		const { selectedOilProprt } = storeToRefs(useOilStore());
 
+    let Conditioning,Creamy,Hard,INS,Iodine,PolyUnsaturated;
 
-		function getProperties(b, a) {
-  var c
-  c = parseInt(selectedOilProprt.value.id, 10)
-  31 == c ||
-  65 == c ||
-  138 == c ||
-  40 == c ||
-  5 == c ||
-  140 == c ||
-  142 == c ||
-  145 == c ||
-  149 == c ||
-  101 == c
-    ? 31 === c
-      ? ((Conditioning += 98 * a),
-        (Creamy += 2 * a),
-        (Hard += 2 * a),
-        (INS += 77 * a),
-        (Iodine += 92 * a),
-        (PolyUnsaturated += 100 * a))
-      : 65 === c
-      ? ((Hard += 100 * a),
-        (Cleansing += 100 * a),
-        (Bubbly += 100 * a),
-        (Lauric += 2 * a),
-        (Myristic += 1 * a),
-        (INS += 324 * a),
-        (Iodine += 1 * a),
-        (Saturated += 90 * a))
-      : 138 == c
-      ? ((Hard += 7 * a),
-        (Creamy += 6 * a),
-        (Conditioning += 93 * a),
-        (Oleic += 14 * a),
-        (Linoleic += 11 * a),
-        (Linolenic += 9 * a),
-        (INS += 67 * a),
-        (Iodine += 105 * a),
-        (Saturated += 6 * a),
-        (MonoUnsaturated += 70 * a),
-        (PolyUnsaturated += 24 * a))
+
+		function getProperties(id, oilWeight) {
+
+      if(id === 31) {
+        Conditioning += 98 * oilWeight;
+        Creamy += 2 * oilWeight;
+        Hard += 2 * oilWeight;
+        INS += 77 * oilWeight;
+        Iodine += 92 * oilWeight;
+        PolyUnsaturated += 100 * oilWeight;
+      }
+
+      if(id === 65) {
+        Hard += 100 * oilWeight;
+        Cleansing += 100 * oilWeight;
+        Bubbly += 100 * oilWeight;
+        Lauric += 2 * oilWeight;
+        Myristic += 1 * oilWeight;
+        INS += 324 * oilWeight;
+        Iodine += 1 * oilWeight;
+        Saturated += 90 * oilWeight;
+      }
+
+      if(id === 138){
+        ? ((Hard += 7 * a),
+          (Creamy += 6 * a),
+          (Conditioning += 93 * a),
+          (Oleic += 14 * a),
+          (Linoleic += 11 * a),
+          (Linolenic += 9 * a),
+          (INS += 67 * a),
+          (Iodine += 105 * a),
+          (Saturated += 6 * a),
+          (MonoUnsaturated += 70 * a),
+          (PolyUnsaturated += 24 * a))
+      }
+
+
+
       : 40 === c
       ? ((Hard += 5 * a),
         (Creamy += 1 * a),
@@ -70,12 +69,16 @@ export default {
         (Saturated += 7 * a),
         (MonoUnsaturated += 68 * a),
         (PolyUnsaturated += 25 * a))
+
+
       : 5 === c
       ? ((Hard += 90 * a),
         (Creamy += 50 * a),
         (Conditioning += 50 * a),
         (INS += 84 * a),
         (Iodine += 10 * a))
+
+
       : 140 === c
       ? ((Hard += 28 * a),
         (Creamy += 3 * a),
@@ -91,12 +94,16 @@ export default {
         (Saturated += 28 * a),
         (MonoUnsaturated += 32 * a),
         (PolyUnsaturated += 40 * a))
+
+
       : 142 === c
       ? ((Hard += 68 * a),
         (Creamy += 60 * a),
         (Conditioning = 60 * a),
         (INS += 12 * a),
         (Iodine += 106 * a))
+
+
       : 145 === c
       ? ((Hard += 6 * a),
         (Creamy += 80 * a),
@@ -108,6 +115,8 @@ export default {
         (Linolenic += 4 * a),
         (INS += 70 * a),
         (Iodine += 98 * a))
+
+
       : 149 == c
       ? ((Hard += 6 * a),
         (Cleansing += 2 * a),
@@ -126,7 +135,6 @@ export default {
         (Saturated += 54 * a),
         (MonoUnsaturated += 42 * a),
         (PolyUnsaturated += 2 * a));
-
 }
 
 
