@@ -125,68 +125,8 @@ export default {
         (Iodine += 68 * a),
         (Saturated += 54 * a),
         (MonoUnsaturated += 42 * a),
-        (PolyUnsaturated += 2 * a))
-      : 101 == c &&
-        ((Hard += 54 * a),
-        (Creamy += 43 * a),
-        (Conditioning += 44 * a),
-        (Palmitic += 8 * a),
-        (Stearic += 35 * a),
-        (Oleic += 42 * a),
-        (Linoleic += 2 * a),
-        (INS += 153 * a),
-        (Iodine += 39 * a),
-        (Saturated += 54 * a),
-        (MonoUnsaturated += 42 * a),
-        (PolyUnsaturated += 2 * a))
-    : ((c = parseInt(aryAllOils[b].lauric, 10)),
-      0 < c &&
-        ((Hard += c * a),
-        (Cleansing += c * a),
-        (Bubbly += c * a),
-        (Lauric += c * a),
-        (Saturated += c * a)),
-      (c = parseInt(aryAllOils[b].myristic, 10)),
-      0 < c &&
-        ((Hard += c * a),
-        (Cleansing += c * a),
-        (Bubbly += c * a),
-        (Myristic += c * a),
-        (Saturated += c * a)),
-      (c = parseInt(aryAllOils[b].palmitic, 10)),
-      0 < c &&
-        ((Hard += c * a),
-        (Creamy += c * a),
-        (Palmitic += c * a),
-        (Saturated += c * a)),
-      (c = parseInt(aryAllOils[b].stearic, 10)),
-      0 < c &&
-        ((Hard += c * a),
-        (Creamy += c * a),
-        (Stearic += c * a),
-        (Saturated += c * a)),
-      (c = parseInt(aryAllOils[b].ricinoleic, 10)),
-      0 < c &&
-        ((Conditioning += c * a),
-        (Bubbly += c * a),
-        (Creamy += c * a),
-        (Ricinoleic += c * a),
-        (MonoUnsaturated += c * a)),
-      (c = parseInt(aryAllOils[b].oleic, 10)),
-      0 < c &&
-        ((Conditioning += c * a), (Oleic += c * a), (MonoUnsaturated += c * a)),
-      (c = parseInt(aryAllOils[b].linoleic, 10)),
-      0 < c &&
-        ((Conditioning += c * a),
-        (Linoleic += c * a),
-        (PolyUnsaturated += c * a)),
-      (c = parseInt(aryAllOils[b].linolenic, 10)),
-      0 < c &&
-        ((Conditioning += c * a),
-        (Linolenic += c * a),
-        (PolyUnsaturated += c * a)),
-      (INS += aryAllOils[b].ins * a),
-      (Iodine += aryAllOils[b].iodine * a))
+        (PolyUnsaturated += 2 * a));
+
 }
 
 
