@@ -7,9 +7,8 @@ function roundNumber(b, a) {
 }
 document.getElementById("spnHard2").value = " " + roundNumber(Hard, 0);
 
-
 var selOil = document.querySelectorAll("#selOil option");
-// var MoreOilsInfo = new Array();
+var MoreOilsInfo = new Array();
 document.getElementById("txtSAPKOH").readOnly = false;
 document.getElementById("txtSAPNaOH").readOnly = false;
 document.getElementById("spnHard").readOnly = false;
@@ -28,44 +27,38 @@ document.getElementById("spnRicinoleic").readOnly = false;
 document.getElementById("spnOleic").readOnly = false;
 document.getElementById("spnLinoleic").readOnly = false;
 document.getElementById("spnLinolenic").readOnly = false;
-selOil.forEach((ele)=>{
+selOil.forEach((ele) => {
 	ele.selected = true;
 	ele.click();
-	setInterval(()=>{
+	setInterval(() => {
 		selOilOnChange();
-
-
 	}, 1000);
-
-    const Oil = {
-        Name: ele.title,
-        Id: ele.id,
-        KOH: document.getElementById("txtSAPKOH").value,
-        NaOH: document.getElementById("txtSAPNaOH").value,
-        Hardness: document.getElementById("spnHard").value,
-        Cleansing: document.getElementById("spnCleansing").value,
-        Condition: document.getElementById("spnConditioning").value,
-        Bubbly: document.getElementById("spnBubbly").value,
-        Creamy: document.getElementById("spnCreamy").value,
-        Iodine: document.getElementById("spnIodine").value,
-        INS: document.getElementById("spnINS").value,
-        Lauric: document.getElementById("spnLauric").value,
-        Myristic: document.getElementById("spnMyristic").value,
-        Palmitic: document.getElementById("spnPalmitic").value,
-        Stearic: document.getElementById("spnStearic").value,
-        Ricinoleic: document.getElementById("spnRicinoleic").value,
-        Oleic: document.getElementById("spnOleic").value,
-        Linoleic: document.getElementById("spnLinoleic").value,
-        Linolenic:  document.getElementById("spnLinolenic").value,
-
-    }
-    MoreOilsInfo.push(Oil)
-
+	let idNum = ele.id;
+	idNum = idNum.replace(/[^0-9]/g, "");
+	const Oil = {
+		Name: ele.title,
+		Id: +idNum,
+		KOH: parseFloat(document.getElementById("txtSAPKOH").value),
+		NaOH: parseFloat(document.getElementById("txtSAPNaOH").value),
+		Hardness: parseFloat(document.getElementById("spnHard").value),
+		Cleansing: parseFloat(document.getElementById("spnCleansing").value),
+		Condition: parseFloat(document.getElementById("spnConditioning").value),
+		Bubbly: parseFloat(document.getElementById("spnBubbly").value),
+		Creamy: parseFloat(document.getElementById("spnCreamy").value),
+		Iodine: parseFloat(document.getElementById("spnIodine").value),
+		INS: parseFloat(document.getElementById("spnINS").value),
+		Lauric: parseFloat(document.getElementById("spnLauric").value),
+		Myristic: parseFloat(document.getElementById("spnMyristic").value),
+		Palmitic: parseFloat(document.getElementById("spnPalmitic").value),
+		Stearic: parseFloat(document.getElementById("spnStearic").value),
+		Ricinoleic: parseFloat(document.getElementById("spnRicinoleic").value),
+		Oleic: parseFloat(document.getElementById("spnOleic").value),
+		Linoleic: parseFloat(document.getElementById("spnLinoleic").value),
+		Linolenic: parseFloat(document.getElementById("spnLinolenic").value),
+	};
+	MoreOilsInfo.push(Oil);
 });
 
-MoreOilsInfo.forEach((ele)=>{
-    console.log(JSON.stringify(ele));
-})
-
-
-
+MoreOilsInfo.forEach((ele) => {
+	console.log(JSON.stringify(ele));
+});
