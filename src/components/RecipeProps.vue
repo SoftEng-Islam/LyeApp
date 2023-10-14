@@ -26,7 +26,7 @@ ul(class="w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between 
 			option(value="KOH") KOH
 	li(class="hover:border-[var(--favColor)] border border-transparent flex items-center justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		span(class="text-white text-sm") Weight of #[span(class="text-[var(--favColor)]") Oils]:
-		input(type="number" class="w-1/4 bg-[var(--dark200)] placeholder:text-white text-white pl-2 py-1 rounded-md scale-90" v-model="OilStore.weightOils")
+		input(type="number" class="w-1/4 bg-[var(--dark200)] placeholder:text-white text-white pl-2 py-1 rounded-md scale-90" v-model="OilStore.RecipeTotal.weightOils")
 		select(class="bg-[var(--dark200)] text-red-500 pl-2 py-1 rounded-md scale-90")
 			option(value="Pounds") Pounds
 			option(value="Ounces") Ounces

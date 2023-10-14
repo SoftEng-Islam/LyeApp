@@ -36,8 +36,13 @@ export const useOilStore = defineStore("taskStore", {
 			Linoleic: 0,
 			Linolenic: 0,
 		},
-		selectedOilArray: new Array(),
-		addedOils: new Array(),
+		RecipeTotal: {
+			weightLye: 0,
+			weightWater: 0,
+			weightOils: 0,
+			FragranceWeight: 0,
+		},
+		AddedOils: new Array(),
 		soapProperties: {
 			Hardness: 0,
 			Cleansing: 0,
@@ -57,11 +62,8 @@ export const useOilStore = defineStore("taskStore", {
 			Saturated: 0,
 			MonoUnsaturated: 0,
 			PolyUnsaturated: 0
-		},
-		weightLye: 0,
-		weightWater: 0,
-		weightOils: 0,
-		FragranceWeight: 0,
+		}
+
 	}),
 	getters: {
 		GetOil(): Object {
@@ -69,7 +71,7 @@ export const useOilStore = defineStore("taskStore", {
 			return this.Oils.filter((O) => O.Name);
 		},
 		GetSelectedOils(): Object {
-			return this.selectedOilArray;
+			return this.AddedOils;
 		},
 		getTypeOfLye(): string {
 			return this.headerOptions.typeOfLye;
@@ -79,16 +81,16 @@ export const useOilStore = defineStore("taskStore", {
 		setTypeOfLye(value: string) {
 			if (value === "NaOH" || "KOH") {
 				this.headerOptions.typeOfLye = value;
-				this.weightLye = 0;
+				this.RecipeTotal.weightLye = 0;
 				// this.weightWater = 0;
 
-				this.selectedOilArray.forEach((oi) => {
+				this.AddedOils.forEach((oi) => {
 					if (this.headerOptions.typeOfLye === "NaOH") {
 						let NaOH: number = oi.weight * oi.NaOH;
 
-						this.weightLye += parseInt(NaOH.toFixed(0));
+						this.RecipeTotal.weightLye += parseInt(NaOH.toFixed(0));
 					} else {
-						this.weightLye += parseInt(
+						this.RecipeTotal.weightLye += parseInt(
 							(oi.weight * oi.KOH).toFixed(0)
 						);
 					}
@@ -96,46 +98,47 @@ export const useOilStore = defineStore("taskStore", {
 			}
 		},
 		ClickedOil(selectedOil: any) {
-			if (this.selectedOilArray.includes(selectedOil) === false) {
+			if (this.AddedOils.includes(selectedOil) === false) {
 				// console.log(this.selectedOilArray);
 				// console.log(selectedOil);
-				this.selectedOilArray.push(selectedOil);
+				selectedOil["weight"] = 0;
+				this.AddedOils.push(selectedOil);
 			}
 		},
 		showTheInfo(selectedOil: any) {
 			this.OilProperties = selectedOil;
 		},
 		RemoveOils(OilToRemove: object) {
-			if (this.selectedOilArray.includes(OilToRemove) === true) {
-				this.selectedOilArray = this.selectedOilArray.filter((o) => {
+			if (this.AddedOils.includes(OilToRemove) === true) {
+				this.AddedOils = this.AddedOils.filter((o) => {
 					return o != OilToRemove;
 				});
-				this.weightOils = 0;
-				this.weightLye = 0;
-				this.weightWater = 0;
-				this.selectedOilArray.forEach((oi) => {
+				this.RecipeTotal.weightOils = 0;
+				this.RecipeTotal.weightLye = 0;
+				this.RecipeTotal.weightWater = 0;
+				this.AddedOils.forEach((oi) => {
 					if (this.headerOptions.typeOfLye === "NaOH") {
 						let NaOH =
 							oi.weight * oi.NaOH;
-						this.weightLye += parseInt(NaOH.toFixed(0));
+						this.RecipeTotal.weightLye += parseInt(NaOH.toFixed(0));
 					} else {
-						this.weightLye += parseInt(
+						this.RecipeTotal.weightLye += parseInt(
 							(oi.weight * oi.KOH).toFixed(0)
 						);
 					}
-					this.weightOils += parseInt(oi.weight.toFixed(0));
+					this.RecipeTotal.weightOils += parseInt(oi.weight.toFixed(0));
 				});
-				this.weightWater += parseInt((this.weightLye * 3).toFixed(0));
+				this.RecipeTotal.weightWater += parseInt((this.RecipeTotal.weightLye * 3).toFixed(0));
 			}
 		},
 		AddedOilsWeight(OilName: string, OilWeight: number) {
-			this.weightLye = 0;
-			this.weightWater = 0;
-			this.weightOils = 0;
-			this.FragranceWeight = 0;
+			this.RecipeTotal.weightLye = 0;
+			this.RecipeTotal.weightWater = 0;
+			this.RecipeTotal.weightOils = 0;
+			this.RecipeTotal.FragranceWeight = 0;
 
 
-			this.selectedOilArray.forEach((oi) => {
+			this.AddedOils.forEach((oi) => {
 				if (OilName === oi.Name) {
 					oi.weight = OilWeight;
 				}
@@ -143,18 +146,18 @@ export const useOilStore = defineStore("taskStore", {
 					let NaOH =
 						oi.weight * oi.NaOH;
 
-					this.weightLye += parseInt(NaOH.toFixed(0));
+					this.RecipeTotal.weightLye += parseInt(NaOH.toFixed(0));
 				} else {
-					this.weightLye += parseInt(
+					this.RecipeTotal.weightLye += parseInt(
 						(oi.weight * oi.KOH).toFixed(0)
 					);
 				}
-				this.weightOils += parseInt(oi.weight.toFixed(0));
+				this.RecipeTotal.weightOils += parseInt(oi.weight.toFixed(0));
 			});
-			this.weightWater += parseInt((this.weightLye * 3).toFixed(0));
+			this.RecipeTotal.weightWater += parseInt((this.RecipeTotal.weightLye * 3).toFixed(0));
 			// ((2000 / 100) * 29) / 1000 * 100
 			// this.FragranceWeight = (this.headerOptions.fragrance.value * this.weightOils / 1000 / this.weightOils ) * 1000 ;
-			this.FragranceWeight = Math.round(((this.weightOils / 100) * this.headerOptions.fragrance.value) / 1000 * 100);
+			this.RecipeTotal.FragranceWeight = Math.round(((this.RecipeTotal.weightOils / 100) * this.headerOptions.fragrance.value) / 1000 * 100);
 		},
 	},
 });
