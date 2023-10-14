@@ -23,7 +23,7 @@ export const useOilStore = defineStore("taskStore", {
 			Saturated: 0,
 			MonoUnsaturated: 0,
 			PolyUnsaturated: 0
-		 },
+		},
 		selectedOilArray: new Array(),
 		addedOils: new Array(),
 		weightLye: 0,
@@ -84,17 +84,12 @@ export const useOilStore = defineStore("taskStore", {
 
 				this.selectedOilArray.forEach((oi) => {
 					if (this.headerOptions.typeOfLye === "NaOH") {
-						let NaOH =
-							oi.weight *
-							(Math.round(
-								(40 / 56.1) * oi.sap * Math.pow(10, 3)
-							) /
-								Math.pow(10, 3));
+						let NaOH: number = oi.weight * oi.NaOH;
 
 						this.weightLye += parseInt(NaOH.toFixed(0));
 					} else {
 						this.weightLye += parseInt(
-							(oi.weight * oi.sap).toFixed(0)
+							(oi.weight * oi.KOH).toFixed(0)
 						);
 					}
 				});
@@ -121,15 +116,11 @@ export const useOilStore = defineStore("taskStore", {
 				this.selectedOilArray.forEach((oi) => {
 					if (this.headerOptions.typeOfLye === "NaOH") {
 						let NaOH =
-							oi.weight *
-							(Math.round(
-								(40 / 56.1) * oi.sap * Math.pow(10, 3)
-							) /
-								Math.pow(10, 3));
+							oi.weight * oi.NaOH;
 						this.weightLye += parseInt(NaOH.toFixed(0));
 					} else {
 						this.weightLye += parseInt(
-							(oi.weight * oi.sap).toFixed(0)
+							(oi.weight * oi.KOH).toFixed(0)
 						);
 					}
 					this.weightOils += parseInt(oi.weight.toFixed(0));
@@ -145,21 +136,17 @@ export const useOilStore = defineStore("taskStore", {
 
 
 			this.selectedOilArray.forEach((oi) => {
-				if (OilName === oi.name) {
+				if (OilName === oi.Name) {
 					oi.weight = OilWeight;
 				}
 				if (this.headerOptions.typeOfLye === "NaOH") {
 					let NaOH =
-						oi.weight *
-						(Math.round(
-							(40 / 56.1) * oi.sap * Math.pow(10, 3)
-						) /
-							Math.pow(10, 3));
+						oi.weight * oi.NaOH;
 
 					this.weightLye += parseInt(NaOH.toFixed(0));
 				} else {
 					this.weightLye += parseInt(
-						(oi.weight * oi.sap).toFixed(0)
+						(oi.weight * oi.KOH).toFixed(0)
 					);
 				}
 				this.weightOils += parseInt(oi.weight.toFixed(0));
