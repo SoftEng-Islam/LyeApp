@@ -3,7 +3,22 @@ import OilsAPIJsonFile from "../API/oilsArray2";
 export const useOilStore = defineStore("taskStore", {
 	state: () => ({
 		Oils: OilsAPIJsonFile,
-		selectedOilProprt: {
+		headerOptions: {
+			typeOfLye: "NaOH",
+			weightOfOilsValue: 0,
+			weightOfOilsUnit: "Grams",
+			water: {
+				waterAsOfOils: 38,
+				lyeConcentration: 70,
+				WaterToLyeRatio: "2:1",
+			},
+			superFat: 5,
+			fragrance: {
+				value: 29,
+				frWeight: "g/Kg",
+			},
+		},
+		OilProperties: {
 			Name: "Oil Properties",
 			Hardness: 0,
 			Cleansing: 0,
@@ -20,31 +35,9 @@ export const useOilStore = defineStore("taskStore", {
 			Oleic: 0,
 			Linoleic: 0,
 			Linolenic: 0,
-			Saturated: 0,
-			MonoUnsaturated: 0,
-			PolyUnsaturated: 0
 		},
 		selectedOilArray: new Array(),
 		addedOils: new Array(),
-		weightLye: 0,
-		weightWater: 0,
-		weightOils: 0,
-		FragranceWeight: 0,
-		headerOptions: {
-			typeOfLye: "NaOH",
-			weightOfOilsValue: 0,
-			weightOfOilsUnit: "Grams",
-			water: {
-				waterAsOfOils: 38,
-				lyeConcentration: 70,
-				WaterToLyeRatio: "2:1",
-			},
-			superFat: 5,
-			fragrance: {
-				value: 29,
-				frWeight: "g/Kg",
-			},
-		},
 		soapProperties: {
 			Hardness: 0,
 			Cleansing: 0,
@@ -61,7 +54,14 @@ export const useOilStore = defineStore("taskStore", {
 			Oleic: 0,
 			Linoleic: 0,
 			Linolenic: 0,
+			Saturated: 0,
+			MonoUnsaturated: 0,
+			PolyUnsaturated: 0
 		},
+		weightLye: 0,
+		weightWater: 0,
+		weightOils: 0,
+		FragranceWeight: 0,
 	}),
 	getters: {
 		GetOil(): Object {
@@ -103,7 +103,7 @@ export const useOilStore = defineStore("taskStore", {
 			}
 		},
 		showTheInfo(selectedOil: any) {
-			this.selectedOilProprt = selectedOil;
+			this.OilProperties = selectedOil;
 		},
 		RemoveOils(OilToRemove: object) {
 			if (this.selectedOilArray.includes(OilToRemove) === true) {
