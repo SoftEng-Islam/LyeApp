@@ -43,26 +43,7 @@ export const useOilStore = defineStore("taskStore", {
 			FragranceWeight: 0,
 		},
 		AddedOils: new Array(),
-		soapProperties: {
-			Hardness: 0,
-			Cleansing: 0,
-			Conditioning: 0,
-			Bubbly: 0,
-			Creamy: 0,
-			Iodine: 0,
-			INS: 0,
-			Lauric: 0,
-			Myristic: 0,
-			Palmitic: 0,
-			Stearic: 0,
-			Ricinoleic: 0,
-			Oleic: 0,
-			Linoleic: 0,
-			Linolenic: 0,
-			Saturated: 0,
-			MonoUnsaturated: 0,
-			PolyUnsaturated: 0
-		}
+
 
 	}),
 	getters: {
