@@ -5,7 +5,7 @@ export default {
 	setup() {
 		const { AddedOils } = storeToRefs(useOilStore());
 
-
+/*
 		function getProperties(b: number, a: number): void {
 			let c: number;
 			c = parseInt(AddedOils[b].id, 10);
@@ -24,12 +24,12 @@ export default {
 				if (31 === c) {
 					Conditioning += 98 * a;
 					Creamy += 2 * a;
-					Hard += 2 * a;
+					Hardness += 2 * a;
 					INS += 77 * a;
 					Iodine += 92 * a;
 					PolyUnsaturated += 100 * a;
 				} else if (65 === c) {
-					Hard += 100 * a;
+					Hardness += 100 * a;
 					Cleansing += 100 * a;
 					Bubbly += 100 * a;
 					Lauric += 2 * a;
@@ -38,7 +38,7 @@ export default {
 					Iodine += 1 * a;
 					Saturated += 90 * a;
 				} else if (138 === c) {
-					Hard += 7 * a;
+					Hardness += 7 * a;
 					Creamy += 6 * a;
 					Conditioning += 93 * a;
 					Oleic += 14 * a;
@@ -50,7 +50,7 @@ export default {
 					MonoUnsaturated += 70 * a;
 					PolyUnsaturated += 24 * a;
 				} else if (40 === c) {
-					Hard += 5 * a;
+					Hardness += 5 * a;
 					Creamy += 1 * a;
 					Conditioning += 95 * a;
 					Oleic += 17 * a;
@@ -62,13 +62,13 @@ export default {
 					MonoUnsaturated += 68 * a;
 					PolyUnsaturated += 25 * a;
 				} else if (5 === c) {
-					Hard += 90 * a;
+					Hardness += 90 * a;
 					Creamy += 50 * a;
 					Conditioning += 50 * a;
 					INS += 84 * a;
 					Iodine += 10 * a;
 				} else if (140 === c) {
-					Hard += 28 * a;
+					Hardness += 28 * a;
 					Creamy += 3 * a;
 					Conditioning += 72 * a;
 					Myristic += 5 * a;
@@ -83,13 +83,13 @@ export default {
 					MonoUnsaturated += 32 * a;
 					PolyUnsaturated += 40 * a;
 				} else if (142 === c) {
-					Hard += 68 * a;
+					Hardness += 68 * a;
 					Creamy += 60 * a;
 					Conditioning = 60 * a;
 					INS += 12 * a;
 					Iodine += 106 * a;
 				} else if (145 === c) {
-					Hard += 6 * a;
+					Hardness += 6 * a;
 					Creamy += 80 * a;
 					Conditioning += 94 * a;
 					Palmitic += 3 * a;
@@ -100,7 +100,7 @@ export default {
 					INS += 70 * a;
 					Iodine += 98 * a;
 				} else if (149 === c) {
-					Hard += 6 * a;
+					Hardness += 6 * a;
 					Cleansing += 2 * a;
 					Creamy += 4 * a;
 					Bubbly += 2 * a;
@@ -118,7 +118,7 @@ export default {
 					MonoUnsaturated += 42 * a;
 					PolyUnsaturated += 2 * a;
 				} else if (101 === c) {
-					Hard += 54 * a;
+					Hardness += 54 * a;
 					Creamy += 43 * a;
 					Conditioning += 44 * a;
 					Palmitic += 8 * a;
@@ -134,7 +134,7 @@ export default {
 			} else {
 				c = parseInt(aryAllOils[b].lauric, 10);
 				if (0 < c) {
-					Hardnss += c * a;
+					Hardness += c * a;
 					Cleansing += c * a;
 					Bubbly += c * a;
 					Lauric += c * a;
@@ -142,7 +142,7 @@ export default {
 				}
 				c = parseInt(aryAllOils[b].myristic, 10);
 				if (0 < c) {
-					Hardnss += c * a;
+					Hardness += c * a;
 					Cleansing += c * a;
 					Bubbly += c * a;
 					Myristic += c * a;
@@ -150,14 +150,14 @@ export default {
 				}
 				c = parseInt(aryAllOils[b].palmitic, 10);
 				if (0 < c) {
-					Hardnss += c * a;
+					Hardness += c * a;
 					Creamy += c * a;
 					Palmitic += c * a;
 					Saturated += c * a;
 				}
 				c = parseInt(aryAllOils[b].stearic, 10);
 				if (0 < c) {
-					Hardnss += c * a;
+					Hardness += c * a;
 					Creamy += c * a;
 					Stearic += c * a;
 					Saturated += c * a;
@@ -193,7 +193,7 @@ export default {
 			}
 		}
 
-
+*/
 		const soapProperties = {
 			Hardness: 0,
 			Cleansing: 0,

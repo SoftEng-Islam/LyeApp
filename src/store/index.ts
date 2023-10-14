@@ -84,6 +84,7 @@ export const useOilStore = defineStore("taskStore", {
 				// console.log(selectedOil);
 				selectedOil["weight"] = 0;
 				this.AddedOils.push(selectedOil);
+				console.log(this.AddedOils);
 			}
 		},
 		showTheInfo(selectedOil: any) {
