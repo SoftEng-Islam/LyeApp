@@ -14,9 +14,8 @@ export default {
 		aryRanges[6] = "INS (in the All column): 136 to 165, the commonly accepted ideal is 160.&nbsp; This value gauges the physical qualities of the bar; primarily hardness, with higher being harder.";
 
 
-		const { selectedOilProprt, OilInfo } = storeToRefs(useOilStore());
+		const { selectedOilProprt } = storeToRefs(useOilStore());
 		return {
-			OilInfo,
 			selectedOilProprt
 		}
 	}
@@ -26,7 +25,7 @@ export default {
 //- Info Section
 div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover:border-yellow-500")
 	div(class="Head bg-yellow-500 p-2 rounded-md")
-		span(class="text-black font-bold ") {{ selectedOilProprt.name }}.
+		span(class="text-black font-bold ") {{ selectedOilProprt.Name }}.
 	ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md h-full flex flex-col")
 		//- li(v-for="val , key in selectedOilProprt")
 		//- 	span(class="float-left text-white") {{key.charAt(0).toUpperCase() + key.slice(1)}}
@@ -34,51 +33,51 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 		//- 	span(class="float-right text-yellow-500") {{ val }}
 		li
 			span(class="float-left text-white") Hardness#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Hardness}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Hardness}}
 		li
 			span(class="float-left text-white") Cleansing#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Cleansing}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Cleansing}}
 		li
 			span(class="float-left text-white") Condition#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Conditioning}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Condition}}
 		li
 			span(class="float-left text-white") Bubbly#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Bubbly}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Bubbly}}
 		li
 			span(class="float-left text-white") Creamy#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Creamy}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Creamy}}
 		li
 			span(class="float-left text-white") Iodine#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Iodine}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Iodine}}
 		li
 			span(class="float-left text-white") INS#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.INS}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.INS}}
 
 		li(class="p-4")
 			hr(class="opacity-50")
 
 		li
 			span(class="float-left text-white") Lauric#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Lauric}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Lauric}}
 		li
 			span(class="float-left text-white") Myristic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Myristic}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Myristic}}
 		li
 			span(class="float-left text-white") Palmitic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Palmitic}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Palmitic}}
 		li
 			span(class="float-left text-white") Stearic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Stearic}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Stearic}}
 		li
 			span(class="float-left text-white") Ricinoleic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Ricinoleic}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Ricinoleic}}
 		li
 			span(class="float-left text-white") Oleic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Oleic}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Oleic}}
 		li
 			span(class="float-left text-white") Linoleic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Linoleic}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Linoleic}}
 		li
 			span(class="float-left text-white") Linolenic#[span(class="text-yellow-500") :]
-			span(class="float-right text-yellow-500") {{OilInfo.Linolenic}}
+			span(class="float-right text-yellow-500") {{selectedOilProprt.Linolenic}}
 </template>

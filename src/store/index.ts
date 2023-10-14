@@ -3,17 +3,11 @@ import OilsAPIJsonFile from "../API/oilsArray2";
 export const useOilStore = defineStore("taskStore", {
 	state: () => ({
 		Oils: OilsAPIJsonFile,
-		selectedOilProprt: { name: "Oil Properties" },
-		selectedOilArray: new Array(),
-		addedOils: new Array(),
-		weightLye: 0,
-		weightWater: 0,
-		weightOils: 0,
-		FragranceWeight: 0,
-		OilInfo: {
+		selectedOilProprt: {
+			Name: "Oil Properties",
 			Hardness: 0,
 			Cleansing: 0,
-			Conditioning: 0,
+			Condition: 0,
 			Bubbly: 0,
 			Creamy: 0,
 			Iodine: 0,
@@ -29,7 +23,13 @@ export const useOilStore = defineStore("taskStore", {
 			Saturated: 0,
 			MonoUnsaturated: 0,
 			PolyUnsaturated: 0
-		},
+		 },
+		selectedOilArray: new Array(),
+		addedOils: new Array(),
+		weightLye: 0,
+		weightWater: 0,
+		weightOils: 0,
+		FragranceWeight: 0,
 		headerOptions: {
 			typeOfLye: "NaOH",
 			weightOfOilsValue: 0,
