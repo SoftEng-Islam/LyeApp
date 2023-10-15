@@ -63,4 +63,10 @@ div(class="lyeWidget flex flex-col min-h-[200px] max-h-[600px] border border-tra
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white") Linolenic
 				span(class="text-pink-500 ml-auto") {{soapProperties.Linolenic}}
+			li(class="p-4")
+				hr(class="opacity-50")
+			li(class="flex overflow-hidden py-2")
+				span(class="text-sm text-white") Sat : Unsat
+				span(class="text-pink-500 ml-auto") {{soapProperties.MonoUnsaturated}} : {{ soapProperties.PolyUnsaturated }}
+
 </template>

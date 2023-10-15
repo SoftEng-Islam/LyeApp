@@ -152,8 +152,24 @@ export const useOilStore = defineStore("taskStore", {
 			this.soapProperties.MonoUnsaturated = 0;
 			this.soapProperties.PolyUnsaturated = 0;
 			this.AddedOils.forEach((ele) => {
-
-				this.soapProperties.Hardness += ele.Hardness * (ele.weight * 100) / this.RecipeTotal.weightOils
+				this.soapProperties.Hardness += Math.round(ele.Hardness * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Cleansing += Math.round(ele.Cleansing * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Conditioning += Math.round(ele.Condition * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Bubbly += Math.round(ele.Bubbly * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Creamy += Math.round(ele.Creamy * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Iodine += Math.round(ele.Iodine * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.INS += Math.round(ele.INS * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Lauric += Math.round(ele.Lauric * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Myristic += Math.round(ele.Myristic * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Palmitic += Math.round(ele.Palmitic * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Stearic += Math.round(ele.Stearic * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Ricinoleic += Math.round(ele.Ricinoleic * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Oleic += Math.round(ele.Oleic * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Linoleic += Math.round(ele.Linoleic * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Linolenic += Math.round(ele.Linolenic * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				this.soapProperties.Saturated += Math.round(ele.Saturated * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				// this.soapProperties.MonoUnsaturated += Math.round(ele.Id * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
+				// this.soapProperties.PolyUnsaturated += Math.round(ele.Id * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
 			}
 			)
 		},
