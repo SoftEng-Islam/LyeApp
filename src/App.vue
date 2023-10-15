@@ -6,6 +6,7 @@ import AddedOils from "./components/AddedOils.vue";
 import RecipeTotal from "./components/RecipeTotal.vue";
 import SoapProperties from "./components/SoapProperties.vue";
 import RecipeProps from "./components/RecipeProps.vue";
+// console.log("[App.vue]", `Hello world from Electron ${process.versions.electron}!`);
 </script>
 
 <template lang="pug">
