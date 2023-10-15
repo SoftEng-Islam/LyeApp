@@ -1,5 +1,4 @@
 <script lang="ts">
-import { ref } from "vue";
 import { storeToRefs } from 'pinia';
 import { useOilStore } from "../store/index";
 import AddedOil from "./AddedOil.vue";
@@ -10,7 +9,7 @@ export default {
 	setup() {
 		const OilStore = storeToRefs(useOilStore());
 		const { AddedOils } = storeToRefs(useOilStore());
-		const RemoveThisOil = (val: Object) => {
+		const RemoveThisOil = (val: Object):void => {
 			useOilStore().RemoveOils(val);
 		}
 		if (OilStore.RecipeTotal.value.weightOils > 1000) {
