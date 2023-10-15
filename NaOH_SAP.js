@@ -62,3 +62,10 @@ selOil.forEach((ele) => {
 MoreOilsInfo.forEach((ele) => {
 	console.log(JSON.stringify(ele));
 });
+
+
+
+// --------------
+function roundNumber(b, a) {
+	return Math.round(b * Math.pow(10, a)) / Math.pow(10, a);
+  }
