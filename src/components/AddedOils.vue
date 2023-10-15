@@ -9,7 +9,7 @@ export default {
 	setup() {
 		const OilStore = storeToRefs(useOilStore());
 		const { AddedOils } = storeToRefs(useOilStore());
-		const RemoveThisOil = (val: Object):void => {
+		const RemoveThisOil = (val: Object): void => {
 			useOilStore().RemoveOils(val);
 		}
 		if (OilStore.RecipeTotal.value.weightOils > 1000) {
