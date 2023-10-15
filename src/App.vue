@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Header from "./components/_0Header.vue";
-import Oils from "./components/_1Oils.vue";
-import InfoOils from "./components/_2Info.vue";
-import AddedOils from "./components/_3AddedOils.vue";
-import RecipeTotal from "./components/_4RecipeTotal.vue";
-import SoapProperties from "./components/_5SoapProperties.vue";
+import Header from "./components/HeaderApp.vue";
+import Oils from "./components/OilsList.vue";
+import InfoOils from "./components/OilInfo.vue";
+import AddedOils from "./components/AddedOils.vue";
+import RecipeTotal from "./components/RecipeTotal.vue";
+import SoapProperties from "./components/SoapProperties.vue";
 import { useOilStore } from "./store/index";
 import RecipeProps from "./components/RecipeProps.vue";
 console.log("[App.vue]", `Hello world from Electron ${process.versions.electron}!`);
