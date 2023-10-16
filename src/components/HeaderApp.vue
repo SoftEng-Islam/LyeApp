@@ -9,9 +9,19 @@ export default {
 };
 </script>
 <template lang="pug">
-header(class="border-[var(--dark200)] border-b w-full flex items-center p-2 select-none h-[var(--HeaderHeight)] bg-[var(--dark300)]" style="-webkit-app-region: drag;")
+header(class="border-[var(--dark200)] border-b w-full flex items-center justify-between p-2 select-none h-[var(--HeaderHeight)] bg-[var(--dark300)]" style="-webkit-app-region: drag;")
 	//- Logo
 	a(class="ml-4 text-xl outline-none text-[var(--favColor)]" :href="LogoLink" style="-webkit-app-region: no-drag") LyeApp #[span(class="text-xs opacity-70") v1.0]
+
+	//- Colors
+	div(class="flex items-center justify-center" style="-webkit-app-region: no-drag")
+		ul(class="h-9 p-1 px-3 rounded-full flex items-center justify-center bg-[var(--dark200)]" id="favColorsUL")
+			li(data-color="var(--blue)"   class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--blue)]")
+			li(data-color="var(--sky)"    class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--sky)]")
+			li(data-color="var(--purple)" class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--purple)]")
+			li(data-color="var(--green)"  class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--green)]")
+			li(data-color="var(--yellow)" class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--yellow)] scale-125 mx-2")
+			li(data-color="var(--pink)"   class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--pink)]")
 
 	//- Main App Fram
 	div(class="h-7 ml-auto mr-2 flex items-center justify-center" style="-webkit-app-region: no-drag")
