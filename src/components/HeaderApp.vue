@@ -6,7 +6,7 @@ export default {
 			LogoLink: "Https://www.google.com",
 		};
 	},
-};
+}
 </script>
 <template lang="pug">
 header(class="w-full p-2 flex items-center justify-between select-none h-[var(--HeaderHeight)] bg-[var(--dark300)] border-b border-[var(--dark200)]" style="-webkit-app-region: drag;")
