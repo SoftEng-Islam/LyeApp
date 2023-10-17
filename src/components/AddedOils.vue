@@ -33,5 +33,4 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 	div(class="flex items-center overflow-hidden px-2 h-10")
 		span(class="text-sm text-white") Oils
 		span(class="text-green-500 ml-auto bg-[var(--dark400)] rounded-full px-2 border border-[var(--dark200)]") {{ OilStore.RecipeTotal.value.weightOils }} #[span(class="text-gray-300") Gram]
-
 </template>
