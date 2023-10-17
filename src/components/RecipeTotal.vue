@@ -1,7 +1,6 @@
 <script lang="ts">
 import { storeToRefs } from 'pinia';
 import { useOilStore } from "../store/index";
-
 export default {
 	setup() {
 		const OilStore = storeToRefs(useOilStore());
@@ -28,7 +27,6 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 		li(class="flex overflow-hidden py-2 border-t border-t-[var(--dark200)]")
 			span(class="text-sm text-white") Fragrance
 			span(class="text-blue-500 ml-auto") {{OilStore.RecipeTotal.value.FragranceWeight}} #[span(class="text-gray-500") Gram]
-
 	div(class="flex items-center overflow-hidden p-2")
 		span(class="text-sm text-white") Recipe
 		span(class="text-blue-500 ml-auto bg-[var(--dark400)] rounded-full px-2 border border-[var(--dark200)]") {{ OilStore.RecipeTotal.value.weightWater + OilStore.RecipeTotal.value.weightLye + OilStore.RecipeTotal.value.weightOils + OilStore.headerOptions.value.fragrance.value || 0 }} #[span(class="text-gray-500") Gram]
