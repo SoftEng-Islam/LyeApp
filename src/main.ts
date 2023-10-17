@@ -15,7 +15,6 @@ createApp(App)
 		watchOptions: true,
 		options: {
 			swipeEasing: true,
-			// suppressScrollX: false,
 		},
 	})
 	.mount("#app")
