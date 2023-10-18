@@ -77,6 +77,7 @@ div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 bord
 		.ps__rail-y {
 			left: 0;
 		}
+
 		.ps__rail-x,
 		.ps__rail-y,
 		.ps__rail-x,
