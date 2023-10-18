@@ -56,7 +56,7 @@
 
 body {
 	font-family: JetBrains;
-	/* border: 4px solid var(--favColor); */
+	border: 4px solid var(--favColor);
 	/* background-color: var(--dark300); */
 	/* -webkit-app-region: drag; */
 	/* background: var(--bgG); */
