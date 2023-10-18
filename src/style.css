@@ -59,7 +59,7 @@ body {
 	border: 4px solid var(--favColor);
 	background-color: var(--dark300);
 	-webkit-app-region: drag;
-	/* background: var(--bgG); */
+	background: var(--bgG);
 }
 
 ::selection {
