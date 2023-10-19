@@ -55,7 +55,7 @@ div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 bord
 						li(class="")
 						li(class="")
 						li(class="")
-						li(class="") Custom
+						li(class="")
 				li(class="mx-4 hover:text-white hover:cursor-pointer") Select
 		//- Oils
 		div(class="OilsList pt-5 w-full h-full flex items-start justify-center border-t border-solid border-[var(--dark100)]")
