@@ -66,7 +66,7 @@ div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 bord
 							| {{ Oil.Id }}
 						button(type="button" class="h-6 w-6 mx-1  font-bold text-xl rounded-md opacity-50 flex-none bg-[var(--favColor)] text-black hover:opacity-100" @click="ClickdOnOil(Oil)")
 							<svg class="w-full" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"/></svg>
-						span(class="w-full inline-block p-1 rounded-lg hover:bg-[var(--dark300)] cursor-default") {{ Oil.Name }}
+						span(class="w-full inline-block p-1 rounded-lg hover:bg-[var(--dark300)] cursor-default" style="text-wrap: nowrap;") {{ Oil.Name }}
 		//- Close
 	button(type="button" id="closeOrResize" class="w-5 h-9 rounded-lg bg-[var(--dark300)] text-[var(--favColor)] border-2 border-solid border-[var(--favColor)] absolute top-1/2 right-[-.7rem] translate-y-[-50%]")
 		| |
