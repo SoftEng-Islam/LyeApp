@@ -6,29 +6,14 @@ export default {
 		return {
 			LogoLink: "Https://www.google.com",
 			rootElement: document.querySelector(":root") as HTMLElement,
-			gradin: {
-				"var(--sky)":
-					"linear-gradient(90deg, #03947c 0%, #00bba2 35%, #64ecda 100%)",
-				"var(--yellow)":
-					"linear-gradient(90deg, #ff6600 0%, #e9912d 35%, #fdc063 100%)",
-				"var(--green)":
-					"linear-gradient(90deg, #37cf4c 0%, #22dd61 35%, #49c46e 100%)",
-				"var(--pink)":
-					"linear-gradient(90deg, #e00043 0%, #d1457f 35%, #fc7373 100%)",
-				"var(--purple)":
-					"linear-gradient(90deg, #9001ce 0%, #9a44cc 35%, #c16bf3 100%)",
-				"var(--blue)":
-					"linear-gradient(90deg, #125ce6 0%, #3a69c0 35%, #7c94ff 100%)",
-			},
-			LiColorActive: "var(--linearGradient)",
+			LiColorActive: "var(--yellow)",
 		};
 	},
 	methods: {
-		changeAppColor(color: string, _alt: any) {
+		changeAppColor(color: string) {
 			this.LiColorActive = color;
-			this.rootElement.style.setProperty("--favColor", _alt);
 			// Error Typescript Element implicitly has an 'any' type because expression of type 'any' can't be used to index type
-			this.rootElement.style.setProperty("--bgG", this.gradin[color]);
+			this.rootElement.style.setProperty("--favColor", color);
 		},
 		closeBtn(){
 			ipcRenderer.send("closeApp");
@@ -51,12 +36,12 @@ header(class="w-full p-2 flex items-center justify-between select-none h-[var(--
 	//- Colors
 	div(class="flex items-center justify-center" style="-webkit-app-region: no-drag")
 		ul(class="h-9 p-1 px-3 rounded-full flex items-center justify-center bg-[var(--dark200)]" id="favColorsUL")
-			li(data-color="var(--blue)"   class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--blue)]")
-			li(data-color="var(--sky)"    class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--sky)]")
-			li(data-color="var(--purple)" class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--purple)]")
-			li(data-color="var(--green)"  class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--green)]")
-			li(data-color="var(--yellow)" class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--yellow)] scale-125 mx-2")
-			li(data-color="var(--pink)"   class="duration-200 hover:scale-90 cursor-pointer h-5 w-5 rounded-lg m-1 bg-[var(--pink)]")
+			li( @click="changeAppColor('var(--blue)')" 		:class="LiColorActive === 'var(--blue)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--blue)]")
+			li( @click="changeAppColor('var(--sky)')" 		:class="LiColorActive === 'var(--sky)' ? 'scale-125 mx-2': ''" 		class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--sky)]")
+			li( @click="changeAppColor('var(--purple)')" 	:class="LiColorActive === 'var(--purple)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--purple)]")
+			li( @click="changeAppColor('var(--green)')" 	:class="LiColorActive === 'var(--green)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--green)]")
+			li( @click="changeAppColor('var(--yellow)')" 	:class="LiColorActive === 'var(--yellow)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--yellow)]")
+			li( @click="changeAppColor('var(--pink)')" 		:class="LiColorActive === 'var(--pink)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--pink)]")
 
 	//- Main App Fram
 	div(class="h-7 mr-2 flex items-center justify-center" style="-webkit-app-region: no-drag")
