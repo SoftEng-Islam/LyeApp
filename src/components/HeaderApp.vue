@@ -7,13 +7,18 @@ export default {
 			LogoLink: "Https://www.google.com",
 			rootElement: document.querySelector(":root") as HTMLElement,
 			gradin: {
-				"var(--linearGradient)": "linear-gradient(-45deg, #20b173 0%, #13a868 25%, #faae28 25%, #f78723 50%, #f67e9b 50%, #f33a6c 75%, #c237c0 75%, #d43c7d 100%)",
-				"var(--sky)": "linear-gradient(90deg, #03947c 0%, #00bba2 35%, #64ecda 100%)",
-				"var(--yellow)": "linear-gradient(90deg, #ff6600 0%, #e9912d 35%, #fdc063 100%)",
-				"var(--green)": "linear-gradient(90deg, #37cf4c 0%, #22dd61 35%, #49c46e 100%)",
-				"var(--pink)": "linear-gradient(90deg, #e00043 0%, #d1457f 35%, #fc7373 100%)",
-				"var(--purple)": "linear-gradient(90deg, #9001ce 0%, #9a44cc 35%, #c16bf3 100%)",
-				"var(--blue)": "linear-gradient(90deg, #125ce6 0%, #3a69c0 35%, #7c94ff 100%)",
+				"var(--sky)":
+					"linear-gradient(90deg, #03947c 0%, #00bba2 35%, #64ecda 100%)",
+				"var(--yellow)":
+					"linear-gradient(90deg, #ff6600 0%, #e9912d 35%, #fdc063 100%)",
+				"var(--green)":
+					"linear-gradient(90deg, #37cf4c 0%, #22dd61 35%, #49c46e 100%)",
+				"var(--pink)":
+					"linear-gradient(90deg, #e00043 0%, #d1457f 35%, #fc7373 100%)",
+				"var(--purple)":
+					"linear-gradient(90deg, #9001ce 0%, #9a44cc 35%, #c16bf3 100%)",
+				"var(--blue)":
+					"linear-gradient(90deg, #125ce6 0%, #3a69c0 35%, #7c94ff 100%)",
 			},
 			LiColorActive: "var(--linearGradient)",
 		};
