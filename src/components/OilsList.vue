@@ -24,7 +24,6 @@ export default {
 		const ShowTheInfo = (val: object) => {
 			useOilStore().showTheInfo(val);
 		}
-
 		return {
 			searchForOil,
 			filteredOils,
