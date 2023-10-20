@@ -35,7 +35,7 @@ export default {
 </script>
 <template lang="pug">
 //- Oils list Section
-div(class="duration-200 z-10 relative h-full bg-[var(--dark400)]  p-3 w-1/5 border-r-2 border-solid border-[var(--favColor)]" id="notes")
+div(class="z-10 relative h-full bg-[var(--dark400)] p-3 w-1/5 border-r-2 border-solid border-[var(--favColor)]" id="notes")
 	div(class="w-full h-full flex flex-col items-center")
 		//- Search
 		div(class="relative w-full p-3 m-2 mb-5 flex items-center justify-center")
