@@ -45,13 +45,7 @@
 	--sky: #23d8c0;
 	--favColor: var(--yellow);
 	--HeaderHeight: 4rem;
-
-	/* --bgG: linear-gradient(90deg, #03947c 0%, #00bba2 35%, #64ecda 100%); */
 	--bgG: linear-gradient(90deg, #ff6600 0%, #e9912d 35%, #fdc063 100%);
-	/* --bgG: linear-gradient(90deg, #37cf4c 0%, #22dd61 35%, #49c46e 100%);
-	--bgG: linear-gradient(90deg, #e00043 0%, #d1457f 35%, #fc7373 100%);
-	--bgG: linear-gradient(90deg, #9001ce 0%, #9a44cc 35%, #c16bf3 100%);
-	--bgG: linear-gradient(90deg, #125ce6 0%, #3a69c0 35%, #7c94ff 100%); */
 }
 
 body {
