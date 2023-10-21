@@ -1,13 +1,13 @@
 <script lang="ts">
-import { ref } from 'vue';
+import { ref, Ref } from 'vue';
 import { computed } from 'vue';
 import { useOilStore } from "../store/index";
 export default {
 	setup() {
 		const OilStore = useOilStore();
-		let STypeLye = ref("NaOH"); // Default => NaOH
+		let STypeLye: Ref<string> = ref("NaOH"); // Default => NaOH
 
-		const SetTypeOfLye = () => {
+		const SetTypeOfLye: () => void = (): void => {
 			useOilStore().setTypeOfLye(STypeLye.value);
 		};
 		const SetsuperFat = computed({

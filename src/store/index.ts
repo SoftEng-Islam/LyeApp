@@ -173,19 +173,19 @@ export const useOilStore = defineStore("taskStore", {
 			}
 			)
 		},
-		AddedOilsWeight(OilName: string, OilWeight: number) {
+		AddedOilsWeight(OilName: string, OilWeight: number): void {
 			this.RecipeTotal.weightLye = 0;
 			this.RecipeTotal.weightWater = 0;
 			this.RecipeTotal.weightOils = 0;
 			this.RecipeTotal.FragranceWeight = 0;
 
 
-			this.AddedOils.forEach((oi) => {
+			this.AddedOils.forEach((oi: any): void => {
 				if (OilName === oi.Name) {
 					oi.weight = OilWeight;
 				}
 				if (this.headerOptions.typeOfLye === "NaOH") {
-					let NaOH =
+					let NaOH: number =
 						oi.weight * oi.NaOH;
 
 					this.RecipeTotal.weightLye += parseInt(NaOH.toFixed(0));
