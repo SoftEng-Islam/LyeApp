@@ -109,27 +109,30 @@ export const useOilStore = defineStore("taskStore", {
 		showTheInfo(selectedOil: any): void {
 			this.OilProperties = selectedOil;
 		},
+		calcLye(){
+			this.RecipeTotal.weightOils = 0;
+			this.RecipeTotal.weightLye = 0;
+			this.RecipeTotal.weightWater = 0;
+			this.AddedOils.forEach((oi) => {
+				if (this.headerOptions.typeOfLye === "NaOH") {
+					let NaOH =
+						oi.weight * oi.NaOH;
+					this.RecipeTotal.weightLye += parseInt(NaOH.toFixed(0));
+				} else {
+					this.RecipeTotal.weightLye += parseInt(
+						(oi.weight * oi.KOH).toFixed(0)
+					);
+				}
+				this.RecipeTotal.weightOils += parseInt(oi.weight.toFixed(0));
+			});
+			this.RecipeTotal.weightWater += parseInt((this.RecipeTotal.weightLye * 3).toFixed(0));
+		},
 		RemoveOils(OilToRemove: object): void {
 			if (this.AddedOils.includes(OilToRemove) === true) {
 				this.AddedOils = this.AddedOils.filter((o) => {
 					return o != OilToRemove;
 				});
-				this.RecipeTotal.weightOils = 0;
-				this.RecipeTotal.weightLye = 0;
-				this.RecipeTotal.weightWater = 0;
-				this.AddedOils.forEach((oi) => {
-					if (this.headerOptions.typeOfLye === "NaOH") {
-						let NaOH =
-							oi.weight * oi.NaOH;
-						this.RecipeTotal.weightLye += parseInt(NaOH.toFixed(0));
-					} else {
-						this.RecipeTotal.weightLye += parseInt(
-							(oi.weight * oi.KOH).toFixed(0)
-						);
-					}
-					this.RecipeTotal.weightOils += parseInt(oi.weight.toFixed(0));
-				});
-				this.RecipeTotal.weightWater += parseInt((this.RecipeTotal.weightLye * 3).toFixed(0));
+				this.calcLye();
 			}
 		},
 		getProperties(): void {
@@ -202,10 +205,13 @@ export const useOilStore = defineStore("taskStore", {
 			this.ChangeSuperFat(this.headerOptions.superFat);
 		},
 		ChangeSuperFat(value:number): void {
-			console.log(value);
+			this.calcLye();
 			this.headerOptions.superFat = value;
-			console.log(this.headerOptions.superFat);
 			this.RecipeTotal.weightLye = ((100 - this.headerOptions.superFat) / 100) * this.RecipeTotal.weightLye;
+		},
+		ChangeFragrance(value:number): void {
+			this.headerOptions.fragrance.value = value;
+			this.RecipeTotal.FragranceWeight = Math.round(((this.RecipeTotal.weightOils / 100) * this.headerOptions.fragrance.value) / 1000 * 100);
 		}
 	},
 });

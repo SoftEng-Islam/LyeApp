@@ -12,16 +12,23 @@ export default {
 		};
 		const SetsuperFat = computed({
 			get(): number{
-				console.log(OilStore.headerOptions.superFat);
 				return OilStore.headerOptions.superFat;
 			},
 			set(value: number): void {
-				console.log(value)
 				OilStore.ChangeSuperFat(value);
+			}
+		});
+		const SetFragrance = computed({
+			get(): number{
+				return OilStore.headerOptions.fragrance.value || 0;
+			},
+			set(value: number): void {
+				OilStore.ChangeFragrance(value || 0);
 			}
 		});
 		return {
 			SetsuperFat,
+			SetFragrance,
 			OilStore,
 			STypeLye,
 			SetTypeOfLye
@@ -60,6 +67,6 @@ ul(class="w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between 
 			span(class="text-orange-400 ml-auto") %
 		div(class="flex justify-between items-center")
 			span(class="text-fuchsia-400 mr-10") Fragrance
-			input(class="pl-2 w-1/3 mr-auto bg-[var(--dark200)] placeholder:text-white text-white py-1 rounded-md scale-90" type="number" v-model="OilStore.headerOptions.fragrance.value")
+			input(class="pl-2 w-1/3 mr-auto bg-[var(--dark200)] placeholder:text-white text-white py-1 rounded-md scale-90" type="number" v-model="SetFragrance")
 			span(class="text-fuchsia-400 ml-auto") {{OilStore.headerOptions.fragrance.frWeight}}
 </template>
