@@ -1,10 +1,11 @@
 {
 	"name": "lye-app",
+	"productName": "Lye",
 	"version": "1.0.0",
 	"main": "dist-electron/main/index.js",
 	"description": "Soapmaking Desktop Lye Calculation",
 	"author": "Islam Ahmed",
-	"license": "MIT",
+	"license": "",
 	"private": true,
 	"keywords": [
 		"electron",
