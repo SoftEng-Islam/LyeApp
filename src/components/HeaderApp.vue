@@ -4,7 +4,7 @@ import { ipcRenderer } from 'electron';
 export default {
 	data() {
 		return {
-			LogoLink: "Https://www.google.com",
+			LogoLink: "https://github.com/SoftEng-Islam/LyeApp",
 			rootElement: document.querySelector(":root") as HTMLElement,
 			LiColorActive: "var(--yellow)",
 		};
@@ -39,7 +39,7 @@ header(class="w-full p-2 flex items-center justify-between select-none h-[var(--
 			li( @click="changeAppColor('var(--blue)')" 		:class="LiColorActive === 'var(--blue)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--blue)]")
 			li( @click="changeAppColor('var(--sky)')" 		:class="LiColorActive === 'var(--sky)' ? 'scale-125 mx-2': ''" 		class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--sky)]")
 			li( @click="changeAppColor('var(--purple)')" 	:class="LiColorActive === 'var(--purple)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--purple)]")
-			li( @click="changeAppColor('var(--green)')" 	:class="LiColorActive === 'var(--green)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--green)]")
+			li( @click="changeAppColor('var(--green)')" 		:class="LiColorActive === 'var(--green)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--green)]")
 			li( @click="changeAppColor('var(--yellow)')" 	:class="LiColorActive === 'var(--yellow)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--yellow)]")
 			li( @click="changeAppColor('var(--pink)')" 		:class="LiColorActive === 'var(--pink)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--pink)]")
 	//- Main App Fram
