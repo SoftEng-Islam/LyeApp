@@ -202,7 +202,9 @@ export const useOilStore = defineStore("taskStore", {
 			this.ChangeSuperFat(this.headerOptions.superFat);
 		},
 		ChangeSuperFat(value:number): void {
+			console.log(value);
 			this.headerOptions.superFat = value;
+			console.log(this.headerOptions.superFat);
 			this.RecipeTotal.weightLye = ((100 - this.headerOptions.superFat) / 100) * this.RecipeTotal.weightLye;
 		}
 	},
