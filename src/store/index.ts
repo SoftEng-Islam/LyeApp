@@ -201,6 +201,11 @@ export const useOilStore = defineStore("taskStore", {
 			// this.FragranceWeight = (this.headerOptions.fragrance.value * this.weightOils / 1000 / this.weightOils ) * 1000 ;
 			this.RecipeTotal.FragranceWeight = Math.round(((this.RecipeTotal.weightOils / 100) * this.headerOptions.fragrance.value) / 1000 * 100);
 			this.getProperties();
+			this.ChangeSuperFat();
 		},
+		ChangeSuperFat(): void {
+			let applySuper = (100 - this.headerOptions.superFat) / 100
+			this.RecipeTotal.weightLye = applySuper * this.RecipeTotal.weightLye;
+		}
 	},
 });
