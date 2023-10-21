@@ -12,10 +12,10 @@ export default {
 		};
 		const SetsuperFat = computed({
 			get(): number{
-				return OilStore.headerOptions.superFat;
+				return OilStore.headerOptions.superFat || 0;
 			},
 			set(value: number): void {
-				OilStore.ChangeSuperFat(value);
+				OilStore.ChangeSuperFat(value || 0);
 			}
 		});
 		const SetFragrance = computed({
