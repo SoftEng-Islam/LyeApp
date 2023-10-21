@@ -97,7 +97,7 @@ async function createWindow() {
 		y: winState.y,
 		frame: false,
 		title: "ElectroNote",
-		icon: join(process.env.PUBLIC, "logo.png"),
+		icon: join(process.env.PUBLIC, "favicon.ico"),
 		webPreferences: {
 			preload,
 			nodeIntegration: true,
