@@ -12,9 +12,12 @@ export default {
 		};
 		const SetsuperFat = computed({
 			get(): number{
+				console.log(OilStore.headerOptions.superFat);
 				return OilStore.headerOptions.superFat;
+
 			},
 			set(value: number): void {
+				console.log(value)
 				OilStore.ChangeSuperFat(value);
 			}
 		});
