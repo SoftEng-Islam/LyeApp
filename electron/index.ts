@@ -47,12 +47,10 @@ if (!app.requestSingleInstanceLock()) {
 // process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
 
 let win: BrowserWindow | null = null;
-let login: BrowserWindow | null = null;
 // Here, you can also use other preload
 const preload = join(__dirname, "../preload/index.js");
 const url = process.env.VITE_DEV_SERVER_URL;
 const indexHtml = join(process.env.DIST, "index.html");
-const loginHtml = join(process.env.DIST, "login.html");
 // #########################
 // #### Tray
 // #########################
@@ -99,7 +97,7 @@ async function createWindow() {
 		y: winState.y,
 		frame: false,
 		title: "ElectroNote",
-		icon: join(process.env.PUBLIC, "favicon.ico"),
+		icon: join(process.env.PUBLIC, "logo.png"),
 		webPreferences: {
 			preload,
 			nodeIntegration: true,
@@ -107,21 +105,6 @@ async function createWindow() {
 		},
 	});
 
-	login = new BrowserWindow({
-		width: 450,
-		height: 450,
-		frame: false,
-		transparent: true,
-		title: "Login",
-		icon: join(process.env.PUBLIC, "favicon.ico"),
-		parent: win,
-		show: false,
-		webPreferences: {
-			preload,
-			nodeIntegration: true,
-			contextIsolation: false,
-		},
-	});
 
 	if (process.env.VITE_DEV_SERVER_URL) {
 		// electron-vite-vue#298
@@ -131,8 +114,6 @@ async function createWindow() {
 	} else {
 		win.loadFile(indexHtml);
 	}
-	login.loadURL(url);
-	login.loadFile(loginHtml);
 
 	//######## Menus
 	// Menu.setApplicationMenu(mainMenu);
@@ -320,5 +301,4 @@ async function deleteRow() {
 		}
 	);
 }
-
 //   deleteRow();

@@ -28,7 +28,7 @@ export default defineConfig(({ command }) => {
 			electron([
 				{
 					// Main-Process entry file of the Electron App.
-					entry: "electron/main/index.ts",
+					entry: "electron/index.ts",
 					onstart(options) {
 						if (process.env.VSCODE_DEBUG) {
 							console.log(
@@ -42,7 +42,7 @@ export default defineConfig(({ command }) => {
 						build: {
 							sourcemap,
 							minify: isBuild,
-							outDir: "dist-electron/main",
+							outDir: "dist-electron/",
 							rollupOptions: {
 								external: Object.keys(
 									"dependencies" in pkg
@@ -54,7 +54,10 @@ export default defineConfig(({ command }) => {
 					},
 				},
 				{
-					entry: "electron/preload/index.ts",
+					entry: [
+						"electron/preload.ts",
+						"electron/funcs.ts"
+					],
 					onstart(options) {
 						// Notify the Renderer-Process to reload the page when the Preload-Scripts build is complete,
 						// instead of restarting the entire Electron App.
@@ -64,7 +67,7 @@ export default defineConfig(({ command }) => {
 						build: {
 							sourcemap: sourcemap ? "inline" : undefined, // #332
 							minify: isBuild,
-							outDir: "dist-electron/preload",
+							outDir: "dist-electron/",
 							rollupOptions: {
 								external: Object.keys(
 									"dependencies" in pkg
