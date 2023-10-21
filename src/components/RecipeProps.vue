@@ -1,14 +1,26 @@
 <script lang="ts">
 import { ref } from 'vue';
+import { computed } from 'vue';
 import { useOilStore } from "../store/index";
 export default {
 	setup() {
-		let STypeLye = ref("NaOH"); // Default => NaOH
 		const OilStore = useOilStore();
+		let STypeLye = ref("NaOH"); // Default => NaOH
+
 		const SetTypeOfLye = () => {
 			useOilStore().setTypeOfLye(STypeLye.value);
 		};
+		const SetsuperFat = computed({
+			get(): number{
+				return OilStore.headerOptions.superFat;
+			},
+			set(value: number): void {
+				OilStore.headerOptions.superFat = value;
+				OilStore.ChangeSuperFat();
+			}
+		});
 		return {
+			SetsuperFat,
 			OilStore,
 			STypeLye,
 			SetTypeOfLye
@@ -42,7 +54,8 @@ ul(class="w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between 
 	li(class="hover:border-[var(--favColor)] border border-transparent text-sm flex flex-col items-start justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		div(class="flex justify-between items-center")
 			span(class="text-orange-400 mr-10") Super Fat
-			input(class="pl-2 w-1/3 mr-auto bg-[var(--dark200)] placeholder:text-white text-white py-1 rounded-md scale-90" type="number" v-model="OilStore.headerOptions.superFat")
+			//- v-model="OilStore.headerOptions.superFat"
+			input(class="pl-2 w-1/3 mr-auto bg-[var(--dark200)] placeholder:text-white text-white py-1 rounded-md scale-90" type="number" v-model="SetsuperFat")
 			span(class="text-orange-400 ml-auto") %
 		div(class="flex justify-between items-center")
 			span(class="text-fuchsia-400 mr-10") Fragrance
