@@ -15,8 +15,7 @@ export default {
 				return OilStore.headerOptions.superFat;
 			},
 			set(value: number): void {
-				OilStore.headerOptions.superFat = value;
-				OilStore.ChangeSuperFat();
+				OilStore.ChangeSuperFat(value);
 			}
 		});
 		return {

@@ -12,9 +12,9 @@ export const useOilStore = defineStore("taskStore", {
 				lyeConcentration: 70,
 				WaterToLyeRatio: "2:1",
 			},
-			superFat: 5,
+			superFat: 0,
 			fragrance: {
-				value: 29,
+				value: 0,
 				frWeight: "g/Kg",
 			},
 		},
@@ -201,11 +201,11 @@ export const useOilStore = defineStore("taskStore", {
 			// this.FragranceWeight = (this.headerOptions.fragrance.value * this.weightOils / 1000 / this.weightOils ) * 1000 ;
 			this.RecipeTotal.FragranceWeight = Math.round(((this.RecipeTotal.weightOils / 100) * this.headerOptions.fragrance.value) / 1000 * 100);
 			this.getProperties();
-			this.ChangeSuperFat();
+			this.ChangeSuperFat(this.headerOptions.superFat);
 		},
-		ChangeSuperFat(): void {
-			let applySuper = (100 - this.headerOptions.superFat) / 100
-			this.RecipeTotal.weightLye = applySuper * this.RecipeTotal.weightLye;
+		ChangeSuperFat(value:number): void {
+			this.headerOptions.superFat = value;
+			this.RecipeTotal.weightLye = ((100 - this.headerOptions.superFat) / 100) * this.RecipeTotal.weightLye;
 		}
 	},
 });
