@@ -2,37 +2,34 @@
  * @see https://www.electron.build/configuration/configuration
  */
 {
-  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
-  "appId": "com.SoftEng.Lye",
-  "asar": true,
-  "directories": {
-    "output": "release/${version}"
-  },
-  "files": [
-    "dist-electron",
-    "dist"
-  ],
-  "mac": {
-    "artifactName": "${productName}_${version}.${ext}",
-    "target": [
-      "dmg"
-    ]
-  },
-  "win": {
-    "target": [
-      {
-        "target": "nsis",
-        "arch": [
-          "x64"
-        ]
-      }
+	$schema: "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+	appId: "com.SoftEng.Lye",
+	asar: true,
+	directories: {
+		output: "release/${version}",
+	},
+	files: ["dist-electron", "dist"],
+	mac: {
+		artifactName: "${productName}_${version}.${ext}",
+		target: ["dmg"],
+	},
+	win: {
+		icon: "build/app.ico",
+		target: [
+			{
+				target: "nsis",
+				arch: ["x64"],
+			},
+		],
+		artifactName: "${productName}_${version}.${ext}",
+	},
+	nsis: {
+		oneClick: false,
+		perMachine: false,
+		allowToChangeInstallationDirectory: true,
+		deleteAppDataOnUninstall: false,
+	},
+	 "extraResources": [
+      "public/favicon.svg"
     ],
-    "artifactName": "${productName}_${version}.${ext}"
-  },
-  "nsis": {
-    "oneClick": false,
-    "perMachine": false,
-    "allowToChangeInstallationDirectory": true,
-    "deleteAppDataOnUninstall": false
-  }
 }

@@ -1,11 +1,12 @@
 const electron = require("electron");
+const path = require('path')
+
 import {
 	app,
 	BrowserWindow,
 	shell,
 	ipcMain,
 	webContents,
-	Tray,
 	Menu,
 	MenuItem,
 } from "electron";
@@ -48,26 +49,9 @@ if (!app.requestSingleInstanceLock()) {
 
 let win: BrowserWindow | null = null;
 // Here, you can also use other preload
-const preload = join(__dirname, "../preload/index.js");
+const preload = join(__dirname, "/preload.js");
 const url = process.env.VITE_DEV_SERVER_URL;
 const indexHtml = join(process.env.DIST, "index.html");
-// #########################
-// #### Tray
-// #########################
-let trayMenu = Menu.buildFromTemplate([{ label: "Item 1" }, { role: "quit" }]);
-let tray;
-function createTray() {
-	tray = new Tray(join(process.env.PUBLIC, "logo.png"));
-	tray.setToolTip("ElectroNote");
-	tray.on("click", (e) => {
-		if (e.shiftKey) {
-			app.quit();
-		} else {
-			win.isVisible() ? win.hide() : win.show();
-		}
-	});
-	tray.setContextMenu(trayMenu);
-}
 
 // #########################
 // #### Context Menu
@@ -83,7 +67,6 @@ let contextMenu = Menu.buildFromTemplate([
 // #### Create Window
 // #########################
 async function createWindow() {
-	createTray();
 	let winState = windowStateKeeper({
 		defaultWidth: 1600,
 		defaultHeight: 800,
@@ -97,13 +80,14 @@ async function createWindow() {
 		y: winState.y,
 		frame: false,
 		title: "ElectroNote",
-		icon: join(process.env.PUBLIC, "favicon.ico"),
 		webPreferences: {
 			preload,
 			nodeIntegration: true,
 			contextIsolation: false,
 		},
 	});
+	// icon: path.join(__dirname, '/public/favicon.ico'),
+	win.setIcon(path.join(__dirname, '../public/favicon.png'));
 
 
 	if (process.env.VITE_DEV_SERVER_URL) {
