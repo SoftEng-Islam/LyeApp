@@ -7,9 +7,16 @@ export default {
 		const OilStore = useOilStore();
 		let STypeLye: Ref<string> = ref("NaOH"); // Default => NaOH
 
+
 		const SetTypeOfLye: () => void = (): void => {
 			useOilStore().setTypeOfLye(STypeLye.value);
 		};
+
+		let TheWaterOption: Ref<number> = ref(0);
+
+
+
+
 		const SetsuperFat = computed({
 			get(): number{
 				return OilStore.headerOptions.superFat || 0;
@@ -26,7 +33,12 @@ export default {
 				OilStore.ChangeFragrance(value || 0);
 			}
 		});
+
+
+
+
 		return {
+			TheWaterOption,
 			SetsuperFat,
 			SetFragrance,
 			OilStore,
@@ -56,9 +68,9 @@ ul(class="w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between 
 		span(class="text-[var(--favColor)] mr-3") Water#[span(class="text-white") :]
 		input(class="w-12 pl-2 py-1 rounded-md scale-9 bg-[var(--dark200)] placeholder:text-white text-white" type="text" value="38")
 		select(class="bg-[var(--dark200)] text-blue-500 pl-2 py-1 rounded-md scale-90")
-			option(value="Water as % of Oils") Water as % of Oils
-			option(value="Lye Concentration") Lye Concentration
-			option(value="Water : Lye Ratio") Water : Lye Ratio
+			option(value="Water as % of Oils" :selected="TheWaterOption === 0") Water as % of Oils
+			option(value="Lye Concentration" :selected="TheWaterOption === 1") Lye Concentration
+			option(value="Water : Lye Ratio" :selected="TheWaterOption === 2") Water : Lye Ratio
 	li(class="hover:border-[var(--favColor)] border border-transparent text-sm flex flex-col items-start justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		div(class="flex justify-between items-center")
 			span(class="text-orange-400 mr-10") Super Fat
