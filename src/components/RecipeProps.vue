@@ -1,5 +1,5 @@
 <script lang="ts">
-import { ref, Ref } from 'vue';
+import { ref, Ref, WritableComputedRef } from 'vue';
 import { computed } from 'vue';
 import { useOilStore } from "../store/index";
 export default {
@@ -13,7 +13,14 @@ export default {
 		};
 
 		let TheWaterOption: Ref<number> = ref(0);
+		const TheWater: WritableComputedRef<string> = computed({
+			get():string {
 
+			},
+			set(value: number): void {
+
+			}
+		});
 
 
 
@@ -66,7 +73,7 @@ ul(class="w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between 
 			option(value="Tons") Tons
 	li(class="w-1/4 h-full p-2 text-sm flex items-center justify-center bg-[var(--dark300)] rounded-lg overflow-hidden hover:border-[var(--favColor)] border border-transparent")
 		span(class="text-[var(--favColor)] mr-3") Water#[span(class="text-white") :]
-		input(class="w-12 pl-2 py-1 rounded-md scale-9 bg-[var(--dark200)] placeholder:text-white text-white" type="text" value="38")
+		input(class="w-12 pl-2 py-1 rounded-md scale-9 bg-[var(--dark200)] placeholder:text-white text-white" type="text" v-model="TheWater")
 		select(class="bg-[var(--dark200)] text-blue-500 pl-2 py-1 rounded-md scale-90")
 			option(value="Water as % of Oils" :selected="TheWaterOption === 0") Water as % of Oils
 			option(value="Lye Concentration" :selected="TheWaterOption === 1") Lye Concentration
