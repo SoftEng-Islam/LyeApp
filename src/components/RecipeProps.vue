@@ -9,16 +9,28 @@ export default {
 
 
 		const SetTypeOfLye: () => void = (): void => {
-			useOilStore().setTypeOfLye(STypeLye.value);
+			OilStore.setTypeOfLye(STypeLye.value);
 		};
 
 		let TheWaterOption: Ref<number> = ref(0);
-		const TheWater: WritableComputedRef<string> = computed({
-			get():string {
-
+		const TheWater: WritableComputedRef<any> = computed({
+			get(): any {
+				if(TheWaterOption.value === 0) {
+					return OilStore.headerOptions.water.waterAsOfOils;
+				} else if (TheWaterOption.value === 1) {
+					return OilStore.headerOptions.water.lyeConcentration;
+				} else {
+					return OilStore.headerOptions.water.WaterToLyeRatio;
+				}
 			},
-			set(value: number): void {
-
+			set(value: any): void {
+				if(TheWaterOption.value === 0) {
+					OilStore.headerOptions.water.waterAsOfOils = value;
+				} else if (TheWaterOption.value === 1) {
+					OilStore.headerOptions.water.lyeConcentration = value;
+				} else {
+					OilStore.headerOptions.water.WaterToLyeRatio = value;
+				}
 			}
 		});
 
@@ -42,10 +54,9 @@ export default {
 		});
 
 
-
-
 		return {
 			TheWaterOption,
+			TheWater,
 			SetsuperFat,
 			SetFragrance,
 			OilStore,
