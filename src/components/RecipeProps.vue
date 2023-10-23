@@ -5,28 +5,34 @@ import { useOilStore } from "../store/index";
 export default {
 	setup() {
 		const OilStore = useOilStore();
+
+
 		let STypeLye: Ref<string> = ref("NaOH"); // Default => NaOH
-
-
 		const SetTypeOfLye: () => void = (): void => {
 			OilStore.setTypeOfLye(STypeLye.value);
 		};
 
-		let TheWaterOption: Ref<number> = ref(0);
+
+
+
+		let TheWaterOption =  OilStore.headerOptions.water.selcted;
+		const TheWaterSelect: () => void = ():void => {
+			OilStore.headerOptions.water.selcted = TheWaterOption;
+		}
 		const TheWater: WritableComputedRef<any> = computed({
 			get(): any {
-				if(TheWaterOption.value === 0) {
+				if(TheWaterOption == 0) {
 					return OilStore.headerOptions.water.waterAsOfOils;
-				} else if (TheWaterOption.value === 1) {
+				} else if (TheWaterOption === 1) {
 					return OilStore.headerOptions.water.lyeConcentration;
 				} else {
 					return OilStore.headerOptions.water.WaterToLyeRatio;
 				}
 			},
 			set(value: any): void {
-				if(TheWaterOption.value === 0) {
+				if(TheWaterOption === 0) {
 					OilStore.headerOptions.water.waterAsOfOils = value;
-				} else if (TheWaterOption.value === 1) {
+				} else if (TheWaterOption === 1) {
 					OilStore.headerOptions.water.lyeConcentration = value;
 				} else {
 					OilStore.headerOptions.water.WaterToLyeRatio = value;
@@ -54,9 +60,11 @@ export default {
 		});
 
 
+
 		return {
 			TheWaterOption,
 			TheWater,
+			TheWaterSelect,
 			SetsuperFat,
 			SetFragrance,
 			OilStore,
@@ -85,10 +93,10 @@ ul(class="w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between 
 	li(class="w-1/4 h-full p-2 text-sm flex items-center justify-center bg-[var(--dark300)] rounded-lg overflow-hidden hover:border-[var(--favColor)] border border-transparent")
 		span(class="text-[var(--favColor)] mr-3") Water#[span(class="text-white") :]
 		input(class="w-12 pl-2 py-1 rounded-md scale-9 bg-[var(--dark200)] placeholder:text-white text-white" type="text" v-model="TheWater")
-		select(class="bg-[var(--dark200)] text-blue-500 pl-2 py-1 rounded-md scale-90")
-			option(value="Water as % of Oils" :selected="TheWaterOption === 0") Water as % of Oils
-			option(value="Lye Concentration" :selected="TheWaterOption === 1") Lye Concentration
-			option(value="Water : Lye Ratio" :selected="TheWaterOption === 2") Water : Lye Ratio
+		select(class="bg-[var(--dark200)] text-blue-500 pl-2 py-1 rounded-md scale-90" v-model="TheWaterOption" @change="TheWaterSelect")
+			option(value="Water as % of Oils") Water as % of Oils
+			option(value="Lye Concentration" ) Lye Concentration
+			option(value="Water : Lye Ratio" ) Water : Lye Ratio
 	li(class="hover:border-[var(--favColor)] border border-transparent text-sm flex flex-col items-start justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		div(class="flex justify-between items-center")
 			span(class="text-orange-400 mr-10") Super Fat
