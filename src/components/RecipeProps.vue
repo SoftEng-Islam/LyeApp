@@ -93,9 +93,9 @@ ul(class="w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between 
 	li(class="w-1/4 h-full p-2 text-sm flex items-center justify-center bg-[var(--dark300)] rounded-lg overflow-hidden hover:border-[var(--favColor)] border border-transparent")
 		span(class="text-[var(--favColor)] mr-3") Water#[span(class="text-white") :]
 		input(class="w-12 pl-2 py-1 rounded-md scale-9 bg-[var(--dark200)] placeholder:text-white text-white" type="text" v-model="TheWater")
-		select(class="bg-[var(--dark200)] text-blue-500 pl-2 py-1 rounded-md scale-90" v-model="TheWaterOption" @change="TheWaterSelect")
+		select(class="bg-[var(--dark200)] text-blue-300 pl-2 py-1 rounded-md scale-90" v-model="TheWaterOption" @change="TheWaterSelect")
 			option(value="0") Water as % of Oils
-			option(value="1" ) Lye Concentration
+			//- option(value="1" ) Lye Concentration
 			option(value="2" ) Water : Lye Ratio
 	li(class="hover:border-[var(--favColor)] border border-transparent text-sm flex flex-col items-start justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		div(class="flex justify-between items-center")
