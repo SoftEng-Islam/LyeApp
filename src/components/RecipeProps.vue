@@ -15,24 +15,24 @@ export default {
 
 
 
-		let TheWaterOption =  OilStore.headerOptions.water.selcted;
+		let TheWaterOption: Ref<number> = ref(0);
 		const TheWaterSelect: () => void = ():void => {
-			OilStore.headerOptions.water.selcted = TheWaterOption;
+			OilStore.headerOptions.water.selcted = TheWaterOption.value;
 		}
 		const TheWater: WritableComputedRef<any> = computed({
 			get(): any {
-				if(TheWaterOption == 0) {
+				if(TheWaterOption.value == 0) {
 					return OilStore.headerOptions.water.waterAsOfOils;
-				} else if (TheWaterOption === 1) {
+				} else if (TheWaterOption.value == 1) {
 					return OilStore.headerOptions.water.lyeConcentration;
 				} else {
 					return OilStore.headerOptions.water.WaterToLyeRatio;
 				}
 			},
 			set(value: any): void {
-				if(TheWaterOption === 0) {
+				if(TheWaterOption.value == 0) {
 					OilStore.headerOptions.water.waterAsOfOils = value;
-				} else if (TheWaterOption === 1) {
+				} else if (TheWaterOption.value == 1) {
 					OilStore.headerOptions.water.lyeConcentration = value;
 				} else {
 					OilStore.headerOptions.water.WaterToLyeRatio = value;
@@ -94,9 +94,9 @@ ul(class="w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between 
 		span(class="text-[var(--favColor)] mr-3") Water#[span(class="text-white") :]
 		input(class="w-12 pl-2 py-1 rounded-md scale-9 bg-[var(--dark200)] placeholder:text-white text-white" type="text" v-model="TheWater")
 		select(class="bg-[var(--dark200)] text-blue-500 pl-2 py-1 rounded-md scale-90" v-model="TheWaterOption" @change="TheWaterSelect")
-			option(value="Water as % of Oils") Water as % of Oils
-			option(value="Lye Concentration" ) Lye Concentration
-			option(value="Water : Lye Ratio" ) Water : Lye Ratio
+			option(value="0") Water as % of Oils
+			option(value="1" ) Lye Concentration
+			option(value="2" ) Water : Lye Ratio
 	li(class="hover:border-[var(--favColor)] border border-transparent text-sm flex flex-col items-start justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		div(class="flex justify-between items-center")
 			span(class="text-orange-400 mr-10") Super Fat
