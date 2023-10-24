@@ -105,6 +105,7 @@ ul(class="w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between 
 			//- v-model="OilStore.headerOptions.superFat"
 			input(class="pl-2 w-1/3 mr-auto bg-[var(--dark200)] placeholder:text-white text-white py-1 rounded-md scale-90" type="number" v-model="SetsuperFat")
 			span(class="text-orange-400 ml-auto") %
+		//- Fragrance
 		div(class="flex justify-between items-center")
 			span(class="text-fuchsia-400 mr-10") Fragrance
 			input(class="pl-2 w-1/3 mr-auto bg-[var(--dark200)] placeholder:text-white text-white py-1 rounded-md scale-90" type="number" v-model="SetFragrance")
