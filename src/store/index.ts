@@ -68,7 +68,10 @@ export const useOilStore = defineStore("taskStore", {
 	}),
 	getters: {
 		GetOil(): Object {
-			return this.Oils.filter((O) => O.Name);
+			return this.Oils.filter((O: { Name: any; }) => O.Name);
+		},
+		GetHeaderOptions(value: any): any{
+			return this.headerOptions[value];
 		},
 		GetSelectedOils(): Object {
 			return this.AddedOils;
@@ -84,7 +87,7 @@ export const useOilStore = defineStore("taskStore", {
 				this.RecipeTotal.weightLye = 0;
 				// this.weightWater = 0;
 
-				this.AddedOils.forEach((oi) => {
+				this.AddedOils.forEach((oi: { weight: number; NaOH: number; KOH: number; }) => {
 					if (this.headerOptions.typeOfLye === "NaOH") {
 						let NaOH: number = oi.weight * oi.NaOH;
 
@@ -113,7 +116,7 @@ export const useOilStore = defineStore("taskStore", {
 			this.RecipeTotal.weightOils = 0;
 			this.RecipeTotal.weightLye = 0;
 			this.RecipeTotal.weightWater = 0;
-			this.AddedOils.forEach((oi) => {
+			this.AddedOils.forEach((oi: { weight: number; NaOH: number; KOH: number; }) => {
 				if (this.headerOptions.typeOfLye === "NaOH") {
 					let NaOH =
 						oi.weight * oi.NaOH;
@@ -129,7 +132,7 @@ export const useOilStore = defineStore("taskStore", {
 		},
 		RemoveOils(OilToRemove: object): void {
 			if (this.AddedOils.includes(OilToRemove) === true) {
-				this.AddedOils = this.AddedOils.filter((o) => {
+				this.AddedOils = this.AddedOils.filter((o: object) => {
 					return o != OilToRemove;
 				});
 				this.calcLye();
@@ -154,7 +157,7 @@ export const useOilStore = defineStore("taskStore", {
 			this.soapProperties.Saturated = 0;
 			this.soapProperties.MonoUnsaturated = 0;
 			this.soapProperties.PolyUnsaturated = 0;
-			this.AddedOils.forEach((ele) => {
+			this.AddedOils.forEach((ele: { Hardness: number; weight: number; Cleansing: number; Condition: number; Bubbly: number; Creamy: number; Iodine: number; INS: number; Lauric: number; Myristic: number; Palmitic: number; Stearic: number; Ricinoleic: number; Oleic: number; Linoleic: number; Linolenic: number; Saturated: number; }) => {
 				this.soapProperties.Hardness += Math.round(ele.Hardness * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
 				this.soapProperties.Cleansing += Math.round(ele.Cleansing * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
 				this.soapProperties.Conditioning += Math.round(ele.Condition * (ele.weight * 100 / this.RecipeTotal.weightOils) /100);
