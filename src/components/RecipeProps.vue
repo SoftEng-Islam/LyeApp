@@ -6,7 +6,7 @@ export default {
 	setup() {
 		const OilStore = useOilStore();
 
-
+		// set Type of Lye
 		let STypeLye: Ref<string> = ref("NaOH"); // Default => NaOH
 		const SetTypeOfLye: () => void = (): void => {
 			OilStore.setTypeOfLye(STypeLye.value);
@@ -14,7 +14,7 @@ export default {
 
 
 
-
+		// The Water Options
 		let TheWaterOption: Ref<number> = ref(0);
 		const TheWaterSelect: () => void = ():void => {
 			OilStore.headerOptions.water.selcted = TheWaterOption.value;
@@ -41,7 +41,7 @@ export default {
 		});
 
 
-
+		// Set Super Fat
 		const SetsuperFat = computed({
 			get(): number{
 				return OilStore.headerOptions.superFat || 0;
