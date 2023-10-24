@@ -59,6 +59,7 @@ export default {
 				OilStore.ChangeFragrance(value || 0);
 			}
 		});
+
 		return {
 			OilStore,
 			STypeLye,
