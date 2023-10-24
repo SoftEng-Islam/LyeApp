@@ -13,7 +13,6 @@ export default {
 		};
 
 
-
 		// The Water Options
 		let TheWaterOption: Ref<number> = ref(0);
 		const TheWaterSelect: () => void = ():void => {
@@ -50,6 +49,8 @@ export default {
 				OilStore.ChangeSuperFat(value || 0);
 			}
 		});
+
+		// Set Fragrance
 		const SetFragrance = computed({
 			get(): number{
 				return OilStore.headerOptions.fragrance.value || 0;
