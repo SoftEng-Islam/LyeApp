@@ -58,16 +58,15 @@ export default {
 				OilStore.ChangeFragrance(value || 0);
 			}
 		});
-
 		return {
+			OilStore,
+			STypeLye,
+			SetTypeOfLye,
 			TheWaterOption,
 			TheWater,
 			TheWaterSelect,
 			SetsuperFat,
-			SetFragrance,
-			OilStore,
-			STypeLye,
-			SetTypeOfLye
+			SetFragrance
 		}
 	}
 }
