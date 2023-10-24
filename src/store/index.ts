@@ -68,7 +68,6 @@ export const useOilStore = defineStore("taskStore", {
 	}),
 	getters: {
 		GetOil(): Object {
-			// this refer to state Object
 			return this.Oils.filter((O) => O.Name);
 		},
 		GetSelectedOils(): Object {
