@@ -28,6 +28,7 @@ export default {
 div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover:border-green-500")
 	div(class="Head bg-green-500 p-2 rounded-md")
 		span(class="text-black font-bold ") Added Oils.
+	//- List of added oils
 	ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md h-full overflow-hidden")
 		added-oil(v-for="oil of AddedOils" :oil="oil")
 	div(class="flex items-center overflow-hidden px-2 h-10")
