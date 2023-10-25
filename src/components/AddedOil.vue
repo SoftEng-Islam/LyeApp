@@ -5,18 +5,13 @@ export default {
 	props: ['oil'],
 	setup() {
 		const weightOfOil = ref(0);
-		// console.log(selectedOilArray.value);
-
 		const RemoveThisOil = (val: Object) => {
 			useOilStore().RemoveOils(val);
 		}
-
 		// weightOfOil
 		const SetOilWeight = (nameOfOil: string) => {
 			useOilStore().AddedOilsWeight(nameOfOil, weightOfOil.value);
-			// console.log(`${nameOfOil}, ${weightOfOil}`); done
 		}
-
 		return {
 			weightOfOil,
 			RemoveThisOil,
