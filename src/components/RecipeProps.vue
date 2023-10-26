@@ -12,7 +12,6 @@ export default {
 			OilStore.setTypeOfLye(STypeLye.value);
 		};
 
-
 		// The Water Options
 		let TheWaterOption: Ref<number> = ref(0);
 		const TheWaterSelect: () => void = ():void => {
@@ -39,7 +38,6 @@ export default {
 			}
 		});
 
-
 		// Set Super Fat
 		const SetsuperFat = computed({
 			get(): number{
@@ -59,7 +57,6 @@ export default {
 				OilStore.ChangeFragrance(value || 0);
 			}
 		});
-
 		return {
 			OilStore,
 			STypeLye,
