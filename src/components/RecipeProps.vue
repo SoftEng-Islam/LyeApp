@@ -4,7 +4,7 @@ import { computed } from 'vue';
 import { useOilStore } from "../store/index";
 export default {
 	setup() {
-		const OilStore = useOilStore();
+		const OilStore: any = useOilStore();
 
 		// set Type of Lye
 		let STypeLye: Ref<string> = ref("NaOH"); // Default => NaOH
