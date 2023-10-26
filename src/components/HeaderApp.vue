@@ -24,7 +24,6 @@ export default {
 		maximizeApp() {
 			ipcRenderer.send("maximizeApp");
 		},
-
 	}
 }
 </script>
