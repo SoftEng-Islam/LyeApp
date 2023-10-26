@@ -4,7 +4,7 @@ import { useOilStore } from "../store/index";
 export default {
 
 	setup() {
-		let aryRanges = Array(7);
+		let aryRanges: any[] = Array(7);
 		aryRanges[0] = "Hardness (in the All column): 29 to 54, higher is harder.";
 		aryRanges[1] = "Cleansing (in the All column): 12 to 22, all soap cleanses but the higher numbers more so.";
 		aryRanges[2] = "Conditioning (in the All column): 44 to 69, higher offers more skin conditioning.";
