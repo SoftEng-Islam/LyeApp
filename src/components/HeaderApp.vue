@@ -32,7 +32,6 @@ export default {
 header(class="w-full p-2 flex items-center justify-between select-none h-[var(--HeaderHeight)] bg-[var(--dark300)] border-b border-[var(--dark200)]" style="-webkit-app-region: drag;")
 	//- Logo
 	a(class="ml-4 text-xl outline-none text-[var(--favColor)]" :href="LogoLink" style="-webkit-app-region: no-drag") LyeApp #[span(class="text-xs opacity-70") v1.0]
-
 	//- Colors
 	div(class="flex items-center justify-center" style="-webkit-app-region: no-drag")
 		ul(class="h-9 p-1 px-3 rounded-full flex items-center justify-center bg-[var(--dark200)]" id="favColorsUL")
