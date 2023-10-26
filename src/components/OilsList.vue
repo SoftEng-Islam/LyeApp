@@ -1,5 +1,5 @@
 <script lang="ts">
-import { ref } from 'vue';
+import { Ref, ref } from 'vue';
 import { useOilStore } from "../store/index";
 export default {
 	data() {
@@ -11,17 +11,17 @@ export default {
 		};
 	},
 	setup() {
-		let searchForOil = ref("");
+		let searchForOil: Ref<string> = ref("");
 		const { Oils } = useOilStore();
-		function filteredOils() {
+		function filteredOils(): any {
 			return Oils.filter((oil: any) => oil.Name.toLowerCase().includes(searchForOil.value.toLowerCase()));;
 		};
 
-		const ClickdOnOil = (val: object) => {
+		const ClickdOnOil = (val: object): void => {
 			useOilStore().ClickedOil(val);
 			// console.log(val)
 		};
-		const ShowTheInfo = (val: object) => {
+		const ShowTheInfo = (val: object): void => {
 			useOilStore().showTheInfo(val);
 		}
 		return {
