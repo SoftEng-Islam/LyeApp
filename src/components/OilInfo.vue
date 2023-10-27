@@ -2,7 +2,6 @@
 import { storeToRefs } from 'pinia';
 import { useOilStore } from "../store/index";
 export default {
-
 	setup() {
 		let aryRanges: any[] = Array(7);
 		aryRanges[0] = "Hardness (in the All column): 29 to 54, higher is harder.";
