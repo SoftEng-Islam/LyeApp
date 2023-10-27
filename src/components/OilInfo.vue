@@ -12,7 +12,6 @@ export default {
 		aryRanges[4] = "Creamy (in the All column): 16 to 48, higher gives a more creamy lather.";
 		aryRanges[5] = "Iodine Value (in the All column): 41 to 70, lower equals harder bar, much above 70 and bar could possibly be too soft.";
 		aryRanges[6] = "INS (in the All column): 136 to 165, the commonly accepted ideal is 160.&nbsp; This value gauges the physical qualities of the bar; primarily hardness, with higher being harder.";
-
 		const { OilProperties } = storeToRefs(useOilStore());
 		return {
 			OilProperties
