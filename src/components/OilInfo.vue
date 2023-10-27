@@ -46,10 +46,10 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 		li
 			span(class="float-left text-white") INS#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.INS}}
-
+		//- -------------------------------------------
 		li(class="p-4")
 			hr(class="opacity-50")
-
+		//- -------------------------------------------
 		li
 			span(class="float-left text-white") Lauric#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Lauric}}
