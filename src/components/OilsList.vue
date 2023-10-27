@@ -68,25 +68,15 @@ div(class="z-10 relative h-full bg-[var(--dark400)] p-3 w-1/5 border-r-2 border-
 <style lang="scss">
 .OilsList {
 	.ps {
-		.ps__rail-y {
-			left: 0;
-		}
-
-		.ps__rail-x,
-		.ps__rail-y,
-		.ps__rail-x,
-		.ps__rail-y,
-		.ps__rail-x:hover,
-		.ps__rail-y:hover,
-		.ps__rail-x:focus,
-		.ps__rail-y:focus,
+		.ps__rail-y { left: 0; }
+		.ps__rail-x, .ps__rail-y, .ps__rail-x, .ps__rail-y,
+		.ps__rail-x:hover, .ps__rail-y:hover, .ps__rail-x:focus, .ps__rail-y:focus,
 		.ps__rail-x.ps--clicking,
 		.ps__rail-y.ps--clicking {
 			background-color: var(--dark300) !important;
 			opacity: 1;
 		}
 	}
-
 	.ps__thumb-y {
 		width: 11px;
 		background-color: var(--favColor) !important;
@@ -94,20 +84,15 @@ div(class="z-10 relative h-full bg-[var(--dark400)] p-3 w-1/5 border-r-2 border-
 }
 
 .list-move,
-/* apply transition to moving elements */
 .list-enter-active,
 .list-leave-active {
 	transition: all 0.5s ease;
 }
-
 .list-enter-from,
 .list-leave-to {
 	opacity: 0;
 	transform: translateX(30px);
 }
-
-/* ensure leaving items are taken out of layout flow so that moving
-   animations can be calculated correctly. */
 .list-leave-active {
 	position: absolute;
 }
