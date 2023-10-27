@@ -25,7 +25,7 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 	div(class="Head bg-yellow-500 p-2 rounded-md")
 		span(class="text-black font-bold ") {{ OilProperties.Name }}.
 	ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md h-full flex flex-col")
-		//- span(class="float-left text-white") {{key.charAt(0).toUpperCase() + key.slice(1)}}
+		//- {{key.charAt(0).toUpperCase() + key.slice(1)}}
 		li
 			span(class="float-left text-white") Hardness#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Hardness}}
