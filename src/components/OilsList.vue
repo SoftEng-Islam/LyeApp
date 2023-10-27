@@ -88,12 +88,9 @@ div(class="z-10 relative h-full bg-[var(--dark400)] p-3 w-1/5 border-r-2 border-
 .list-leave-active {
 	transition: all 0.5s ease;
 }
-.list-enter-from,
-.list-leave-to {
+.list-enter-from, .list-leave-to {
 	opacity: 0;
 	transform: translateX(30px);
 }
-.list-leave-active {
-	position: absolute;
-}
+.list-leave-active { position: absolute; }
 </style>
