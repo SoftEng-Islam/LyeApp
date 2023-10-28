@@ -190,10 +190,7 @@ ipcMain.handle("open-win", (_, arg) => {
 	}
 });
 
-// $$$$$$$$$$$$$$$$$$
 // $$$$ Database $$$$
-// $$$$$$$$$$$$$$$$$$
-
 const fs = require("fs");
 const sqlite3 = require("sqlite3").verbose();
 const filepath = "./fish.db";
