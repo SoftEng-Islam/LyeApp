@@ -1,9 +1,12 @@
 <script lang="ts">
 import { storeToRefs } from 'pinia';
 import { useOilStore } from "../store/index";
-import { Tippy } from 'vue-tippy'
+import { directive } from 'vue-tippy'
+
 export default {
-	components: {Tippy},
+	directives: {
+      tippy: directive,
+    },
 	setup() {
 		let aryRanges: any[] = Array(7);
 		aryRanges[0] = "Hardness (in the All column): 29 to 54, higher is harder.";
@@ -28,9 +31,7 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 	ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md h-full flex flex-col")
 		//- {{key.charAt(0).toUpperCase() + key.slice(1)}}
 		li
-			tippy
-				<button>Tippy!</button>
-				template(content="Hiiiiiii") Hi!
+			<button v-tippy="{ content: 'Hi!' }">Tippy!</button>
 			span(class="float-left text-white") Hardness#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Hardness}}
 		li
