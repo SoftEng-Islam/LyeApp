@@ -64,7 +64,6 @@ export const useOilStore = defineStore("taskStore", {
 			MonoUnsaturated: 0,
 			PolyUnsaturated: 0
 		}
-
 	}),
 	getters: {
 		GetOil(): Object {
