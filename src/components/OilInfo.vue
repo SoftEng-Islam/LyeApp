@@ -1,8 +1,10 @@
 <script lang="ts">
 import { storeToRefs } from 'pinia';
 import { useOilStore } from "../store/index";
-import { directive } from 'vue-tippy'
-
+import { setDefaultProps , directive } from 'vue-tippy'
+setDefaultProps({
+  placement: 'top',
+})
 export default {
 	directives: {
       tippy: directive,
