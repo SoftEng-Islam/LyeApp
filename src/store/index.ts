@@ -190,7 +190,6 @@ export const useOilStore = defineStore("taskStore", {
 			this.RecipeTotal.weightOils = 0;
 			this.RecipeTotal.FragranceWeight = 0;
 
-
 			this.AddedOils.forEach((oi: any): void => {
 				if (OilName === oi.Name) {
 					oi.weight = OilWeight;
