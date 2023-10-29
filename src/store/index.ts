@@ -79,6 +79,9 @@ export const useOilStore = defineStore("taskStore", {
 		getTypeOfLye(): string {
 			return this.headerOptions.typeOfLye;
 		},
+		getRecipeTotal(): any {
+			return this.RecipeTotal;
+		},
 		getSoapProperties(): any {
 			return this.soapProperties;
 		}
