@@ -117,10 +117,19 @@ export const useOilStore = defineStore("taskStore", {
 		showTheInfo(selectedOil: any): void {
 			this.OilProperties = selectedOil;
 		},
+		WaterAsofOils(): void {
+			// this.RecipeTotal.weightWater = 0;
+			console.log('weightWater' , this.RecipeTotal.weightWater);
+			console.log('waterAsOfOils' , this.headerOptions.water.waterAsOfOils);
+			console.log('weightOils' , this.RecipeTotal.weightOils);
+			console.log('weightWater' , this.RecipeTotal.weightWater);
+
+			this.RecipeTotal.weightWater = (this.headerOptions.water.waterAsOfOils / this.RecipeTotal.weightOils) * this.RecipeTotal.weightOils;
+		},
 		calcLye(){
 			this.RecipeTotal.weightOils = 0;
 			this.RecipeTotal.weightLye = 0;
-			this.RecipeTotal.weightWater = 0;
+			// this.RecipeTotal.weightWater = 0;
 			this.AddedOils.forEach((oi: { weight: number; NaOH: number; KOH: number; }) => {
 				if (this.headerOptions.typeOfLye === "NaOH") {
 					let NaOH =
@@ -133,7 +142,8 @@ export const useOilStore = defineStore("taskStore", {
 				}
 				this.RecipeTotal.weightOils += parseInt(oi.weight.toFixed(0));
 			});
-			this.RecipeTotal.weightWater += parseInt((this.RecipeTotal.weightLye * 3).toFixed(0));
+			// this.RecipeTotal.weightWater += parseInt((this.RecipeTotal.weightLye * 3).toFixed(0));
+			this.WaterAsofOils();
 		},
 		RemoveOils(OilToRemove: object): void {
 			if (this.AddedOils.includes(OilToRemove) === true) {
@@ -186,7 +196,7 @@ export const useOilStore = defineStore("taskStore", {
 		},
 		AddedOilsWeight(OilName: string, OilWeight: number): void {
 			this.RecipeTotal.weightLye = 0;
-			this.RecipeTotal.weightWater = 0;
+			// this.RecipeTotal.weightWater = 0;
 			this.RecipeTotal.weightOils = 0;
 			this.RecipeTotal.FragranceWeight = 0;
 
@@ -211,12 +221,6 @@ export const useOilStore = defineStore("taskStore", {
 			this.WaterAsofOils();
 			this.getProperties();
 			this.ChangeSuperFat(this.headerOptions.superFat);
-		},
-		WaterAsofOils(): void {
-			// let pr = this.headerOptions.water.waterAsOfOils;
-			// let ois = this.RecipeTotal.weightOils;
-			// this.RecipeTotal.weightWater = 0;
-			// this.RecipeTotal.weightWater = (pr / ois) * ois;
 		},
 		ChangeSuperFat(value:number): void {
 			this.calcLye();
