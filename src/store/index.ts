@@ -124,7 +124,7 @@ export const useOilStore = defineStore("taskStore", {
 			console.log('weightOils' , this.RecipeTotal.weightOils);
 			console.log('weightWater' , this.RecipeTotal.weightWater);
 
-			this.RecipeTotal.weightWater = (this.headerOptions.water.waterAsOfOils / this.RecipeTotal.weightOils) * this.RecipeTotal.weightOils;
+			this.RecipeTotal.weightWater = (this.RecipeTotal.weightOils / 100) * this.headerOptions.water.waterAsOfOils;
 		},
 		calcLye(){
 			this.RecipeTotal.weightOils = 0;
