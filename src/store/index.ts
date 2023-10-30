@@ -209,13 +209,13 @@ export const useOilStore = defineStore("taskStore", {
 			this.RecipeTotal.weightWater += parseInt((this.RecipeTotal.weightLye * 3).toFixed(0));
 			this.RecipeTotal.FragranceWeight = Math.round(((this.RecipeTotal.weightOils / 100) * this.headerOptions.fragrance.value) / 1000 * 100);
 			this.getProperties();
+			this.WaterAsofOils();
 			this.ChangeSuperFat(this.headerOptions.superFat);
 		},
 		WaterAsofOils(): void {
 			let pr = this.headerOptions.water.waterAsOfOils;
 			let ois = this.RecipeTotal.weightOils;
-			// this.RecipeTotal.weightWater;
-
+			this.RecipeTotal.weightWater = (pr / ois) * ois;
 		},
 		ChangeSuperFat(value:number): void {
 			this.calcLye();
