@@ -211,6 +211,9 @@ export const useOilStore = defineStore("taskStore", {
 			this.getProperties();
 			this.ChangeSuperFat(this.headerOptions.superFat);
 		},
+		WaterAsofOils(): void {
+
+		},
 		ChangeSuperFat(value:number): void {
 			this.calcLye();
 			this.headerOptions.superFat = value;
