@@ -55,19 +55,29 @@ div(class="lyeWidget flex flex-col min-h-[200px] max-h-[600px] border border-tra
 					| Cleansing
 				span(class="text-pink-500 ml-auto") {{soapProperties.Cleansing}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
-				span(class="text-sm text-white flex items-center") Conditioning
+				span(class="text-sm text-white flex items-center")
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					| Conditioning
 				span(class="text-pink-500 ml-auto") {{soapProperties.Conditioning}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
-				span(class="text-sm text-white flex items-center") Bubbly
+				span(class="text-sm text-white flex items-center")
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					| Bubbly
 				span(class="text-pink-500 ml-auto") {{soapProperties.Bubbly}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
-				span(class="text-sm text-white flex items-center") Creamy
+				span(class="text-sm text-white flex items-center")
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					| Creamy
 				span(class="text-pink-500 ml-auto") {{soapProperties.Creamy}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
-				span(class="text-sm text-white flex items-center") Iodine
+				span(class="text-sm text-white flex items-center")
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					| Iodine
 				span(class="text-pink-500 ml-auto") {{soapProperties.Iodine}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
-				span(class="text-sm text-white flex items-center") INS
+				span(class="text-sm text-white flex items-center")
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					| INS
 				span(class="text-pink-500 ml-auto") {{soapProperties.INS}}
 			li(class="p-4")
 				hr(class="opacity-50")
