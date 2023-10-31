@@ -54,15 +54,15 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 				| Bubbly#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Bubbly}}
 		li
-			span(class="float-left text-white")
+			span(class="float-left text-white flex items-center")
 				| Creamy#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Creamy}}
 		li
-			span(class="float-left text-white")
+			span(class="float-left text-white flex items-center")
 				| Iodine#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Iodine}}
 		li
-			span(class="float-left text-white")
+			span(class="float-left text-white flex items-center")
 				| INS#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.INS}}
 		//- -------------------------------------------
