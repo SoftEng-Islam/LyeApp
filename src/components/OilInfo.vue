@@ -49,7 +49,9 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 				| Condition#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Condition}}
 		li
-			span(class="float-left text-white flex items-center") Bubbly#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center")
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[3] }">!</button>
+				| Bubbly#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Bubbly}}
 		li
 			span(class="float-left text-white") Creamy#[span(class="text-yellow-500") :]
