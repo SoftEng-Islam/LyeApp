@@ -9,7 +9,7 @@ export const useOilStore = defineStore("taskStore", {
 			weightOfOilsUnit: "Grams",
 			water: {
 				selcted: 0,
-				waterAsOfOils: 100,
+				waterAsOfOils: 38,
 				lyeConcentration: 70,
 				WaterToLyeRatio: "2:1",
 			},
