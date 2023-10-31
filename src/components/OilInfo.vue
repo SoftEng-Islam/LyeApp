@@ -39,6 +39,8 @@ export default {
 		const { OilProperties } = storeToRefs(useOilStore());
 		return {
 			aryRanges,
+			tailFADetail,
+			aryFADetail,
 			OilProperties
 		}
 	}
@@ -91,27 +93,28 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 			hr(class="opacity-50")
 		//- -------------------------------------------
 		li
-			span(class="float-left text-white") Lauric#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center")
+				| Lauric#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Lauric}}
 		li
-			span(class="float-left text-white") Myristic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center") Myristic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Myristic}}
 		li
-			span(class="float-left text-white") Palmitic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center") Palmitic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Palmitic}}
 		li
-			span(class="float-left text-white") Stearic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center") Stearic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Stearic}}
 		li
-			span(class="float-left text-white") Ricinoleic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center") Ricinoleic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Ricinoleic}}
 		li
-			span(class="float-left text-white") Oleic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center") Oleic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Oleic}}
 		li
-			span(class="float-left text-white") Linoleic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center") Linoleic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Linoleic}}
 		li
-			span(class="float-left text-white") Linolenic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center") Linolenic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Linolenic}}
 </template>
