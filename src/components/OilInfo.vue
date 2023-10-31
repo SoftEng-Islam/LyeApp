@@ -20,6 +20,7 @@ export default {
 		aryRanges[6] = "INS (in the All column): 136 to 165, the commonly accepted ideal is 160.&nbsp; This value gauges the physical qualities of the bar; primarily hardness, with higher being harder.";
 		const { OilProperties } = storeToRefs(useOilStore());
 		return {
+			aryRanges,
 			OilProperties
 		}
 	}
@@ -33,8 +34,9 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 	ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md h-full flex flex-col")
 		//- {{key.charAt(0).toUpperCase() + key.slice(1)}}
 		li
-			<button v-tippy="{ content: 'Hi!' }">Tippy!</button>
-			span(class="float-left text-white") Hardness#[span(class="text-yellow-500") :]
+			span(class="float-left text-white")
+				<button class="w-3 h-3 rounded-full bg-[var(--favColor)]" v-tippy="{ content: aryRanges[0] }">!</button>
+				| Hardness#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Hardness}}
 		li
 			span(class="float-left text-white") Cleansing#[span(class="text-yellow-500") :]
