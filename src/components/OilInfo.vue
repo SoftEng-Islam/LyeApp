@@ -94,27 +94,42 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 		//- -------------------------------------------
 		li
 			span(class="float-left text-white flex items-center")
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryFADetail[0] }">!</button>
 				| Lauric#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Lauric}}
 		li
-			span(class="float-left text-white flex items-center") Myristic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center")
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryFADetail[1] }">!</button>
+				| Myristic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Myristic}}
 		li
-			span(class="float-left text-white flex items-center") Palmitic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center")
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryFADetail[2] }">!</button>
+				| Palmitic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Palmitic}}
 		li
-			span(class="float-left text-white flex items-center") Stearic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center")
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryFADetail[3] }">!</button>
+				| Stearic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Stearic}}
 		li
-			span(class="float-left text-white flex items-center") Ricinoleic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center")
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryFADetail[4] }">!</button>
+				| Ricinoleic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Ricinoleic}}
 		li
-			span(class="float-left text-white flex items-center") Oleic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center")
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryFADetail[5] }">!</button>
+				| Oleic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Oleic}}
 		li
-			span(class="float-left text-white flex items-center") Linoleic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center")
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryFADetail[6] }">!</button>
+				| Linoleic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Linoleic}}
 		li
-			span(class="float-left text-white flex items-center") Linolenic#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center")
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryFADetail[7] }">!</button>
+				| Linolenic#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Linolenic}}
 </template>
