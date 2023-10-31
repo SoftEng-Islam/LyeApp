@@ -34,12 +34,14 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 	ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md h-full flex flex-col")
 		//- {{key.charAt(0).toUpperCase() + key.slice(1)}}
 		li
-			span(class="float-left text-white")
-				<button class="w-3 h-3 rounded-full bg-[var(--favColor)]" v-tippy="{ content: aryRanges[0] }">!</button>
+			span(class="float-left text-white flex items-center")
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
 				| Hardness#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Hardness}}
 		li
-			span(class="float-left text-white") Cleansing#[span(class="text-yellow-500") :]
+			span(class="float-left text-white flex items-center")
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[1] }">!</button>
+				| Cleansing#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Cleansing}}
 		li
 			span(class="float-left text-white") Condition#[span(class="text-yellow-500") :]
