@@ -1,7 +1,11 @@
 <script lang="ts">
 import { storeToRefs } from 'pinia';
 import { useOilStore } from "../store/index";
+import { setDefaultProps , directive } from 'vue-tippy';
 export default {
+	directives: {
+      tippy: directive,
+    },
 	setup() {
 		const { soapProperties } = storeToRefs(useOilStore());
 
