@@ -89,7 +89,7 @@ ul(class="w-full mb-5 py-2 px-4 flex flex-row gap-2 items-start justify-between 
 		select(class="bg-[var(--dark200)] text-blue-300 pl-2 py-1 rounded-md scale-90" v-model="TheWaterOption" @change="TheWaterSelect")
 			option(value="0") Water as % of Oils
 			//- option(value="1" ) Lye Concentration
-			option(value="2" ) Water : Lye Ratio
+			//- option(value="2" ) Water : Lye Ratio
 	//- The Lest Section
 	li(class="hover:border-[var(--favColor)] border border-transparent text-sm flex flex-col items-start justify-center w-1/4 h-full bg-[var(--dark300)] rounded-lg p-2")
 		//- Super Fat
