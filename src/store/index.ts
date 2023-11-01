@@ -117,8 +117,14 @@ export const useOilStore = defineStore("taskStore", {
 		showTheInfo(selectedOil: any): void {
 			this.OilProperties = selectedOil;
 		},
-		WaterAsofOils(): void {
-			// this.RecipeTotal.weightWater = 0;
+		WaterAsofOils(valueOne: any, valueTwo: any): void {
+			if(valueOne == 0) {
+				this.headerOptions.water.waterAsOfOils = valueTwo;
+			} else if (valueOne == 1) {
+				this.headerOptions.water.lyeConcentration = valueTwo;
+			} else {
+				this.headerOptions.water.WaterToLyeRatio = valueTwo;
+			}
 			console.log('weightWater' , this.RecipeTotal.weightWater);
 			console.log('waterAsOfOils' , this.headerOptions.water.waterAsOfOils);
 			console.log('weightOils' , this.RecipeTotal.weightOils);

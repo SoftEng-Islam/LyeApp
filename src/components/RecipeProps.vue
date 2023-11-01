@@ -28,13 +28,7 @@ export default {
 				}
 			},
 			set(value: any): void {
-				if(TheWaterOption.value == 0) {
-					OilStore.headerOptions.water.waterAsOfOils = value;
-				} else if (TheWaterOption.value == 1) {
-					OilStore.headerOptions.water.lyeConcentration = value;
-				} else {
-					OilStore.headerOptions.water.WaterToLyeRatio = value;
-				}
+				OilStore.WaterAsofOils(TheWaterOption.value, value)
 			}
 		});
 
