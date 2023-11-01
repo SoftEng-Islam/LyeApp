@@ -1,6 +1,7 @@
-![image](https://github.com/SoftEng-Islam/LyeApp/assets/142545372/78d99795-bc61-4524-a976-c1e7a63baacd)
+![image](https://github.com/SoftEng-Islam/LyeApp/assets/142545372/dc6e8a72-c141-4184-8bdc-f6d52bd00af8)
 
 
+my twitter https://twitter.com/SoftEng_Islam
 
 # LyeApp => For  Lye Calculation
 
