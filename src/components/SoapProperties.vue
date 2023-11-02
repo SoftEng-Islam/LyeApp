@@ -1,11 +1,11 @@
 <script lang="ts">
 import { storeToRefs } from 'pinia';
 import { useOilStore } from "../store/index";
-import { setDefaultProps , directive } from 'vue-tippy';
+import { setDefaultProps, directive } from 'vue-tippy';
 export default {
 	directives: {
-      tippy: directive,
-    },
+		tippy: directive,
+	},
 	setup() {
 		const { soapProperties } = storeToRefs(useOilStore());
 
@@ -19,7 +19,7 @@ export default {
 		aryRanges[6] = "INS (in the All column): 136 to 165, the commonly accepted ideal is 160.&nbsp; This value gauges the physical qualities of the bar; primarily hardness, with higher being harder.";
 
 		let aryFADetail = Array(8),
-		tailFADetail = "<br /><br />Click/Tap on green <span style='font-weight:700;font-size:14px;font-family:Courier'>i</span> button to get more detail from Wikipedia.";
+			tailFADetail = "<br /><br />Click/Tap on green <span style='font-weight:700;font-size:14px;font-family:Courier'>i</span> button to get more detail from Wikipedia.";
 		aryFADetail[0] = "<b>Lauric Acid</b><br /><br />&bull; 12:0<br />&bull; Saturated<br />&bull; dodecanoic acid. &nbsp;&nbsp;(doe-dec-a-no-ik)";
 		aryFADetail[1] = "<b>Myristic Acid</b><br /><br />&bull; 14:0<br />&bull; Saturated<br />&bull; tetradecanoic acid. &nbsp;&nbsp;(te-tra-dec-a-no-ik)";
 		aryFADetail[2] = "<b>Palmitic Acid</b><br /><br />&bull; 16:0<br />&bull; Saturated<br />&bull; hexadecanoic acid. &nbsp;&nbsp;(hex-a-dec-a-no-ik)";
