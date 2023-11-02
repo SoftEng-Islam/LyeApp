@@ -19,7 +19,6 @@ export default {
 		aryRanges[5] = "Iodine Value (in the All column): 41 to 70, lower equals harder bar, much above 70 and bar could possibly be too soft.";
 		aryRanges[6] = "INS (in the All column): 136 to 165, the commonly accepted ideal is 160.&nbsp; This value gauges the physical qualities of the bar; primarily hardness, with higher being harder.";
 
-
 		let aryFADetail = Array(8),
 		tailFADetail = "<br /><br />Click/Tap on green <span style='font-weight:700;font-size:14px;font-family:Courier'>i</span> button to get more detail from Wikipedia.";
 		aryFADetail[0] = "<b>Lauric Acid</b><br /><br />&bull; 12:0<br />&bull; Saturated<br />&bull; dodecanoic acid. &nbsp;&nbsp;(doe-dec-a-no-ik)";
