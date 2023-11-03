@@ -48,37 +48,37 @@ div(class="lyeWidget flex flex-col min-h-[200px] border border-transparent hover
 		//- {{key.charAt(0).toUpperCase() + key.slice(1)}}
 		li
 			span(class="float-left text-white flex items-center")
-				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-yellow-600 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
 				| Hardness#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Hardness}}
 		li
 			span(class="float-left text-white flex items-center")
-				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[1] }">!</button>
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-yellow-600 text-sm mr-2" v-tippy="{ content: aryRanges[1] }">!</button>
 				| Cleansing#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Cleansing}}
 		li
 			span(class="float-left text-white flex items-center")
-				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[2] }">!</button>
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-yellow-600 text-sm mr-2" v-tippy="{ content: aryRanges[2] }">!</button>
 				| Condition#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Condition}}
 		li
 			span(class="float-left text-white flex items-center")
-				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[3] }">!</button>
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-yellow-600 text-sm mr-2" v-tippy="{ content: aryRanges[3] }">!</button>
 				| Bubbly#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Bubbly}}
 		li
 			span(class="float-left text-white flex items-center")
-				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[4] }">!</button>
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-yellow-600 text-sm mr-2" v-tippy="{ content: aryRanges[4] }">!</button>
 				| Creamy#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Creamy}}
 		li
 			span(class="float-left text-white flex items-center")
-				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[5] }">!</button>
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-yellow-600 text-sm mr-2" v-tippy="{ content: aryRanges[5] }">!</button>
 				| Iodine#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.Iodine}}
 		li
 			span(class="float-left text-white flex items-center")
-				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[6] }">!</button>
+				<button class="w-4 h-4 rounded-full flex items-center justify-center bg-yellow-600 text-sm mr-2" v-tippy="{ content: aryRanges[6] }">!</button>
 				| INS#[span(class="text-yellow-500") :]
 			span(class="float-right text-yellow-500") {{OilProperties.INS}}
 		//- -------------------------------------------
