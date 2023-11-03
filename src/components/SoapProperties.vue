@@ -46,7 +46,7 @@ div(class="lyeWidget flex flex-col min-h-[200px] max-h-[600px] border border-tra
 		ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md overflow-hidden")
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-600 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Hardness
 				span(class="text-pink-500 ml-auto") {{soapProperties.Hardness}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
