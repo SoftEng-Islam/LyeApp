@@ -52,7 +52,7 @@ div(class="z-10 relative h-full bg-[var(--dark400)] p-3 w-1/5 border-r-2 border-
 						li(class="")
 				li(class="mx-4 hover:text-white hover:cursor-pointer") Select
 		//- Oils
-		div(class="OilsList pt-5 w-full h-full flex items-start justify-center border-t border-solid border-[var(--dark100)]")
+		div(class="OilsList pt-5 w-full h-full flex items-start justify-center")
 			perfect-scrollbar(class="h-[83%] w-full bg-[var(--dark300)] rounded-lg border-4 border-[var(--dark300)]")
 				transition-group(name="list" tag="ul" class="h-full w-full pl-5 pb-6")
 					li(v-for="Oil in filteredOils()" :key="Oil.Name" class="py-2 my-2 text-sm rounded-lg flex flex-nowrap items-center gap-2 text-[var(--favColor)]" @click="ShowTheInfo(Oil)" @dblclick="ClickdOnOil(Oil)")
