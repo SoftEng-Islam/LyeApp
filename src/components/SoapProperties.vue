@@ -46,79 +46,79 @@ div(class="lyeWidget flex flex-col min-h-[200px] max-h-[600px] border border-tra
 		ul(class="bg-[var(--dark400)] mt-4 p-2 rounded-md overflow-hidden")
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-600 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Hardness
 				span(class="text-pink-500 ml-auto") {{soapProperties.Hardness}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Cleansing
 				span(class="text-pink-500 ml-auto") {{soapProperties.Cleansing}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Conditioning
 				span(class="text-pink-500 ml-auto") {{soapProperties.Conditioning}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Bubbly
 				span(class="text-pink-500 ml-auto") {{soapProperties.Bubbly}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Creamy
 				span(class="text-pink-500 ml-auto") {{soapProperties.Creamy}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Iodine
 				span(class="text-pink-500 ml-auto") {{soapProperties.Iodine}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| INS
 				span(class="text-pink-500 ml-auto") {{soapProperties.INS}}
 			li(class="p-4")
 				hr(class="opacity-50")
 			li(class="flex overflow-hidden py-2")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Lauric
 				span(class="text-pink-500 ml-auto") {{soapProperties.Lauric}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Myristic
 				span(class="text-pink-500 ml-auto") {{soapProperties.Myristic}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Palmitic
 				span(class="text-pink-500 ml-auto") {{soapProperties.Palmitic}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Stearic
 				span(class="text-pink-500 ml-auto") {{soapProperties.Stearic}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Ricinoleic
 				span(class="text-pink-500 ml-auto") {{soapProperties.Ricinoleic}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Oleic
 				span(class="text-pink-500 ml-auto") {{soapProperties.Oleic}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Linoleic
 				span(class="text-pink-500 ml-auto") {{soapProperties.Linoleic}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-purple-800 text-sm mr-2" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
 					| Linolenic
 				span(class="text-pink-500 ml-auto") {{soapProperties.Linolenic}}
 			li(class="p-4")
