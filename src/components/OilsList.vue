@@ -38,7 +38,7 @@ export default {
 div(class="z-10 relative h-full bg-[var(--dark400)] p-3 w-1/5 border-r-2 border-solid border-[var(--favColor)]" id="notes")
 	div(class="w-full h-full flex flex-col items-center")
 		//- Search
-		div(class="relative w-full p-3 m-2 mb-5 flex items-center justify-center")
+		div(class="relative w-full p-3 m-2 mb-4 flex items-center justify-center")
 			div(class="z-10 w-full pl-4 h-9 flex items-center justify-center rounded-xl bg-[var(--dark200)]")
 				input(v-on:focusin="show = ''" v-on:focusout="show = 'hidden'" v-model="searchForOil" class="h-7 w-4/5 outline-none text-white placeholder:focus:opacity-40 bg-transparent" type="text" placeholder="Search...")
 				button(class="outline-none")
