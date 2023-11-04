@@ -71,7 +71,7 @@ div(class="lyeWidget flex flex-col min-h-[200px] max-h-[600px] border border-tra
 				span(class="text-pink-500 ml-auto") {{soapProperties.Creamy}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
 				span(class="text-sm text-white flex items-center")
-					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[0] }">!</button>
+					<button class="w-4 h-4 rounded-full flex items-center justify-center bg-pink-500 text-sm mr-2 text-black" v-tippy="{ content: aryRanges[5] }">!</button>
 					| Iodine
 				span(class="text-pink-500 ml-auto") {{soapProperties.Iodine}}
 			li(class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")
