@@ -1,0 +1,68 @@
+@tailwind base;
+
+@layer base {
+	h1 {
+		@apply text-4xl font-bold;
+	}
+
+	h2 {
+		@apply text-3xl font-bold;
+	}
+
+	h3 {
+		@apply text-2xl font-bold;
+	}
+
+	h4 {
+		@apply text-xl font-bold;
+	}
+
+	h5 {
+		@apply text-lg font-bold;
+	}
+
+	p {
+		@apply text-base;
+	}
+
+	img {
+		@apply rounded-md;
+	}
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: JetBrains;
+	src: url(./fonts/ttf/JetBrainsMonoNL-Regular.ttf);
+}
+
+:root {
+	--dark100: #575758;
+	--dark200: #424243;
+	--dark300: #2e2d2d;
+	--dark400: #201f1f;
+	--white: #b8b8b8;
+	--blue: #96b5ff;
+	--purple: #df8dff;
+	--pink: #ff8f8f;
+	--green: #89ffae;
+	--yellow: #ffeb7c;
+	--sky: #23d8c0;
+	--favColor: var(--yellow);
+	--HeaderHeight: 4rem;
+	--bgG: linear-gradient(90deg, #ff6600 0%, #e9912d 35%, #fdc063 100%);
+}
+
+body {
+	font-family: JetBrains;
+	/* border: 4px solid var(--favColor);
+	background-color: var(--dark300);
+	-webkit-app-region: drag;
+	background: var(--bgG); */
+}
+
+::selection {
+	background: var(--favColor);
+}
