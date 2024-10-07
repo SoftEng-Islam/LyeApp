@@ -2,23 +2,23 @@
 import { ref } from "vue";
 import { useOilStore } from "../store/index";
 export default {
-	props: ['oil'],
+	props: ["oil"],
 	setup() {
 		const weightOfOil = ref(0);
 		const RemoveThisOil = (val: Object) => {
 			useOilStore().RemoveOils(val);
-		}
+		};
 		// weightOfOil
 		const SetOilWeight = (nameOfOil: string) => {
 			useOilStore().AddedOilsWeight(nameOfOil, weightOfOil.value);
-		}
+		};
 		return {
 			weightOfOil,
 			RemoveThisOil,
 			SetOilWeight
-		}
-	},
-}
+		};
+	}
+};
 </script>
 <template lang="pug">
 li( class="flex overflow-hidden py-2 first-of-type:border-none border-t border-t-[var(--dark200)]")

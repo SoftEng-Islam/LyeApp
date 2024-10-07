@@ -1,5 +1,5 @@
 <script lang="ts">
-import { storeToRefs } from 'pinia';
+import { storeToRefs } from "pinia";
 import { useOilStore } from "../store/index";
 import AddedOil from "./AddedOil.vue";
 export default {
@@ -11,16 +11,16 @@ export default {
 		const { AddedOils } = storeToRefs(useOilStore());
 		const RemoveThisOil = (val: Object): void => {
 			useOilStore().RemoveOils(val);
-		}
+		};
 		if (OilStore.RecipeTotal.value.weightOils > 1000) {
 			console.log(OilStore.RecipeTotal.value.weightOils / 1000); // Gram to k.g
 		}
 		return {
 			OilStore,
 			AddedOils,
-			RemoveThisOil,
-		}
-	},
+			RemoveThisOil
+		};
+	}
 };
 </script>
 <template lang="pug">
