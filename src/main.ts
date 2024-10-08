@@ -5,8 +5,10 @@ import App from "./App.vue";
 import "./style.css";
 import "animate.css";
 
-import {PerfectScrollbar, PerfectScrollbarPlugin} from "vue3-perfect-scrollbar";
-import "../node_modules/vue3-perfect-scrollbar/dist/style.css";
+// import "../node_modules/vue3-perfect-scrollbar/dist/style.css";
+import { PerfectScrollbarPlugin } from 'vue3-perfect-scrollbar';
+import 'vue3-perfect-scrollbar/style.css';
+
 
 import VueTippy from "vue-tippy";
 import "tippy.js/dist/tippy.css"; // optional for styling
