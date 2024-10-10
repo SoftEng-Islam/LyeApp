@@ -12,11 +12,9 @@
 	"dependencies": {
 		"@tauri-apps/api": "^1.6.0",
 		"bcrypt": "^5.1.1",
-		"postcss-loader": "^8.1.1",
 		"sqlite3": "^5.1.7",
 		"tippy.js": "^6.3.7",
-		"vue": "^3.5.10",
-		"vue-tippy": "^6.4.4"
+		"vue": "^3.5.10"
 	},
 	"devDependencies": {
 		"@tailwindcss/aspect-ratio": "^0.4.2",
@@ -34,6 +32,7 @@
 		"perfect-scrollbar": "^1.5.5",
 		"pinia": "^2.2.2",
 		"postcss": "^8.4.47",
+		"postcss-loader": "^8.1.1",
 		"pug": "^3.0.3",
 		"pug-plain-loader": "^1.1.0",
 		"raw-loader": "^4.0.2",
@@ -47,6 +46,7 @@
 		"vue-loader-plugin": "^1.3.0",
 		"vue-pug-plugin": "^2.0.3",
 		"vue-template-compiler": "^2.7.16",
+		"vue-tippy": "^6.4.4",
 		"vue-tsc": "^2.1.6",
 		"vue3-perfect-scrollbar": "^2.0.0"
 	}

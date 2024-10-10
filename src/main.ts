@@ -5,7 +5,6 @@ import App from "./App.vue";
 import "./style.css";
 import "animate.css";
 
-// import "../node_modules/vue3-perfect-scrollbar/dist/style.css";
 import { PerfectScrollbarPlugin } from 'vue3-perfect-scrollbar';
 import 'vue3-perfect-scrollbar/style.css';
 
