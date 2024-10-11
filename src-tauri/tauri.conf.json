@@ -6,7 +6,7 @@
 		"distDir": "../dist"
 	},
 	"package": {
-		"productName": "lyeapp-tauri",
+		"productName": "LyeApp",
 		"version": "0.0.0"
 	},
 	"tauri": {
