@@ -1,5 +1,4 @@
 <script lang="ts">
-// import { ipcRenderer } from 'electron';
 // The Header
 export default {
 	data() {
@@ -32,7 +31,7 @@ header(class="w-full p-2 flex items-center justify-between select-none h-[var(--
 	//- Logo
 	a(class="ml-4 text-xl outline-none text-[var(--favColor)]" :href="LogoLink" style="-webkit-app-region: no-drag") LyeApp #[span(class="text-xs opacity-70") v1.0]
 	//- Colors
-	div(class="flex items-center justify-center" style="-webkit-app-region: no-drag")
+	div(v-show="false" class="flex items-center justify-center" style="-webkit-app-region: no-drag")
 		ul(class="h-9 p-1 px-3 rounded-full flex items-center justify-center bg-[var(--dark200)]" id="favColorsUL")
 			li(@click="changeAppColor('var(--blue)')"		:class="LiColorActive === 'var(--blue)' ? 'scale-125 mx-2': ''" 	class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--blue)]")
 			li(@click="changeAppColor('var(--sky)')"		:class="LiColorActive === 'var(--sky)' ? 'scale-125 mx-2': ''" 		class="cursor-pointer duration-200 hover:scale-95 h-5 w-5 rounded-full m-1 bg-[var(--sky)]")
